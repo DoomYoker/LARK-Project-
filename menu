@@ -1,14 +1,34 @@
 #!/bin/bash
 
 location=$PWD
+sword=0
+key=0
+centaur=0
 export sword
-export torch
 export key
+export centaur
 
-function move_everything() {
+function move_items() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+function reset_var() {
 
 
 
