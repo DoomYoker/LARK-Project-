@@ -1,0 +1,27 @@
+#!/bin/bash
+
+location=$PWD
+export sword
+export torch
+export key
+
+function move_everything() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
