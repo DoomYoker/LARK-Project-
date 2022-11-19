@@ -1,0 +1,4 @@
+#!/bin/bash
+work=$PWD
+export work;
+
