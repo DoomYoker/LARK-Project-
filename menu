@@ -7,8 +7,6 @@ function beastiary () {
 	echo "                      Beastiary                      "
 	echo "-----------------------------------------------------"
 	echo ""
-	echo ""
-	echo ""
 	echo "$i) Exit Beastiary"
 	for FILE in $location/beastiary; ((i = i + 1)); echo "$i) Read " FILE " description";
 
