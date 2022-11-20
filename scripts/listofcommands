@@ -1,0 +1,11 @@
+Commands to use during the game:
+
+$PWD - lists what your current working directory(location) is
+
+cd "pathname" - allows you to move to another accessible location (ex: cd $PWD/cave)
+
+cd .. - moves you back to the previous location you were in
+
+ls - displays all current files and directories(other locations nearby) in the current directory(location) you are in
+
+cat "filename" - allows you to read the contents of a specific item you have collected or thing needed to be read (ex: cat amulet)
