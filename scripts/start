@@ -3,9 +3,54 @@ clear
 
 sleep 1
 
-echo "
+tput bold; echo "Mysterious Voice: "; tput sgr0; echo "Wake up..."
+sleep 5;
+tput bold; echo "Mysterious Voice: "; tput sgr0; echo "Please $name, we need you..."
 
-Children Children gather round, let me tell you the story of the great warrior who took down the beast.
+echo "Our hero slowly awakes. Pushing himself to a standing position, he is unable to become aware of his surroundings. The darkness comes too close to a resemblance of any kind. However, he notices a small light bright enough to be noticeable."
+sleep 10;
+read -p "$name feels intrigued to pickup this item. But will he do so?[yes or no]: " firstchoice
+	case $firstchoice in
+	yes)
+		echo "$name bends over and spreads a hand to grasp on the item. Bringing it to his face, he sees that it is an unknown amulet with a giant gemstone in the center. He carefully caresses it and lays his thumb over the gem, evoking a bright light that illuminates the room."
+		sleep 10;
+		break
+		;;
+	no)
+		echo "$name understands that the amulet could be potentially dangerous, understanding the risks involved in picking up something that could inflict harm on himself. However, his interest overcomes common sense and decides to firmly grasp the item on the ground. When doing so, the identified amulet nearly blinds him, illuminating the room."
+		sleep 10;
+		;;
+	esac
+echo "As the lights shine to reveal the walls of a cave, the amulet begins to vibrate. It jolts from his palm and floats infront of him. The amulet speaks to him."
+sleep 10;
 
-"
+clear
+
+tput bold; echo "Mysterious Voice: "; tput sgr0; echo "Good to see you awake. We are in desperate need of your help. You can save us."
+sleep 10;
+
+echo "The amulet turns towards left, leaning in as if it were wanting him to head towards that direction."
+sleep 5;
+tput bold; echo "Mysterious Voice: "; tput sgr0; echo "Please head this way. We'll meet soon."
+sleep 5;
+echo "The amulet immediately drops onto the ground. $name leans over to pick it up and hangs it from his neck. This allows him to continue seeing dark areas."
+sleep 5;
+
+clear
+
+read -p "Looking forward, our hero decides whether to go left as the amulet told him, or follow right instead? [left or right]: " splitcave
+	case $splitcave in
+	left)
+		echo "Feeling as if the amulet is helping, $name decides to head left. Travelling down this path, the hero stumbles upon an exit to the outside."
+	      	break
+		;;
+	right)
+		echo "Feeling as if the amulet could harm him, $name decides to try and navigate the right path. As he approaches the right path, he notices that the ground along the path lays a skull of a creature with large eye sockets and pointed horns upon the top. As this sends a shiver down his spine, he chooses to continue pressing on."
+		sleep 10;
+		echo "A few steps later, he hears rustling up ahead and immediately halts his movements. A large being slowly emmerges from the shadow upahead, outlining the figure of a gigantic bird. It immediately shreiks in fear, causing $name to jump back in panic. This forces him to scurry backwards and out the left route, steadily calming as he grows further and further away. He then comes towards a big cave opening leading to the outside."
+		sleep 10;
+		;;
+	esac
+echo "He quickly leaves to reveal open fields of grass and lush trees. While glancing around, he notices a farm close by that may have others he can talk to. Knowing that this location may provide him help, he goes forth."
+sleep 10;
 
