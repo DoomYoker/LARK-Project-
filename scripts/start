@@ -47,7 +47,7 @@ read -p "Looking forward, our hero decides whether to go left as the amulet told
 	right)
 		echo "Feeling as if the amulet could harm him, $name decides to try and navigate the right path. As he approaches the right path, he notices that the ground along the path lays a skull of a creature with large eye sockets and pointed horns upon the top. As this sends a shiver down his spine, he chooses to continue pressing on."
 		sleep 10;
-		echo "A few steps later, he hears rustling up ahead and immediately halts his movements. A large being slowly emmerges from the shadow upahead, outlining the figure of a gigantic bird. It immediately shreiks in fear, causing $name to jump back in panic. This forces him to scurry backwards and out the left route, steadily calming as he grows further and further away. He then comes towards a big cave opening leading to the outside."
+		echo "A few steps later, he hears rustling up ahead and immediately halts his movements. A large being slowly emmerges from the shadow up ahead, outlining the figure of a gigantic bird. It immediately shreiks in fear, causing $name to jump back in panic. This forces him to scurry backwards and out the left route, steadily calming as he grows further and further away. He then comes towards a big cave opening leading to the outside."
 		sleep 10;
 		;;
 	esac
