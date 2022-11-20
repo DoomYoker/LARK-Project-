@@ -23,6 +23,7 @@ skeleton="no"
 ladyofthelake="no"
 phoenix="no"
 merlin="no"
+merlintalk="no"
 siren="no"
 basilisk="no"
 }
@@ -40,6 +41,7 @@ export imp
 export phoenix
 export ladyofthelake
 export merlin
+export merlintalk
 export siren
 export basilisk
 
