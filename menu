@@ -2,14 +2,37 @@
 
 location=$PWD
 
+function beastiary(){
+	i=0
+	echo "                      Beastiary                      "
+	echo "-----------------------------------------------------"
+	echo ""
+	echo ""
+	echo ""
+	echo "$i) Exit Beastiary"
+	for FILE in $location/beastiary; ((i = i + 1)); echo "$i) Read " FILE " description";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
 function reset_var()
 {	
 talisman="no"
 excalibur="no"
 skull-key="no"
 centaur="no"
-egg="no"
-griffen="no"
+egg="no"griffen="no"
 spell="no"
 skeleton="no"
 ladyofthelake="no"
