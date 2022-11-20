@@ -19,11 +19,6 @@ siren="no"
 basilisk="no"
 }
 
-read -p "Enter a name of the Legend: " name
-echo "Excellent. Now it is time to tell the story of our new hero $name."
-
-sleep 10;
-
 export name
 export talisman
 export excalibur
@@ -39,12 +34,6 @@ export ladyofthelake
 export merlin
 export siren
 export basilisk
-
-echo "This game does require you to search around for items. Make sure to pick them up along the way, as they will be needed for you to continue on your journey."
-
-sleep 10;
-
-echo "If at any point you need to exit the game, just type _____." 
 
 function move_items() 
 {
@@ -92,3 +81,15 @@ function move_items()
   rm /LARK-Project-/collection/.basilisk
 }
 
+echo "This game does require you to search around for items. Make sure to pick them up along the way, as they will be needed for you to continue on your journey."
+
+sleep 10;
+
+echo "If at any point you need to exit the game, just type _____."
+
+sleep 10;
+
+read -p "Enter a name of the Legend: " name
+echo "Excellent. Now it is time to tell the story of our new hero $name."
+
+sleep 10;
