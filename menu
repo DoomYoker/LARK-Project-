@@ -2,7 +2,7 @@
 
 location=$PWD
 
-function beastiary(){
+function beastiary () {
 	i=0
 	echo "                      Beastiary                      "
 	echo "-----------------------------------------------------"
@@ -12,22 +12,8 @@ function beastiary(){
 	echo "$i) Exit Beastiary"
 	for FILE in $location/beastiary; ((i = i + 1)); echo "$i) Read " FILE " description";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
-function reset_var()
-{	
+function reset_var () {	
 talisman="no"
 excalibur="no"
 skull-key="no"
@@ -59,8 +45,7 @@ export merlin
 export siren
 export basilisk
 
-function move_items() 
-{
+function move_items () {
   cp $location/collection/.talisman $location/collection/talisman
   mv $location/collection/talisman $location/collected
   rm $location/collection/.talisman
@@ -104,16 +89,51 @@ function move_items()
   mv /LARK-Project-/collection/basilisk /LARK-Project-/collected
   rm /LARK-Project-/collection/.basilisk
 }
+talisman() { less "$location/scripts/commandList"; }
 
-echo "This game does require you to search around for items. Make sure to pick them up along the way, as they will be needed for you to continue on your journey."
+tput smcup
+while [[ $REPLY != "c" ]]
+do
+clear 
+  cat <<EOF
+	      Menu
+	~~~~~~~~~~~~~~~~~
+	a. Start Game
+	b. About Game
+	c. Quit
 
-sleep 10;
 
-echo "If at any point you need to exit the game, just type _____."
-
-sleep 10;
-
-read -p "Enter a name of the Legend: " name
-echo "Excellent. Now it is time to tell the story of our new hero $name."
-
-sleep 10;
+EOF
+	read -p "Enter choice [a-c]: " choice
+	move_items
+	reset_var
+	
+	case $choice in 
+	a) echo "Your Story can now begin"
+	sleep 1;
+	read -p "Enter a name of the Legend: " name
+	sleep 1;
+	echo "Excellent. Now it is time to tell the story of our new hero $name."
+	sleep 1;
+	echo "(If at any point you need to exit the game, just type _____.)"
+	sleep 1;
+	echo "(This game does require you to search around for items. Make sure to pick them up along the way, as they will be needed for you to continue on your journey.)"
+	. start
+	;;
+	b) clear 
+	echo "___________ is a terminal based game that was made to showcase a few basics commands used in the linux terminal.
+	This is done so that the player can learn a bit about how to utilize the bash shell in an entertaining way.
+	To begin the game be sure to choose option a). After choosing option a) your goal as the hero of this story is to explore this mystical forest and confront the evil being causing more and more evils to infect this peaceful land.
+	
+	If you wish to avoid seeing and altering any of the game code be sure to follow the games instructions."
+	sleep 1;
+	;;
+	c) 
+	tput rmcup
+	echo "Exiting Game"
+	break
+	;;
+	*) echo "Invalid Option: Make sure to enter only [a-c] for this menu."
+	;;
+esac
+done
