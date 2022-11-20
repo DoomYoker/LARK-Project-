@@ -4,8 +4,8 @@ location=$PWD
 
 function reset_var()
 {	
-gemini="no"
-sword="no"
+talisman="no"
+excalibur="no"
 skull-key="no"
 centaur="no"
 egg="no"
@@ -25,8 +25,8 @@ echo "Excellent. Now it is time to tell the story of our new hero $name."
 sleep 10;
 
 export name
-export gemini
-export sword
+export talisman
+export excalibur
 export skull-key
 export centaur
 export griffen
@@ -48,6 +48,47 @@ echo "If at any point you need to exit the game, just type _____."
 
 function move_items() 
 {
-  cp /LARK-Project-/collection/.
+  cp /LARK-Project-/collection/.talisman /LARK-Project-/collection/talisman
+  mv /LARK-Project-/collection/talisman /LARK-Project-/collected
+  rm /LARK-Project-/collection/.talisman
+  cp /LARK-Project-/collection/.excalibur /LARK-Project-/collection/excalibur
+  mv /LARK-Project-/collection/excalibur /LARK-Project-/collected
+  rm /LARK-Project-/collection/.excalibur
+  cp /LARK-Project-/collection/.skull-key /LARK-Project-/collection/skull-key
+  mv /LARK-Project-/collection/skull-key /LARK-Project-/collected
+  rm /LARK-Project-/collection/.skull-key
+  cp /LARK-Project-/collection/.centaur /LARK-Project-/collection/centaur
+  mv /LARK-Project-/collection/centaur /LARK-Project-/collected
+  rm /LARK-Project-/collection/.centaur
+  cp /LARK-Project-/collection/.griffen /LARK-Project-/collection/griffen
+  mv /LARK-Project-/collection/griffen /LARK-Project-/collected
+  rm /LARK-Project-/collection/.griffen
+  cp /LARK-Project-/collection/.egg /LARK-Project-/collection/egg
+  mv /LARK-Project-/collection/egg /LARK-Project-/collected
+  rm /LARK-Project-/collection/.egg
+  cp /LARK-Project-/collection/.spell /LARK-Project-/collection/spell
+  mv /LARK-Project-/collection/spell /LARK-Project-/collected
+  rm /LARK-Project-/collection/.spell
+  cp /LARK-Project-/collection/.skeleton /LARK-Project-/collection/skeleton
+  mv /LARK-Project-/collection/skeleton /LARK-Project-/collected
+  rm /LARK-Project-/collection/.skeleton
+  cp /LARK-Project-/collection/.imp /LARK-Project-/collection/imp
+  mv /LARK-Project-/collection/imp /LARK-Project-/collected
+  rm /LARK-Project-/collection/.imp
+  cp /LARK-Project-/collection/.phoenix /LARK-Project-/collection/phoenix
+  mv /LARK-Project-/collection/phoenix /LARK-Project-/collected
+  rm /LARK-Project-/collection/.phoenix
+  cp /LARK-Project-/collection/.ladyofthelake /LARK-Project-/collection/ladyofthelake
+  mv /LARK-Project-/collection/ladyofthelake /LARK-Project-/collected
+  rm /LARK-Project-/collection/.ladyofthelake
+  cp /LARK-Project-/collection/.merlin /LARK-Project-/collection/merlin
+  mv /LARK-Project-/collection/merlin /LARK-Project-/collected
+  rm /LARK-Project-/collection/.merlin
+  cp /LARK-Project-/collection/.siren /LARK-Project-/collection/siren
+  mv /LARK-Project-/collection/siren /LARK-Project-/collected
+  rm /LARK-Project-/collection/.siren
+  cp /LARK-Project-/collection/.basilisk /LARK-Project-/collection/basilisk
+  mv /LARK-Project-/collection/basilisk /LARK-Project-/collected
+  rm /LARK-Project-/collection/.basilisk
 }
 
