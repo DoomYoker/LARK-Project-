@@ -40,12 +40,12 @@ function move_items()
   cp $location/collection/.talisman $location/collection/talisman
   mv $location/collection/talisman $location/collected
   rm $location/collection/.talisman
-  cp /LARK-Project-/collection/.excalibur /LARK-Project-/collection/excalibur
-  mv /LARK-Project-/collection/excalibur /LARK-Project-/collected
-  rm /LARK-Project-/collection/.excalibur
-  cp /LARK-Project-/collection/.skull-key /LARK-Project-/collection/skull-key
-  mv /LARK-Project-/collection/skull-key /LARK-Project-/collected
-  rm /LARK-Project-/collection/.skull-key
+  cp $location/collection/.excalibur $location/collection/excalibur
+  mv $location/collection/excalibur $location/collected
+  rm $location/collection/.excalibur
+  cp $location/collection/.skull-key $location/collection/skull-key
+  mv $location/collection/skull-key $location/collected
+  rm $location/collection/.skull-key
   cp /LARK-Project-/collection/.centaur /LARK-Project-/collection/centaur
   mv /LARK-Project-/collection/centaur /LARK-Project-/collected
   rm /LARK-Project-/collection/.centaur
