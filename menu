@@ -53,39 +53,39 @@ function move_items () {
   cp $location/collection/.skull-key $location/collection/skull-key
   mv $location/collection/skull-key $location/collected
   rm $location/collection/.skull-key
-  cp /LARK-Project-/collection/.centaur /LARK-Project-/collection/centaur
-  mv /LARK-Project-/collection/centaur /LARK-Project-/collected
-  rm /LARK-Project-/collection/.centaur
-  cp /LARK-Project-/collection/.griffen /LARK-Project-/collection/griffen
-  mv /LARK-Project-/collection/griffen /LARK-Project-/collected
-  rm /LARK-Project-/collection/.griffen
-  cp /LARK-Project-/collection/.egg /LARK-Project-/collection/egg
-  mv /LARK-Project-/collection/egg /LARK-Project-/collected
-  rm /LARK-Project-/collection/.egg
-  cp /LARK-Project-/collection/.spell /LARK-Project-/collection/spell
-  mv /LARK-Project-/collection/spell /LARK-Project-/collected
-  rm /LARK-Project-/collection/.spell
-  cp /LARK-Project-/collection/.skeleton /LARK-Project-/collection/skeleton
-  mv /LARK-Project-/collection/skeleton /LARK-Project-/collected
-  rm /LARK-Project-/collection/.skeleton
-  cp /LARK-Project-/collection/.imp /LARK-Project-/collection/imp
-  mv /LARK-Project-/collection/imp /LARK-Project-/collected
-  rm /LARK-Project-/collection/.imp
-  cp /LARK-Project-/collection/.phoenix /LARK-Project-/collection/phoenix
-  mv /LARK-Project-/collection/phoenix /LARK-Project-/collected
-  rm /LARK-Project-/collection/.phoenix
-  cp /LARK-Project-/collection/.ladyofthelake /LARK-Project-/collection/ladyofthelake
-  mv /LARK-Project-/collection/ladyofthelake /LARK-Project-/collected
-  rm /LARK-Project-/collection/.ladyofthelake
-  cp /LARK-Project-/collection/.merlin /LARK-Project-/collection/merlin
-  mv /LARK-Project-/collection/merlin /LARK-Project-/collected
-  rm /LARK-Project-/collection/.merlin
-  cp /LARK-Project-/collection/.siren /LARK-Project-/collection/siren
-  mv /LARK-Project-/collection/siren /LARK-Project-/collected
-  rm /LARK-Project-/collection/.siren
-  cp /LARK-Project-/collection/.basilisk /LARK-Project-/collection/basilisk
-  mv /LARK-Project-/collection/basilisk /LARK-Project-/collected
-  rm /LARK-Project-/collection/.basilisk
+  cp $location/collection/.centaur $location/collection/centaur
+  mv $location/collection/centaur $location/collected
+  rm $location/collection/.centaur
+  cp $location/collection/.griffen $location/collection/griffen
+  mv $location/collection/griffen $location/collected
+  rm $location/collection/.griffen
+  cp $location/collection/.egg $location/collection/egg
+  mv $location/collection/egg $location/collected
+  rm $location/collection/.egg
+  cp $location/collection/.spell $location/collection/spell
+  mv $location/collection/spell $location/collected
+  rm $location/collection/.spell
+  cp $location/collection/.skeleton $location/collection/skeleton
+  mv $location/collection/skeleton $location/collected
+  rm $location/collection/.skeleton
+  cp $location/collection/.imp $location/collection/imp
+  mv $location/collection/imp $location/collected
+  rm $location/collection/.imp
+  cp $location/collection/.phoenix $location/collection/phoenix
+  mv $location/collection/phoenix $location/collected
+  rm $location/collection/.phoenix
+  cp $location/collection/.ladyofthelake $location/collection/ladyofthelake
+  mv $location/collection/ladyofthelake $location/collected
+  rm $location/collection/.ladyofthelake
+  cp $location/collection/.merlin $location/collection/merlin
+  mv $location/collection/merlin $location/collected
+  rm $location/collection/.merlin
+  cp $location/collection/.siren $location/collection/siren
+  mv $location/collection/siren $location/collected
+  rm $location/collection/.siren
+  cp $location/collection/.basilisk $location/collection/basilisk
+  mv $location/collection/basilisk $location/collected
+  rm $location/collection/.basilisk
 }
 talisman() { less "$location/scripts/commandList"; }
 
