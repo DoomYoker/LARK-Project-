@@ -24,7 +24,7 @@ read -p "What do you do[notice or continue]:
 Option continue echo "You proceed to continue to the top, keeping your determination. You see a sword upon the top with it inside the top of the stone. You try to pull it out, for which it gives way. When released. The singing halts to a stop. You turn towards the direction of where the signing happened, noting a fish-like woman's head staring at you. She then swims under the water as you look in confusion. You turn to look at the sword and read the word 'Excalibur' engraved on the side. You head down the mound and travel back to the original part of the lake. 
 Option notice echo "You turn to see a fish-like human being, staring at you. You feel the urgue to head towards her. But as soon as you take one step down towards her, a hand grabs your ankle as a terrifying his comes from below. You startle and look down to see a menacing physique of a similar creature with a hand grasp on, hissing and preparing to bite your foot with razor sharp teeth. You yank your foot back and glance quickly around to see multiple mermaids coming towards you. You quickly climb the mound to get higher ground, seeing the sword in a stone. You quickly try pulling it out, to which is slides out smoothly. The creatures all hiss at you as you aim it in their directions. They all leave in fear as you stand their in suprise. You look at the sword and see the engraving on the side 'Excalibur'. You quickly hop down the mound and sprint back to the lake."
 -------------
-Option 2 (Garden) echo "You head to the entrance of a garden, seeing many lush plants and bushes laying about with another crossroads. Directly in the center, you see a angel-like statue of the same woman you saw in the lake. You approach it, noticing a bird sitting ontop of it. However, this bird appears to be glowing with a fire hue. As you move towards the bird, it flies towards the right path."
+Option 2 (Garden) echo "You head to the entrance of a garden, seeing many lush plants and bushes laying about with another crossroads. Directly in the center, you see a statue of a half-horse half-human creature. You approach it, noticing a bird sitting ontop of it. However, this bird appears to be glowing with a fire hue. As you move towards the bird, it flies towards the right path."
 read -p "Should you follow?[yes or no]: "
 Option yes echo "You choose to run after it, following the right path." 
 Option no echo "As you look to start heading down the left path, the amulet speaks to you."
@@ -34,24 +34,36 @@ Option no echo "As you look to start heading down the left path, the amulet spea
 echo "Travelling around some bends by trees and curvy path structure, you come across a giant tower. You notice the phoenix fly high to a balcony, landing for a second on a railing looking at a figure inside. You see the bird take off and fly towards the entrance on the ground, as the door slowly opens."
 echo "You approach the open door and see a man emerge. He appears to be of older age, wearing a matching gown and pointed had. You stop as he slowly waddles to you."
 ------------------------------------------------------------------------
-tput bold; echo "Merlin: "; tput srg0; echo "My name is Merlin. I am a protector of these lands against evil. This is my companion. I had him lead you here to me to ask you, $name, for help."
+tput bold; echo "Merlin: "; tput srg0; echo "I was the one talking to you through the talisman you are wearing. My name is Merlin. I am a protector of these lands against evil. This is my companion. I had him lead you here to me to ask you, $name, for help."
 Option 1 (Why do you need me to help you?): echo "Cornwall is in dismay. Legend has it that an adventurer of unknown origins will come to slay the beast glooming over the land. I believe that hero is you."
-Option 2 (What do you need me to do?): echo "I need you to go on a fetch quest. The basilisk is a prickly fellow. His gaze is a deadly weapon. One glance and your done for. I can make invulnerable if you can get the basil herb. It should just be down in the cemetery at the garden for the path you did not go down."
-----------------------------
+Option 2 (What do you need me to do?): echo "I need you to go on a fetch quest. The basilisk is a prickly fellow. His gaze is a deadly weapon. One glance and your done for. I can make invulnerable if you can get the basil herb. There is a chest-locked away with this herb. However, there is a key you need for it. It should just be down towards cemetery along the path at the garden you did not take."
+---------------------------------------------
+(To the cemetery) echo "You soon enter the cemetery and see tombstones. You look around and see another similar statue to the human-horse in the garden. This one seems to resemble the Lady of the Lake, with her hand reaching out. In her hand, she has hold of a key mentioned by Merlin. You move towards it, but stop when the ground begins to shake. You see hands popping out from some of the graves. You begin to see skeletons climbing out and moving towards the statue, as if they are trying to protect it. You rush into they surrounding group, hoping to push past them. However, they are able to force you off and throw you to the ground. You turn around and leave, hoping to ask Merlin for help."  
+--------------------------------------------------------
+echo "You approach Merlin and tell him of the undead."
 tput bold; echo "Merlin: "; tput srg0; echo "Skeletons blocking your path? The basilisk must have sent these troops to prevent you from continuing on."
 echo "Merlin looks toward his phoenix and whispers something in another language to him. He then flies off and merlin turns back."
-tput bold; echo "Merlin: "; tput srg0; echo "I am sending him off to the centaur. Speak with him if you had not already. He should be able to help you get what you need."
+tput bold; echo "Merlin: "; tput srg0; echo "I am sending him off to the centaur statue. Go back to it, it should aid you with them."
+-----------------------------------------------------
+echo "You enter the garden, seeing the phoenix sitting again on the statue. As you move closer, you see the phoenix peck the the of the statue's head. It starts to to beckon and move. It becomes aware of its surroundings and looks directly at you. He then speaks."
+tput bold; echo "Centaur: "; tput srg0; echo "Take me to them."
+echo "The centaur statue hops down from the pedastal it was standing on. It has now joined your party."
+----------------------------------
+echo "You re-enter the cemetery to still see the skeletons surrounding the statue, but they immediately draw fear from the centuar. The phoenix stays close to you as the centaur prepares to charge them. The skeletons all run amok, allowing you to go to the angel statue. You go close to it and reach out your hand to grab the key. You proceed to hold the key in your hand, when a skeleton grabs the end. You both pull back and forth between who has it. The skeleton then gets hold of it, but gets rammed by the centaur statue. This causes the skeleton to explode bones everywhere and the key to fly in the air. The phoenix flies towards it and grabs hold of the key, flying down to you and dropping it into your hand. As the centaur is continuing with the other skeletons in the cemetery, you and the phoenix proceed to head back out."
+-------------------------------------
+(Arriving at barn) echo "You come across the chest sitting in the corner of the barn. With the skull engraving on the lock matching the skull-shape of the key, you go to unlock it. You open the lid and come across the herb Merlin asked for. You grab it and leave the barn."
 -----------------------------------
 echo "You hand merlin the basil plant. He takes the basil, carefully tearing the leaves and letting them float on the ground. He throws the stem and grabs a unknown book from behind him."
-tput bold; echo "Merlin: "; tput srg0; echo "Take this, a Potion of Petrification. This should help you when you face off. Just make sure to drink it beforehand."
+tput bold; echo "Merlin: "; tput srg0; echo "Take this, a Potion of Bezoar. This should help you when you face off. Just make sure to drink it beforehand."
 echo "You obtained a potion!"
 tput bold; echo "Merlin: "; tput srg0; echo "I can see that you have everything you need. Head to the bridge next to the lake. It should take you directly to the castle and face off with the credent."
+-----------------------
+(Arrive at spooky area) echo "You travel to the dead part of the forest. You take some bends around to then come across a bridge over a gigantic moat. You look ahead to start walking over the dridge, when it begins to rise. You see a big reptilian creature looking directly at you as the bridge closes. You cannot cross over to the castle. You decide to head back and speak with Merlin again."
 --------------------------------
-echo "You speak with Merlin and explain that the basilisk had risen the drawbridge."
-tput bold; echo "Merlin: "; tput srg0; echo "This is not good. He is growing thin. Go with him. There is a friend who can help you cross over the castle walls. She should be located in the cave I originally called to you at."
-echo "The phoenix is now flying with you. Phoenix obtained!"
+(At Merlin Tower) echo "You speak with Merlin and explain that the basilisk had risen the drawbridge."
+tput bold; echo "Merlin: "; tput srg0; echo "This is not good. He is growing thin. Go with him. There is a friend who can help you cross over the castle walls. She should be located in the cave I originally called to you at. The phoenix is now flying with you."
 --------------------------------
-echo "As you arrive in the cave to the crossroads, your amulet begins to glow as the phoenix decides to take off ahead and fly through the right path. This was the one you scurried back out of."
+(Entering Cave) echo "As you arrive in the cave to the crossroads, your amulet begins to glow as the phoenix decides to take off ahead and fly through the right path. This was the one you scurried back out of."
 -------------------------------
 echo "Approaching the path, you come to notice that the screams you heard are now silent. You can make out the light of the phoenix in the distance, to where the big shadowy figure was. You slowly approach to realize that this being was mearly just a griffen. A mother griffen in fact, for which a gigantic nest lay under her. She seems to be caressing its empty bowl as the phoenix sits next to it, nodding to you to come closer. You move closer, slowly approaching as the mother bird glances at you and calls out."
 
@@ -60,13 +72,25 @@ echo "You slowly raise your hand, as the mother bird lowers her head. You move i
 tput bold; echo "Merlin: "; tput srg0; echo "Poor innocent creature. Who would have done something like this."
 echo "The amulet turns to see the skull on the ground. It then turns back to you."
 
-tput bold; echo "Merlin: "; tput srg0; echo "Those pesky imps. The basilisk must have sent them. I will send the phoenix off to scout for their wereabouts. Make your way back to me. I can give you a location when you arrive."
+tput bold; echo "Merlin: "; tput srg0; echo "Those pesky imps. The basilisk must have sent them. I will send the phoenix off to scout for their wereabouts. Make your way back to me. I can give you a location as you travel."
 echo "You slowly bring your hand back as the phoenix flys out of the cave. The griffen lays her head back down, sighing. You turn back and head to the cross roads."
 -------------------------------------------------------------
-
-
-
-
+(Arriving at Barn) echo "You reach the barn. The amulet moves itself by floating infront of you."
+tput bold; echo "Merlin: "; tput srg0; echo "We have identified the imps at location to your right. They should be just inside a building closeby."
+-------------------------------------------------------------
+(Arriving at Church) read -p "You enter to the church. Do you decide to go through the front door or head around?[front or side]: "
+Option front echo "You try to go through the front entrance, but the doors will not budge. However, you do hear laughter inside.'
+Option side echo "You see some fauna blocking your way. You do note that it looks easy to get through if your were to cut past it. You proceed to use Excalibur."
+-sword command-
+---------------------------------------------------
+(after sword at side of church) echo "You proceed to cut some of the trees blocking the way. They are easily trimmable with your sharp sword. You step through the chopped trees and procceed around back to where a back entrance is. You enter through the open door and head to the chapel. You see three imps crowding around the egg placed on the pulpit. You preceed to aim your sword and walk towards them. They get alarmed and scurried away out the front door, leaving the egg alone. You proceed to grab the egg and quickly exit through the front door, holding your sword out to make sure no imps are hiding."
+-----------------------------------
+(In cave) echo "You go back inside the cave and travel to where the griffen is. When coming face to face with her, she notices the egg you are holding and proceeds to stand up. You then bring it to her nest and lay it down delicately. She then steps towards the egg and caresses it with delight. She turns to you and leans her head down, as you reach your hand out and pat. She now trusts you and will help you travel over the moat."
+-------------------------------------------------------------------------------------------------------------------------------
+(At exit of cave) echo "The griffen prepares to fly you over the castle walls from the cave entrance. You hop on and she soars high into the sky."
+echo "As you both fly through the over the moat, you notice the basilisk is inside a tower. You scout and see an open balcony, pointing the griffen to land there."
+------------------------------------------
+(Arriving Castle) echo "You and the griffen land on the balcony. You hop off and send the griffen away from danger. You pull out the potion Merlin gave you and drink it. You then feel a rush of energy."
 
 
 
