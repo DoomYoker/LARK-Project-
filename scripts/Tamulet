@@ -1,1 +1,91 @@
+echo "You slowly approach the barn. Seeing the doors wide open, you enter to see an open area with vacant stables and hay bales sprawled out. Nobody is around, but you see something poking out behind a few bales of hay."
+Option 1 (You choose to see whats in the bales of hay) echo "Digging through the hay bales, you push them apart to uncover a sealed chest. This chest shows to have an engraved lock of a skull. You take note of this as you decide to leave the barn, finding nothing else notable."
+Option 2 (You decide to leave) echo "You choose to note mess with the thing inside, as it could be potentially dangerous. You then leave the barn."
+
+echo "As you open the door, you see multiple tiny creatures running off in a frantic mean. You notice that they are carrying something large with them from the way you came from. You do note a path to the forking to the left towards a giant open lake."
+Option 1 (Go to the ) echo "Deciding to follow them from behind, you come across a large church in the distance. This rustic structure looks to be warn down. You do see the creatures heading inside, as the last one looks back before closing the door with a slam. You take note of its demonic look."
+                      echo "You approach the doors to which the little creatures entered. You try pulling them open, but do not budge. You then stop and hear laughter coming from inside. You try looking around the building, but find trees and fauna blocking their paths. You turn around and leave, heading back to the path towards the lake."
+Option 2 (Go to the lake) echo "You choose to not take part with these creatures, seeing as their path may be a trap of intrigue. You look at the other path and procceed on."
+---------------------------------------------------------------------------------------------------------
+echo "Following the route. You come across a calm body of water. This appears to a surrounding tree landscape with no movement. You feel eerily calm, but no rush to leave. You scout out a lush garden to your right, an arch way directly infront of you and behind the lake, and to your right an unmarked path with dark vines and dead looking trees."
+echo "Before deciding whether to continue on with any of these paths, you see the calm body of water start to move in one specific spot. You move closer to get a clearer view of the movement, but a head begins to slowly rise. A woman emerges."
+tput bold; echo "Lady of the Lake: "; tput srg0; echo "Hello traveler. You must be unaware of what is happening."
+Option 1 (Who are you) I am the Lady of this Lake. I come from Avalon, a community laying below this reservoir."
+Option 2 (Someone called out to me with this necklack.) echo "You take the necklace off and show her. She briefly grabs onto it and makes sense of it design. She hand it back."
+                                                        tput bold; echo "Lady of the Lake"; tput srg0; echo "This was not my doing. But I know whom and why they did so."
+echo "The Lady turns to the her right, nodding as you look left to see the deeper part of the lake."
+tput bold; echo "Lady of the Lake: "; tput srg0; echo "Follow this path. There is an item you will need. It is most important for your travels."
+echo "She turns to you."
+tput bold; echo "Lady of the Lake: "; tput srg0; echo "Travel quietly. If you are pulled in, stay determined. Once you get this item, come back here and head through the backwards path. You soon meet him."
+echo "She proceeds to turn around, walking gracefully into the water to see ripples dissipate."
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+Option 1 (Deep Lake) echo "You proceed leftward as the lady told. You following along the side of the lake to a more dark blue area with a huge waterfall. There lays in the middle a stoneline mound with a rod pointed out. You carefully navigate towards it, without falling in to the surrounding water. Climbing up the mound, you notice a voice singing to you."
+read -p "What do you do[notice or continue]:
+Option continue echo "You proceed to continue to the top, keeping your determination. You see a sword upon the top with it inside the top of the stone. You try to pull it out, for which it gives way. When released. The singing halts to a stop. You turn towards the direction of where the signing happened, noting a fish-like woman's head staring at you. She then swims under the water as you look in confusion. You turn to look at the sword and read the word 'Excalibur' engraved on the side. You head down the mound and travel back to the original part of the lake. 
+Option notice echo "You turn to see a fish-like human being, staring at you. You feel the urgue to head towards her. But as soon as you take one step down towards her, a hand grabs your ankle as a terrifying his comes from below. You startle and look down to see a menacing physique of a similar creature with a hand grasp on, hissing and preparing to bite your foot with razor sharp teeth. You yank your foot back and glance quickly around to see multiple mermaids coming towards you. You quickly climb the mound to get higher ground, seeing the sword in a stone. You quickly try pulling it out, to which is slides out smoothly. The creatures all hiss at you as you aim it in their directions. They all leave in fear as you stand their in suprise. You look at the sword and see the engraving on the side 'Excalibur'. You quickly hop down the mound and sprint back to the lake."
+-------------
+Option 2 (Garden) echo "You head to the entrance of a garden, seeing many lush plants and bushes laying about with another crossroads. Directly in the center, you see a angel-like statue of the same woman you saw in the lake. You approach it, noticing a bird sitting ontop of it. However, this bird appears to be glowing with a fire hue. As you move towards the bird, it flies towards the right path."
+read -p "Should you follow?[yes or no]: "
+Option yes echo "You choose to run after it, following the right path." 
+Option no echo "As you look to start heading down the left path, the amulet speaks to you."
+          tput bold; echo "Mysterious Voice: "; tput srg0; echo "Do not head here yet, you need to follow the phoenix."
+          echo "As you listen to the words of the unknown voice, you proceed right onwards to where the phoenix is going."
+----------------------------
+echo "Travelling around some bends by trees and curvy path structure, you come across a giant tower. You notice the phoenix fly high to a balcony, landing for a second on a railing looking at a figure inside. You see the bird take off and fly towards the entrance on the ground, as the door slowly opens."
+echo "You approach the open door and see a man emerge. He appears to be of older age, wearing a matching gown and pointed had. You stop as he slowly waddles to you."
+------------------------------------------------------------------------
+tput bold; echo "Merlin: "; tput srg0; echo "My name is Merlin. I am a protector of these lands against evil. This is my companion. I had him lead you here to me to ask you, $name, for help."
+Option 1 (Why do you need me to help you?): echo "Cornwall is in dismay. Legend has it that an adventurer of unknown origins will come to slay the beast glooming over the land. I believe that hero is you."
+Option 2 (What do you need me to do?): echo "I need you to go on a fetch quest. The basilisk is a prickly fellow. His gaze is a deadly weapon. One glance and your done for. I can make invulnerable if you can get the basil herb. It should just be down in the cemetery at the garden for the path you did not go down."
+----------------------------
+tput bold; echo "Merlin: "; tput srg0; echo "Skeletons blocking your path? The basilisk must have sent these troops to prevent you from continuing on."
+echo "Merlin looks toward his phoenix and whispers something in another language to him. He then flies off and merlin turns back."
+tput bold; echo "Merlin: "; tput srg0; echo "I am sending him off to the centaur. Speak with him if you had not already. He should be able to help you get what you need."
+-----------------------------------
+echo "You hand merlin the basil plant. He takes the basil, carefully tearing the leaves and letting them float on the ground. He throws the stem and grabs a unknown book from behind him."
+tput bold; echo "Merlin: "; tput srg0; echo "Take this, a Potion of Petrification. This should help you when you face off. Just make sure to drink it beforehand."
+echo "You obtained a potion!"
+tput bold; echo "Merlin: "; tput srg0; echo "I can see that you have everything you need. Head to the bridge next to the lake. It should take you directly to the castle and face off with the credent."
+--------------------------------
+echo "You speak with Merlin and explain that the basilisk had risen the drawbridge."
+tput bold; echo "Merlin: "; tput srg0; echo "This is not good. He is growing thin. Go with him. There is a friend who can help you cross over the castle walls. She should be located in the cave I originally called to you at."
+echo "The phoenix is now flying with you. Phoenix obtained!"
+--------------------------------
+echo "As you arrive in the cave to the crossroads, your amulet begins to glow as the phoenix decides to take off ahead and fly through the right path. This was the one you scurried back out of."
+-------------------------------
+echo "Approaching the path, you come to notice that the screams you heard are now silent. You can make out the light of the phoenix in the distance, to where the big shadowy figure was. You slowly approach to realize that this being was mearly just a griffen. A mother griffen in fact, for which a gigantic nest lay under her. She seems to be caressing its empty bowl as the phoenix sits next to it, nodding to you to come closer. You move closer, slowly approaching as the mother bird glances at you and calls out."
+
+echo "You slowly raise your hand, as the mother bird lowers her head. You move it over her head and carefully pat it, noticing the tears from her eyes. As you see the sad state the mother bird is in, the amulet springs from your chest and floats to your side facing the nest. It then turns to you."
+
+tput bold; echo "Merlin: "; tput srg0; echo "Poor innocent creature. Who would have done something like this."
+echo "The amulet turns to see the skull on the ground. It then turns back to you."
+
+tput bold; echo "Merlin: "; tput srg0; echo "Those pesky imps. The basilisk must have sent them. I will send the phoenix off to scout for their wereabouts. Make your way back to me. I can give you a location when you arrive."
+echo "You slowly bring your hand back as the phoenix flys out of the cave. The griffen lays her head back down, sighing. You turn back and head to the cross roads."
+-------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+echo "And with this, power was restored to the land. Many faces emerged from hiding, without fear of persecution. And to this, the civilians of Cornwall had knighted $name, choosing to give him the title of King Arthur."
 
