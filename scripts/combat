@@ -1,0 +1,28 @@
+#!/bin/bash
+echo "fighting start"
+sleep 1
+
+
+cat >>EOF
+	
+
+			_________________________________________________________________________________________________
+			|			|			|			|			|
+			|      1. Attack        |        2. Block       |	3.Inventory     |      	  4.Help	|	               
+			|_______________________|_______________________|_______________________|_______________________|
+
+EOF
+
+read -p "Choose Action" action
+case $action in 
+	1) #Attack action used - implement dealt damage from 1 to approximately 5 I would guess
+	
+
+	2) #Block action used - implement blocked damage based on creature and 
+
+
+	3) #Inventory action used - access and display 
+
+
+	4) #Help action used - Display combat help and description
+
