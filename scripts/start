@@ -53,4 +53,4 @@ read -p "Looking forward, our hero decides whether to go left as the amulet told
 	esac
 echo "He quickly leaves to reveal open fields of grass and lush trees. While glancing around, he notices a farm close by that may have others he can talk to. Knowing that this location may provide him help, he goes forth."
 sleep 10;
-
+cd $location/locations/cave
