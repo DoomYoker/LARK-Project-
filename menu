@@ -28,6 +28,7 @@ siren="no"
 basilisk="no"
 }
 
+export location
 export name
 export talisman
 export excalibur
@@ -112,6 +113,7 @@ EOF
 	a) echo "Your Story can now begin"
 	sleep 1;
 	read -p "Enter a name of the Legend: " name
+	echo "$name" >> ./currentPlayer.dat
 	sleep 1;
 	echo "Excellent. Now it is time to tell the story of our new hero $name."
 	sleep 1;
