@@ -1,4 +1,5 @@
 #!/bin/bash
+#This code should be changed into a function so that it can be used in the combat vim file.
 clear
 echo "		Usable items - Description		"
 echo "--------------------------------------------------"
