@@ -12,6 +12,8 @@ function beastiary () {
 
 }
 function reset_var () {	
+attack="5"
+defense="0.8"
 talisman="no"
 excalibur="no"
 skull-key="no"
@@ -26,8 +28,10 @@ merlin="no"
 merlintalk="no"
 siren="no"
 basilisk="no"
-}
 
+
+export attack
+export defense
 export location
 export name
 export talisman
@@ -45,6 +49,7 @@ export merlin
 export merlintalk
 export siren
 export basilisk
+}
 
 function move_items () {
   cp $location/collection/.talisman $location/collection/talisman
@@ -90,7 +95,7 @@ function move_items () {
   mv $location/collection/basilisk $location/collected
   rm $location/collection/.basilisk
 }
-talisman() { less "$location/scripts/commandList"; }
+function talisman() { less "$location/scripts/commandList"; }
 
 tput smcup
 while [[ $REPLY != "c" ]]
