@@ -2,15 +2,6 @@
 
 location=$PWD
 
-function beastiary () {
-	i=0
-	echo "                      Beastiary                      "
-	echo "-----------------------------------------------------"
-	echo ""
-	echo "$i) Exit Beastiary"
-	for FILE in $location/beastiary; ((i = i + 1)); echo "$i) Read " FILE " description";
-
-}
 function reset_var () {	
 attack="5"
 defense="0.8"
