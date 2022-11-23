@@ -1,0 +1,29 @@
+#!/bin/bash
+clear
+echo "		Usable items - Description		"
+echo "--------------------------------------------------"
+for FILE in $location/usables; echo FILE " - $FILE"; done
+echo ""
+echo ""
+while [[ $REPLY != "none" ]]
+do
+echo "Enter item to be used or enter 'none' to return to menu (be sure to enter the item exactly as entered above)"
+read item
+case item in 
+Healing-Potion) #change health in player data
+
+;;
+Strength-Potion) #change locale variable for damage till end of combat.
+
+;;
+Defense-Potion) #change locale variable for defense to a lower decimal value so that damage done * defense shrinks the damage done based on defense.
+
+;;
+none)
+echo "No item used
+;;
+
+*)
+echo "Invalid input - be sure to use a valid item"
+;;
+ 
