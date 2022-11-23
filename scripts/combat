@@ -1,8 +1,9 @@
 #!/bin/bash
 echo "fighting start"
 sleep 1
-
-
+# has to have a equal to 1 so that 
+while [[ ( ls $location/combat | wc = 1 ) ]]
+do
 cat >>EOF
 	
 
@@ -26,3 +27,5 @@ case $action in
 
 	4) #Help action used - Display combat help and description
 
+esac
+done
