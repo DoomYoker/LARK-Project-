@@ -21,10 +21,10 @@ Defense-Potion) #change locale variable for defense to a lower decimal value so 
 
 ;;
 none)
-echo "No item used
+echo "No item used"
 ;;
 
 *)
 echo "Invalid input - be sure to use a valid item"
 ;;
- 
+esac
