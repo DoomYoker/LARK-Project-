@@ -12,3 +12,4 @@ case $r in
 	3) cp $location/collection/.Defense-Potion $location/usables/Defense-Potion
 	echo "You found a Defense Potion"
 	;;
+esac
