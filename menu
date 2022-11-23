@@ -114,6 +114,7 @@ EOF
 	sleep 1;
 	read -p "Enter a name of the Legend: " name
 	echo "$name" >> ./currentPlayer.dat
+	echo "20" >> ./Health
 	sleep 1;
 	echo "Excellent. Now it is time to tell the story of our new hero $name."
 	sleep 1;
