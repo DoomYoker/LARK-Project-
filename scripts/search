@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-r=$(( $RANDOM % 4 )) #should give r a random number between 1 and 3
+r=$(( $RANDOM % 3 + 1 )) #should give r a random number between 1 and 3
 
 case $r in 
 	1) cp $location/collection/.Health-Potion $location/usables/Health-Potion
