@@ -2,6 +2,8 @@
 echo "fighting start"
 sleep 1
 # has to have a equal to 1 so that 
+for FILE in $location/combat do 
+cat FILE
 while [[ ( ls $location/combat | wc = 1 ) ]]
 do
 cat >>EOF
