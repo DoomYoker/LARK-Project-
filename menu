@@ -44,49 +44,49 @@ export siren
 export basilisk
 }
 
-function move_items () {
-  cp $location/collection/.talisman $location/collection/talisman
-  mv $location/collection/talisman $location/collected
-  rm $location/collection/.talisman
-  cp $location/collection/.excalibur $location/collection/excalibur
-  mv $location/collection/excalibur $location/collected
-  rm $location/collection/.excalibur
-  cp $location/collection/.skull-key $location/collection/skull-key
-  mv $location/collection/skull-key $location/collected
-  rm $location/collection/.skull-key
-  cp $location/collection/.centaur $location/collection/centaur
-  mv $location/collection/centaur $location/collected
-  rm $location/collection/.centaur
-  cp $location/collection/.griffen $location/collection/griffen
-  mv $location/collection/griffen $location/collected
-  rm $location/collection/.griffen
-  cp $location/collection/.egg $location/collection/egg
-  mv $location/collection/egg $location/collected
-  rm $location/collection/.egg
-  cp $location/collection/.spell $location/collection/spell
-  mv $location/collection/spell $location/collected
-  rm $location/collection/.spell
-  cp $location/collection/.skeleton $location/collection/skeleton
-  mv $location/collection/skeleton $location/collected
-  rm $location/collection/.skeleton
-  cp $location/collection/.imp $location/collection/imp
-  mv $location/collection/imp $location/collected
-  rm $location/collection/.imp
-  cp $location/collection/.phoenix $location/collection/phoenix
-  mv $location/collection/phoenix $location/collected
-  rm $location/collection/.phoenix
-  cp $location/collection/.ladyofthelake $location/collection/ladyofthelake
-  mv $location/collection/ladyofthelake $location/collected
-  rm $location/collection/.ladyofthelake
-  cp $location/collection/.merlin $location/collection/merlin
-  mv $location/collection/merlin $location/collected
-  rm $location/collection/.merlin
-  cp $location/collection/.siren $location/collection/siren
-  mv $location/collection/siren $location/collected
-  rm $location/collection/.siren
-  cp $location/collection/.basilisk $location/collection/basilisk
-  mv $location/collection/basilisk $location/collected
-  rm $location/collection/.basilisk
+function move_items() {
+  cp $location/collection/.talisman $location/collection/talisman 2>/dev/null
+  mv $location/collection/talisman $location/collected 2>/dev/null
+  rm $location/collection/.talisman 2>/dev/null
+  cp $location/collection/.excalibur $location/collection/excalibur 2>/dev/null
+  mv $location/collection/excalibur $location/collected 2>/dev/null
+  rm $location/collection/.excalibur 2>/dev/null
+  cp $location/collection/.skull-key $location/collection/skull-key 2>/dev/null
+  mv $location/collection/skull-key $location/collected 2>/dev/null
+  rm $location/collection/.skull-key 2>/dev/null
+  cp $location/collection/.centaur $location/collection/centaur 2>/dev/null
+  mv $location/collection/centaur $location/collected 2>/dev/null
+  rm $location/collection/.centaur 2>/dev/null
+  cp $location/collection/.griffen $location/collection/griffen 2>/dev/null
+  mv $location/collection/griffen $location/collected 2>/dev/null
+  rm $location/collection/.griffen 2>/dev/null
+  cp $location/collection/.egg $location/collection/egg 2>/dev/null
+  mv $location/collection/egg $location/collected 2>/dev/null
+  rm $location/collection/.egg 2>/dev/null
+  cp $location/collection/.spell $location/collection/spell 2>/dev/null
+  mv $location/collection/spell $location/collected 2>/dev/null
+  rm $location/collection/.spell 2>/dev/null
+  cp $location/collection/.skeleton $location/collection/skeleton 2>/dev/null
+  mv $location/collection/skeleton $location/collected 2>/dev/null
+  rm $location/collection/.skeleton 2>/dev/null
+  cp $location/collection/.imp $location/collection/imp 2>/dev/null
+  mv $location/collection/imp $location/collected 2>/dev/null
+  rm $location/collection/.imp 2>/dev/null
+  cp $location/collection/.phoenix $location/collection/phoenix 2>/dev/null
+  mv $location/collection/phoenix $location/collected 2>/dev/null
+  rm $location/collection/.phoenix 2>/dev/null
+  cp $location/collection/.ladyofthelake $location/collection/ladyofthelake 2>/dev/null
+  mv $location/collection/ladyofthelake $location/collected 2>/dev/null
+  rm $location/collection/.ladyofthelake 2>/dev/null
+  cp $location/collection/.merlin $location/collection/merlin 2>/dev/null
+  mv $location/collection/merlin $location/collected 2>/dev/null
+  rm $location/collection/.merlin 2>/dev/null
+  cp $location/collection/.siren $location/collection/siren 2>/dev/null
+  mv $location/collection/siren $location/collected 2>/dev/null
+  rm $location/collection/.siren 2>/dev/null
+  cp $location/collection/.basilisk $location/collection/basilisk 2>/dev/null
+  mv $location/collection/basilisk $location/collected 2>/dev/null
+  rm $location/collection/.basilisk 2>/dev/null
 }
 talisman() { less "$location/scripts/commandList"; }
 
