@@ -4,6 +4,7 @@ location=$PWD
 
 function reset_var () {	
 attack="5"
+health="20"
 defense="0.8"
 talisman="no"
 excalibur="no"
@@ -20,7 +21,7 @@ merlintalk="no"
 siren="no"
 basilisk="no"
 
-
+export health
 export attack
 export defense
 export location
@@ -109,8 +110,7 @@ EOF
 	a) echo "Your Story can now begin"
 	sleep 1;
 	read -p "Enter a name of the Legend: " name
-	echo "$name" > ./currentPlayer.dat
-	echo "20" > ./Health
+	
 	sleep 1;
 	echo "Excellent. Now it is time to tell the story of our new hero $name."
 	sleep 1;
