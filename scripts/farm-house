@@ -1,1 +1,9 @@
 
+echo " The amulet suddenly flies off of your neck and hovers before you"
+      tput bold; echo "Amulet: " ; tput sgr0 ; echo "Before you lies multiple different options, in order to interact with and use these ites/events here is what you must do
+. <scriptname>
+      - This allows you to trigger scripts (scripts will begin with a !)
+      ex. . !chest
+mv <scriptname> \$collection
+        - This command is used to move files(items) to your collection. \"\$collection\" is the variable that holds the path to your inventory (be wary with moving items because if you move anything without an ? infront of it you can break this game)
+        - OPEN collection: ls \$collection
