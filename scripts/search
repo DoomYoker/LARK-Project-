@@ -13,3 +13,4 @@ case $r in
 	echo "You found a Defense Potion"
 	;;
 esac
+rm 
