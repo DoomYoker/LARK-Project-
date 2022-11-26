@@ -3,6 +3,7 @@
 location=$PWD
 
 function reset_var () {	
+priority="0"
 attack="5"
 health="20"
 defense="0.8"
