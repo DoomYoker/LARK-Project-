@@ -2,7 +2,16 @@
 
 #Option 1 (Deep Lake) - move to Deep Lake Directory
 
-echo "You proceed leftward as the lady directed. Following closely along the edge of the lake to a more dark blue area with a huge waterfall. There lay in the center of the lake a massive stone outcropping with a rod pointed out of it. You carefully navigate towards it, without falling in to the surrounding water. Climbing up the mound, you notice a voice singing to you." 
+echo "You proceed leftward as the lady directed."
+sleep 1;
+echo "Following closely along the edge of the lake to a more dark blue area with a huge waterfall."
+sleep 1;
+echo "There lay in the center of the lake a massive stone outcropping with a rod pointed out of it."
+sleep 1;
+echo "You carefully navigate towards it, without falling in to the surrounding water."
+sleep 1;
+echo "Climbing up the mound, you notice a voice singing to you." 
+sleep 1;
 read -p "What do you do?[continue or notice]: " selection5
         case $selection5 in
         continue)
