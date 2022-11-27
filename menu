@@ -3,31 +3,33 @@
 location=$PWD
 
 function reset_var () {	
+priority="0"
 attack="5"
-defense="0.8"
-talisman="no"
-excalibur="no"
-skull-key="no"
-centaur="no"
-egg="no"
-griffen="no"
-spell="no"
-skeleton="no"
-ladyofthelake="no"
-phoenix="no"
-merlin="no"
-merlintalk="no"
-siren="no"
-basilisk="no"
+health="20"
+defense="1"
+talisman="0"
+excalibur="0"
+skullKey="0"
+centaur="0"
+egg="0"
+griffen="0"
+spell="0"
+skeleton="0"
+ladyofthelake="0"
+phoenix="0"
+merlin="0"
+merlintalk="0"
+siren="0"
+basilisk="0"
 
-
+export health
 export attack
 export defense
 export location
 export name
 export talisman
 export excalibur
-export skull-key
+export skullKey
 export centaur
 export griffen
 export egg
@@ -42,51 +44,51 @@ export siren
 export basilisk
 }
 
-function move_items () {
-  cp $location/collection/.talisman $location/collection/talisman
-  mv $location/collection/talisman $location/collected
-  rm $location/collection/.talisman
-  cp $location/collection/.excalibur $location/collection/excalibur
-  mv $location/collection/excalibur $location/collected
-  rm $location/collection/.excalibur
-  cp $location/collection/.skull-key $location/collection/skull-key
-  mv $location/collection/skull-key $location/collected
-  rm $location/collection/.skull-key
-  cp $location/collection/.centaur $location/collection/centaur
-  mv $location/collection/centaur $location/collected
-  rm $location/collection/.centaur
-  cp $location/collection/.griffen $location/collection/griffen
-  mv $location/collection/griffen $location/collected
-  rm $location/collection/.griffen
-  cp $location/collection/.egg $location/collection/egg
-  mv $location/collection/egg $location/collected
-  rm $location/collection/.egg
-  cp $location/collection/.spell $location/collection/spell
-  mv $location/collection/spell $location/collected
-  rm $location/collection/.spell
-  cp $location/collection/.skeleton $location/collection/skeleton
-  mv $location/collection/skeleton $location/collected
-  rm $location/collection/.skeleton
-  cp $location/collection/.imp $location/collection/imp
-  mv $location/collection/imp $location/collected
-  rm $location/collection/.imp
-  cp $location/collection/.phoenix $location/collection/phoenix
-  mv $location/collection/phoenix $location/collected
-  rm $location/collection/.phoenix
-  cp $location/collection/.ladyofthelake $location/collection/ladyofthelake
-  mv $location/collection/ladyofthelake $location/collected
-  rm $location/collection/.ladyofthelake
-  cp $location/collection/.merlin $location/collection/merlin
-  mv $location/collection/merlin $location/collected
-  rm $location/collection/.merlin
-  cp $location/collection/.siren $location/collection/siren
-  mv $location/collection/siren $location/collected
-  rm $location/collection/.siren
-  cp $location/collection/.basilisk $location/collection/basilisk
-  mv $location/collection/basilisk $location/collected
-  rm $location/collection/.basilisk
+function move_items() {
+  cp $location/collection/.talisman $location/collection/talisman 2>/dev/null
+  mv $location/collection/talisman $location/collected 2>/dev/null
+  rm $location/collection/.talisman 2>/dev/null
+  cp $location/collection/.excalibur $location/collection/excalibur 2>/dev/null
+  mv $location/collection/excalibur $location/collected 2>/dev/null
+  rm $location/collection/.excalibur 2>/dev/null
+  cp $location/collection/.skull-key $location/collection/skull-key 2>/dev/null
+  mv $location/collection/skull-key $location/collected 2>/dev/null
+  rm $location/collection/.skull-key 2>/dev/null
+  cp $location/collection/.centaur $location/collection/centaur 2>/dev/null
+  mv $location/collection/centaur $location/collected 2>/dev/null
+  rm $location/collection/.centaur 2>/dev/null
+  cp $location/collection/.griffen $location/collection/griffen 2>/dev/null
+  mv $location/collection/griffen $location/collected 2>/dev/null
+  rm $location/collection/.griffen 2>/dev/null
+  cp $location/collection/.egg $location/collection/egg 2>/dev/null
+  mv $location/collection/egg $location/collected 2>/dev/null
+  rm $location/collection/.egg 2>/dev/null
+  cp $location/collection/.spell $location/collection/spell 2>/dev/null
+  mv $location/collection/spell $location/collected 2>/dev/null
+  rm $location/collection/.spell 2>/dev/null
+  cp $location/collection/.skeleton $location/collection/skeleton 2>/dev/null
+  mv $location/collection/skeleton $location/collected 2>/dev/null
+  rm $location/collection/.skeleton 2>/dev/null
+  cp $location/collection/.imp $location/collection/imp 2>/dev/null
+  mv $location/collection/imp $location/collected 2>/dev/null
+  rm $location/collection/.imp 2>/dev/null
+  cp $location/collection/.phoenix $location/collection/phoenix 2>/dev/null
+  mv $location/collection/phoenix $location/collected 2>/dev/null
+  rm $location/collection/.phoenix 2>/dev/null
+  cp $location/collection/.ladyofthelake $location/collection/ladyofthelake 2>/dev/null
+  mv $location/collection/ladyofthelake $location/collected 2>/dev/null
+  rm $location/collection/.ladyofthelake 2>/dev/null
+  cp $location/collection/.merlin $location/collection/merlin 2>/dev/null
+  mv $location/collection/merlin $location/collected 2>/dev/null
+  rm $location/collection/.merlin 2>/dev/null
+  cp $location/collection/.siren $location/collection/siren 2>/dev/null
+  mv $location/collection/siren $location/collected 2>/dev/null
+  rm $location/collection/.siren 2>/dev/null
+  cp $location/collection/.basilisk $location/collection/basilisk 2>/dev/null
+  mv $location/collection/basilisk $location/collected 2>/dev/null
+  rm $location/collection/.basilisk 2>/dev/null
 }
-function talisman() { less "$location/scripts/commandList"; }
+talisman() { less "$location/scripts/commandList"; }
 
 tput smcup
 while [[ $REPLY != "c" ]]
@@ -102,22 +104,21 @@ clear
 
 EOF
 	read -p "Enter choice [a-c]: " choice
-	move_items
+	#move_items
 	reset_var
 	
 	case $choice in 
 	a) echo "Your Story can now begin"
 	sleep 1;
 	read -p "Enter a name of the Legend: " name
-	echo "$name" > ./currentPlayer.dat
-	echo "20" > ./Health
+	
 	sleep 1;
 	echo "Excellent. Now it is time to tell the story of our new hero $name."
 	sleep 1;
 	echo "(If at any point you need to exit the game, just type _____.)"
 	sleep 1;
 	echo "(This game does require you to search around for items. Make sure to pick them up along the way, as they will be needed for you to continue on your journey.)"
-	. start
+	. .start
 	;;
 	b) clear 
 	echo "___________ is a terminal based game that was made to showcase a few basics commands used in the linux terminal.
@@ -126,13 +127,17 @@ EOF
 	
 	If you wish to avoid seeing and altering any of the game code be sure to follow the games instructions."
 	sleep 1;
+	echo "Press any button to select a different option"
+	read
+	
 	;;
 	c) 
 	tput rmcup
 	echo "Exiting Game"
 	break
 	;;
-	*) echo "Invalid Option: Make sure to enter only [a-c] for this menu."
+	*) echo "Invalid Option: Press any button to return then make sure to enter only [a-c] for this menu. "
+	read
 	;;
 esac
 done

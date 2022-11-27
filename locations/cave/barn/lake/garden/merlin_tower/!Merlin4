@@ -1,0 +1,7 @@
+#!bin/bash/
+
+#(At Merlin Tower) - move to Tower Directory 
+
+echo "You speak with Merlin and explain that the basilisk had risen the drawbridge."
+tput bold; echo "Merlin: "; tput srg0; echo "This is not good. He is growing thin. Go with him. There is a friend who can help you cross over the castle walls."
+echo "She should be located in the cave I originally called to you at. The phoenix is now flying with you."

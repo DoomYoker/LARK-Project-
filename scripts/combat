@@ -4,7 +4,7 @@ sleep 1
 # has to have a equal to 1 so that 
 for FILE in $location/combat do 
 cat FILE
-while [[ ( ls $location/combat | wc = 1 ) ]]
+while [[ ( ls $location/combat | wc ) != 1 ]]
 do
 cat >>EOF
 	
@@ -17,8 +17,7 @@ cat >>EOF
 
 
 
-
-
+			Currently not implemented going to add enemies and have turned based combat
 
 			_________________________________________________________________________________________________
 			|			|			|			|			|
@@ -26,6 +25,7 @@ cat >>EOF
 			|_______________________|_______________________|_______________________|_______________________|
 
 EOF
+for FILE in $location/combat 
 
 read -p "Choose Action" action
 case $action in 

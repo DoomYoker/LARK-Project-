@@ -1,4 +1,5 @@
 #!/bin/bash
+#THis script should be removed
 clear
 r=$(( $RANDOM % 3 + 1 )) #should give r a random number between 1 and 3
 
@@ -13,3 +14,4 @@ case $r in
 	echo "You found a Defense Potion"
 	;;
 esac
+rm 

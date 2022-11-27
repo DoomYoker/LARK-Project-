@@ -10,4 +10,4 @@ ls - displays all current files and directories(other locations nearby) in the c
 
 cat "filename" - allows you to read the contents of a specific item you have collected or creature descriptions (ex: cat amulet)
 
-beastiary - allows you to choose and read any collected creature descriptions
+mv - allows you to change locations

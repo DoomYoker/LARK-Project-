@@ -1,0 +1,8 @@
+#!bin/bash/
+
+#(enter garden) - move to Garden Directory
+
+echo "You enter the garden, seeing the phoenix sitting again on the statue. As you move closer, you see the phoenix peck the the of the statue's head." 
+echo "It starts to to beckon and move. It becomes aware of its surroundings and looks directly at you. He then speaks."
+tput bold; echo "Centaur: "; tput srg0; echo "Take me to them."
+echo "The centaur statue hops down from the pedastal it was standing on. It has now joined your party."
