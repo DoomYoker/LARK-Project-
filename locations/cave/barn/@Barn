@@ -9,7 +9,7 @@ Do you look inside or head back outside?[inside or outside]: " selection2
     case $selection2 in
     inside)
           echo "Digging through the hay bales, you push them apart to uncover a sealed chest. This chest shows to have an engraved lock of a skull."
-          mv .?chest \?chest
+          mv .&chest \?chest
           ;;
     outside)
           echo "You choose to note mess with the thing inside, as it could be potentially dangerous."
@@ -17,11 +17,12 @@ Do you look inside or head back outside?[inside or outside]: " selection2
 esac
 
 echo "Further exploring the recesses of this barn you spot a shining light from an old shelf, as you approach the light you are able to make out the form of a rusted platemail vest"
-mv .?platemail \?platemail
+mv .&platemail \&platemail
 echo " The amulet suddenly flies off of your neck and hovers before you"
       tput bold; echo "Amulet: " ; tput sgr0 ; echo "Before you lies multiple different options, in order to interact with and use these items here is what you must do
 mv <scriptname> \$collection
-        - This command is used to move files(items) to your collection. \"\$collection\" is the variable that holds the path to your inventory (be wary with moving items because if you move anything without an ? infront of it you can break this game)
+        - This command is used to move files(items) to your collection. \"\$collection\" is the variable that holds the path to your inventory 
+        (be wary with moving items because if you move anything without an & infront of it you can break this game)
         - OPEN collection: ls \$collection
 
 #(exiting barn) - action to go outside of barn
