@@ -58,6 +58,5 @@ read -p "What do you do?[continue or notice]: " selection5
               echo "They all leave in fear as you stand there in suprise of your successful vanquish. You look at the sword and see the engraving on the side | Excalibur |. "
               sleep 1;
               ;;
-              Attack="10"
               
 esac
