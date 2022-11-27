@@ -42,5 +42,4 @@ echo "You slowly bring your hand back as the phoenix flys out of the cave."
 sleep 1;
 echo "The griffen lays her head back down, sighing. You turn back and head to the cross roads and out of the cave."
 sleep 1;
-
-rm $location/locations/cave/Cave
+mv $location/locations/cave/barn/lake/garden/merlin-tower/.@Merlin5 $location/locations/cave/barn/lake/garden/merlin-tower/@Merlin5
