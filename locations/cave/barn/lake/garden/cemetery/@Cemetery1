@@ -18,7 +18,7 @@ echo "You begin to see skeletons climbing out and moving towards the statue, as 
 sleep 1;
 echo "Three skeletons engage you into a fight."
 sleep 1;
-
+tput bold; echo "This part is not implemented yet. The final product will show a system of confrontation."; tput sgr0;
 sleep 1;
 echo "You began to feel overwhelmed with fighting, as more of them rise from the graves and come at you."
 sleep 1;
