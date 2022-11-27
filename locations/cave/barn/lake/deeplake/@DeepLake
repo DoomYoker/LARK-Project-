@@ -50,7 +50,8 @@ read -p "What do you do?[continue or notice]: " selection5
               sleep 1;
               echo "The creatures all hiss at you as you aim it in their directions, drawing you into a battle against three different sirens."
               sleep 1;
-              mv .+excalibur \$collected\+excalibur
+              mv .+excalibur \+excalibur
+              mv +excalibur \$collected
               
               attack="10"
               tput bold; echo "This part is not implemented yet. The final product will show a system of confrontation."; tput sgr0;
