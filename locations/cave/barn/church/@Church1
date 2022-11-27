@@ -14,7 +14,6 @@ sleep 1;
 echo "You try looking around the building, but find trees and fauna blocking their paths."
 sleep 1;
 echo "However, you do see a potion on the ground tilting on the side of the building."
-chmod +x .+health-potion
 mv .+health-potion $location/location/cave/barn/church/+health-potion
 sleep 1;
 echo "You then turn around and leave, heading back to the path towards the lake."
