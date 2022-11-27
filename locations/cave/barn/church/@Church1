@@ -17,3 +17,6 @@ mv .health-potion \health-potion
 sleep 1;
 echo "You then turn around and leave, heading back to the path towards the lake."
 sleep 1;
+echo "press any button to continue"
+read 
+clear
