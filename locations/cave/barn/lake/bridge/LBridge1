@@ -2,4 +2,15 @@
 
 #(Arrive at spooky area) - move to Bridge Directory
 
-echo "You travel to the dead part of the forest. You take some bends around to then come across a bridge over a gigantic moat. You look ahead to start walking over the dridge, when it begins to rise. You see a big reptilian creature looking directly at you as the bridge closes. You cannot cross over to the castle. You decide to head back and speak with Merlin again."
+echo "You travel to the dead part of the forest."
+sleep 1;
+echo "You take some bends around to then come across a bridge over a gigantic moat."
+sleep 1;
+echo "You look ahead to start walking over the dridge, when it begins to rise."
+sleep 1;
+echo "You see a big reptilian creature looking directly at you as the bridge closes."
+sleep 1;
+echo "You cannot cross over to the castle."
+sleep 1;
+echo "You decide to head back and speak with Merlin again."
+sleep 1;
