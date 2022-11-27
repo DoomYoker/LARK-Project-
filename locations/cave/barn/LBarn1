@@ -1,0 +1,26 @@
+#!bin/bash
+
+#(inside barn) - action to go inside barn
+
+read -p "You slowly approach the barn. Seeing the doors wide open, you enter to see an open area with vacant stables and hay bales sprawled out. Nobody is around, but you see something poking out behind a few bales of hay. Do you look inside or head back outside?[inside or outside]: " selection2
+    case $selection2 in
+    inside)
+          echo "Digging through the hay bales, you push them apart to uncover a sealed chest. This chest shows to have an engraved lock of a skull. You take note of this as you decide to leave the barn, finding nothing else notable."
+          ;;
+    outside)
+          echo "You choose to note mess with the thing inside, as it could be potentially dangerous. You then leave the barn."
+          ;;
+esac
+
+#(exiting barn) - action to go outside of barn
+
+read -p "As you open the door, you see multiple tiny creatures running off in a frantic mean. You notice that they are carrying something large with them from the way you came from. You do note a path to the forking to the left towards a giant open lake. Do you follow them down the unknown path?[yes or no]: " selection3
+    case $selection3 in
+    yes) 
+          echo "Deciding to follow them from behind, you come across a large church in the distance. This rustic structure looks to be warn down. You do see the creatures heading inside, as the last one looks back before closing the door with a slam. You take note of its demonic look."
+          echo "You approach the doors to which the little creatures entered. You try pulling them open, but do not budge. You then stop and hear laughter coming from inside. You try looking around the building, but find trees and fauna blocking their paths. You turn around and leave, heading back to the path towards the lake."
+          ;;
+    no) 
+          echo "You choose to not take part with these creatures, seeing as their path may be a trap of intrigue. You look at the other path and procceed on."
+          ;;
+esac
