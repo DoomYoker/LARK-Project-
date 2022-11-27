@@ -2,23 +2,25 @@
 
 #(re enter cemetery) - move to Cemetery Directory
 
-echo "You re-enter the cemetery to still see the skeletons surrounding the statue, but they immediately draw fear from the centuar."
+echo "You re-enter the cemetery to still see the skeletons surrounding the statue, but they flinch away at the sight of the centaur."
 sleep 1;
-scho "The phoenix stays close to you as the centaur prepares to charge them."
+echo "The phoenix stays close to you as the centaur prepares to charge them."
 sleep 1;
-echo "The skeletons all run amok, allowing you to go to the angel statue."
+echo "The skeletons quickly lose formation and run away afraid, leaving only a single courageous commander behind to guard the key."
 sleep 1;
-echo "You go close to it and reach out your hand to grab the key."
+echo "This gives you an opening as you sprint towards the angel statue."
 sleep 1;
-echo "You proceed to hold the key in your hand, when a skeleton grabs the end."
+echo "You close the distance to the statue and reach out your hand to grab the key."
+sleep 1;
+echo "You quickly grasp onto the key when an armored giant of a skeleton closes it's fist around the other end."
 sleep 1;
 echo "You both pull back and forth between who has it, the key slips from both of your hands and lands on a nearby tombstone."
 sleep 1;
-echo "You and the skeleton draw your weapons as more approach to fight."
+echo "You and the giant draw your weapons as you prepare to duel."
 sleep 1;
 tput bold; echo "This part is not implemented yet. The final product will show a system of confrontation."; tput sgr0;
 sleep 1;
-"The last remaining skeleton uses its last strength to crawl towards the key, but before it can reach the key it gets rammed by the centaur statue."
+echo "The defeated commander uses its last strength to crawl towards the key, but before it can reach the key it gets rammed by the centaur statue."
 sleep 1;
-echo "This causes the skeleton to explode into bones that are flung everywhere, the key being left shining on the tombstone"
-mv .@key /key
+echo "This causes the skeleton to explode into bones and fragments of it's once great armor that are flung everywhere, the key being left shining on the tombstone"
+mv .~key /~key
