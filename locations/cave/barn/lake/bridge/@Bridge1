@@ -14,3 +14,5 @@ echo "You cannot cross over to the castle."
 sleep 1;
 echo "You decide to head back and speak with Merlin again."
 sleep 1;
+echo "looking at the giant moat before you, a sparkling flask of a deep maroon color stands out to you against the moats bank."
+mv .~strength-potion /~strength-potion
