@@ -89,6 +89,31 @@ function move_items() {
   rm $location/collection/.basilisk 2>/dev/null
 }
 talisman() { less "$location/scripts/commandList"; }
+equip() { 
+if ( $1 = "&rusted-platemail" )
+then
+defense="0.7"
+mv $collected/$1 $location/equip
+elif ( $1 = "&platemail" )
+then 
+defense="0.5"
+mv $collected/$1 $location/equip
+elif ( $1 = "&blessed-platemail" )
+mv $collected/$1 $location/equip
+then
+defense="0.3"
+mv $collected/$1 $location/equip
+else 
+	echo" Invalid equip try equipping a piece of platemail"
+fi
+
+
+
+
+
+
+mv $collected/$1 $location/equip 
+}
 collected=$location/collected
 tput smcup
 while [[ $REPLY != "c" ]]
