@@ -105,6 +105,6 @@ read -p "Looking forward, our hero decides whether to go left as the amulet told
 	-> This command will search the current location and display what you can do currently."
 
 cd $location/locations/cave
-echo "select any button to continue"
+echo "Insert any button to continue: "
 read
 break
