@@ -7,12 +7,19 @@ read -p "What do you do?[continue or notice]: " selection5
         case $selection5 in
         continue)
               echo "You proceed on the long climb to the top, keeping your determination. "
+              sleep 1;
               echo "You see a sword upon the rock plunged bladefirst into the stone. "
+              sleep 1;
               echo "You try to pull it out, at which point to your surprise it slips free easily, in contrast with the unyielding and seemingly unmovable stone. "
+              sleep 1;
               echo "When released. The singing halts to a stop. "
+              sleep 1;
               echo "You turn towards the direction of where the singing originated, noting a fish-like woman's head staring at you. "
+              sleep 1;
               echo "She then dives underneath the water as you look on in confusion."
+              sleep 1;
               echo "You turn towards the now free sword and read the word 'Excalibur' engraved on it's side. "
+              sleep 1;
               ;;
         notice)
               echo "You turn to see a fish-like human being, staring at you."
