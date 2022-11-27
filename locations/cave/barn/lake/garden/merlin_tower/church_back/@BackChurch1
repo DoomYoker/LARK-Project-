@@ -15,6 +15,7 @@ sleep 1;
 tput bold; echo "This part is not implemented yet. The final product will show a system of confrontation."; tput sgr0;
 sleep 1;
 echo "The get scared and scurry away out the front door, leaving the egg alone."
+mv .~egg /~egg
 sleep 1;
-echo "You proceed to grab the egg and quickly exit through the front door, holding your sword out to make sure no imps are hiding."
-sleep 1;
+rm @BackChurch1
+;
