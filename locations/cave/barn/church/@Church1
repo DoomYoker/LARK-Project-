@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "Deciding to follow them from behind, you come across a large church in the distance."
 sleep 1;
 echo "This rustic structure looks to be warn down. You do see the creatures heading inside."
