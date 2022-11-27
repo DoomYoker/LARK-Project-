@@ -8,6 +8,6 @@ tput bold; echo "Merlin: "; tput srg0; echo "This is not good. He is growing thi
 sleep 1;
 echo "She should be located in the cave I originally called to you at. The phoenix is now flying with you."
 mv .~phoenix /~phoenix
-mv ~phoenix /$collected
+mv \~phoenix /$collected
 mv $location/
 sleep 1;
