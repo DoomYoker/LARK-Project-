@@ -5,7 +5,7 @@
 echo "As you arrive in the cave to the crossroads,"
 sleep 1;
 echo "your amulet begins to glow as the phoenix decides to take off ahead and fly through the right path."
-rm $collected/~phoenix
+rm $collected/+phoenix
 sleep 1;
 echo "This was the one you scurried back out of."
 sleep 1;
