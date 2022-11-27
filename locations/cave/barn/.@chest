@@ -10,7 +10,7 @@ echo "You open the lid and come across the herb Merlin asked for."
 sleep 1;
 echo "You grab it and leave the barn."
 sleep 1;
-mv 
+mv $location/locations/cave/barn/lake/garden/merlin_tower/.@Merlin4 $location/locations/cave/barn/lake/garden/merlin_tower/@Merlin4
 else 
 echo "The chest is locked up tight the only way to open it seems to come from the skull shaped lock engraved on the surface."
 sleep 1;
