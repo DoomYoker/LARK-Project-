@@ -89,7 +89,7 @@ function move_items() {
   rm $location/collection/.basilisk 2>/dev/null
 }
 talisman() { less "$location/scripts/commandList"; }
-
+collected=$location/collected
 tput smcup
 while [[ $REPLY != "c" ]]
 do
