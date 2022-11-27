@@ -46,28 +46,5 @@ echo "You notice that they are carrying something large with them from the way y
 sleep 1;
 echo "You do note a path to the forking to the left towards a giant open lake."
 sleep 1;
-read -p "Do you follow them down the unknown path?[yes or no]: " selection3
-    case $selection3 in
-    yes) 
-          echo "Deciding to follow them from behind, you come across a large church in the distance."
-          sleep 1;
-          echo "This rustic structure looks to be warn down. You do see the creatures heading inside,"
-          sleep 1;
-          echo "as the last one looks back before closing the door with a slam."
-          sleep 1;
-          echo "You take note of its demonic look."
-          sleep 1;
-          echo "You approach the doors to which the little creatures entered.
-          sleep 1;
-          echo "You try pulling them open, but do not budge. You then stop and hear laughter coming from inside."
-          sleep 1;
-          echo "You try looking around the building, but find trees and fauna blocking their paths."
-          sleep 1;
-          echo "You turn around and leave, heading back to the path towards the lake."
-          sleep 1;
-          ;;
-    no) 
-          echo "You choose to not take part with these creatures, seeing as their path may be a trap of intrigue. You look at the other path and procceed on."
-          sleep 1;
-          ;;
-esac
+echo "You choose to not take part with these creatures, seeing as their path may be a trap of intrigue. You look at the other path and procceed on."
+sleep 1;
