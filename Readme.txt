@@ -1,7 +1,7 @@
 
-Welcome to ___________
+Welcome to Legend of Cornwall
 
-___________ was designed as a Linux Activity to Reinforce Knowledge
+Legend of Cornwall was designed as a Linux Activity to Reinforce Knowledge
 
 Developed By: Max Smith, Kaleb Walden, and Charles Cahill
 
