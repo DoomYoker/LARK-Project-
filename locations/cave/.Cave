@@ -9,3 +9,6 @@ tput bold; echo "Merlin: "; tput srg0; echo "Poor innocent creature. Who would h
 echo "The amulet turns to see the skull on the ground. It then turns back to you."
 tput bold; echo "Merlin: "; tput srg0; echo "Those pesky imps. The basilisk must have sent them. I will send the phoenix off to scout for their wereabouts. Make your way back to me. I can give you a location as you travel."
 echo "You slowly bring your hand back as the phoenix flys out of the cave. The griffen lays her head back down, sighing. You turn back and head to the cross roads and out of the cave."
+
+
+rm $location
