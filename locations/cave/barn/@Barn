@@ -68,6 +68,8 @@ read -p "Do you look inside or head back outside?[inside or outside]: " selectio
           echo "by doing so this will remove the platmail"
           ;;
 esac
-
+echo "press any button to continue"
+read
+clear
 #(exiting barn) - action to go outside of barn
 
