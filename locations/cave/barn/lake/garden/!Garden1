@@ -2,7 +2,9 @@
 
 #Option 2 (Garden) - move to Garden Directory
 
-echo "You head to the entrance of a garden, seeing many lush plants and bushes laying about with another crossroads. Directly in the center, you see a statue of a half-horse half-human creature. You approach it, noticing a bird sitting ontop of it. However, this bird appears to be glowing with a fire hue. As you move towards the bird, it flies towards the right path."
+echo "You head to the entrance of a garden, seeing many lush plants and bushes laying about with another crossroads." 
+echo "Directly in the center, you see a statue of a half-horse half-human creature. You approach it, noticing a bird sitting ontop of it."
+echo "However, this bird appears to be glowing with a fire hue. As you move towards the bird, it flies towards the right path."
 read -p "Which path do you go?[left or right]: " selectionA
       case $selectionA in
       left)
