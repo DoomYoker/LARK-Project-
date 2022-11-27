@@ -118,7 +118,7 @@ EOF
 	echo "(If at any point you need to exit the game, just type _____.)"
 	sleep 1;
 	echo "(This game does require you to search around for items. Make sure to pick them up along the way, as they will be needed for you to continue on your journey.)"
-	. start
+	. .start
 	;;
 	b) clear 
 	echo "___________ is a terminal based game that was made to showcase a few basics commands used in the linux terminal.
