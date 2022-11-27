@@ -4,9 +4,9 @@ location=$PWD
 
 function reset_var () {	
 priority="0"
-attack="5"
-health="20"
-defense="1"
+attack=5
+health=20
+defense=1
 talisman="0"
 excalibur="0"
 skullKey="0"
