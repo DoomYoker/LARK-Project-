@@ -68,19 +68,20 @@ read -p "What do you do?[continue or notice]: " selection5
               ;;
 esac
 -------------
-Option 2 (Garden) - move to Garden Directory
+#Option 2 (Garden) - move to Garden Directory
 
 echo "You head to the entrance of a garden, seeing many lush plants and bushes laying about with another crossroads. Directly in the center, you see a statue of a half-horse half-human creature. You approach it, noticing a bird sitting ontop of it. However, this bird appears to be glowing with a fire hue. As you move towards the bird, it flies towards the right path."
-
-(Option Uno) - move to Tower Directory
-
-echo "You choose to run after it, following the right path."
-
-(Option Dos) - move to Cemetery Directory
-
-echo "As you look to start heading down the left path, the amulet speaks to you."
-tput bold; echo "Mysterious Voice: "; tput srg0; echo "Do not head here yet, you need to follow the phoenix."
-echo "As you listen to the words of the unknown voice, you proceed right onwards to where the phoenix is going."
+read -p "Which path do you go?[left or right]: " selectionA
+      case $selectionA in
+      left)
+            echo "You choose to run after it, following the right path."
+            ;;
+      right)
+            echo "As you look to start heading down the left path, the amulet speaks to you."
+            tput bold; echo "Mysterious Voice: "; tput srg0; echo "Do not head here yet, you need to follow the phoenix."
+            echo "As you listen to the words of the unknown voice, you proceed right onwards to where the phoenix is going."
+            ;;
+esac
 ---------------------------------------------------
 Merlin Tower(goes to tower after garden) - move to Tower Directory/continue from tower directory in Option Uno 
 
