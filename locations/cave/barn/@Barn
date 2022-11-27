@@ -2,24 +2,34 @@
 
 #(inside barn) - action to go inside barn
 
-read -p "You slowly approach the barn. 
-Seeing the doors wide open, you enter to see an open area with vacant stables and hay bales sprawled out. 
-Nobody is around, but you see something poking out behind a few bales of hay.
-Do you look inside or head back outside?[inside or outside]: " selection2
+echo "You slowly approach the barn."
+sleep 1;
+echo "Seeing the doors wide open, you enter to see an open area with vacant stables and hay bales sprawled out."
+sleep 1;
+echo "Nobody is around, but you see something poking out behind a few bales of hay."
+sleep 1;
+read -p "Do you look inside or head back outside?[inside or outside]: " selection2
     case $selection2 in
     inside)
           echo "Digging through the hay bales, you push them apart to uncover a sealed chest. This chest shows to have an engraved lock of a skull."
+          sleep 1;
           mv .@chest \@chest
           ;;
     outside)
           echo "You choose to note mess with the thing inside, as it could be potentially dangerous."
+          sleep 1;
           ;;
 esac
 
-echo "Further exploring the recesses of this barn you spot a shining light from an old shelf, as you approach the light you are able to make out the form of a rusted platemail vest"
+echo "Further exploring the recesses of this barn you spot a shining light from an old shelf,"
+sleep 1;
+echo "as you approach the light you are able to make out the form of a rusted platemail vest."
+sleep 1;
 mv .~rusted-platemail \~rusted-platemail
-echo " The amulet suddenly flies off of your neck and hovers before you"
-      tput bold; echo "Amulet: " ; tput sgr0 ; echo "Before you lies multiple different options, in order to interact with and use these items here is what you must do
+echo "The amulet suddenly flies off of your neck and hovers before you"
+sleep 1;
+      tput bold; echo "Amulet: " ; tput sgr0 ; echo "Before you lies multiple different options, 
+      in order to interact with and use these items here is what you must do
 mv <scriptname> \$collected
         - This command is used to move files(items) to your collection. \"\$collected\" is the variable that holds the path to your inventory 
         (be wary with moving items because if you move anything without an ~ infront of it you can break this game)
@@ -27,9 +37,10 @@ mv <scriptname> \$collected
 equip &rusted-platemail
         - This is another command implemented for the different armors special to this game. This command uses the platemail armor you find to increase your defense
           by doing so this will remove the platmail"
+          sleep 1;
 #(exiting barn) - action to go outside of barn
 
-read -p "As you open the door, you see multiple tiny creatures running off in a frantic mean. 
+echo "Opening, you see multiple tiny creatures running off in a frantic mean."
 You notice that they are carrying something large with them from the way you came from. 
 You do note a path to the forking to the left towards a giant open lake.
 Do you follow them down the unknown path?[yes or no]: " selection3
