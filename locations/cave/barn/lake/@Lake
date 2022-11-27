@@ -60,3 +60,6 @@ EOF
               ;;
 esac
 done
+echo "press any button to continue"
+read 
+clear
