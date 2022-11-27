@@ -1,0 +1,6 @@
+#!bin/bash/
+
+#(Arriving at Merlin Tower) - move to Tower Directory 
+
+echo "Merlin comes close to you and tells you important information on the wereabouts."
+tput bold; echo "Merlin: "; tput srg0; echo "We have identified the imps at location to church you passed by. They should be just inside that building. I understand that you are unable to enter, as they have blocked you off. The route to the left of me will lead you directly to the back entrance."
