@@ -164,7 +164,7 @@ tput bold; echo "Merlin: "; tput srg0; echo "We have identified the imps at loca
 -------------------------------------------------------------
 (Arriving at Church) - move to Church Directory 
 
-read -p "Merlin waves his hand and trees wiggle at a V shape. You move through and travel along until you come across an entrance into the back of the church. "You look ahead to see a giant interior of a rustic chapel, seeing a giant silhouette of the Lady from the Lake. Below, you see three imps crowding around the egg placed on the pulpit. You preceed to aim your sword and walk towards them. They get alarmed and engage into combat."
+echo "Merlin waves his hand and trees wiggle at a V shape. You move through and travel along until you come across an entrance into the back of the church. "You look ahead to see a giant interior of a rustic chapel, seeing a giant silhouette of the Lady from the Lake. Below, you see three imps crowding around the egg placed on the pulpit. You preceed to aim your sword and walk towards them. They get alarmed and engage into combat."
 tput bold; echo "This part is not implemented yet. The final product will show a system of confrontation."; tput sgr0;
 echo "The get scared and scurry away out the front door, leaving the egg alone. You proceed to grab the egg and quickly exit through the front door, holding your sword out to make sure no imps are hiding."
 -----------------------------------
