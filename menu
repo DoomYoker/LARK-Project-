@@ -7,20 +7,20 @@ priority=0
 attack=5
 health=20
 defense=1
-talisman="0"
-excalibur="0"
-skullKey="0"
-centaur="0"
-egg="0"
-griffen="0"
-spell="0"
-skeleton="0"
-ladyofthelake="0"
-phoenix="0"
-merlin="0"
-merlintalk="0"
-siren="0"
-basilisk="0"
+talisman="no"
+excalibur="no"
+skullKey="no"
+centaur="no"
+egg="no"
+griffen="no"
+spell="no"
+skeleton="no"
+ladyofthelake="no"
+phoenix="no"
+merlin="no"
+merlintalk="no"
+siren="no"
+basilisk="no"
 
 export health
 export attack
