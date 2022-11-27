@@ -1,7 +1,0 @@
-#!bin/bash/
-
-#(re enter cemetery) - move to Cemetery Directory
-
-echo "You re-enter the cemetery to still see the skeletons surrounding the statue, but they immediately draw fear from the centuar. The phoenix stays close to you as the centaur prepares to charge them. The skeletons all run amok, allowing you to go to the angel statue. You go close to it and reach out your hand to grab the key. You proceed to hold the key in your hand, when a skeleton grabs the end. You both pull back and forth between who has it, proceeding in a duel."
-tput bold; echo "This part is not implemented yet. The final product will show a system of confrontation."; tput sgr0;
-"The skeleton uses its last strength to get a hold of it, but gets rammed by the centaur statue. This causes the skeleton to explode bones everywhere and the key to fly in the air. The phoenix flies towards it and grabs hold of the key, flying down to you and dropping it into your hand. As the centaur is continuing with the other skeletons in the cemetery, you and the phoenix proceed to head back out."
