@@ -12,4 +12,4 @@ tput bold; echo "Merlin: "; tput sgr0; echo "I am sending him off to the";tput b
 sleep 1;
 echo "Go back there, my phoenix should already have awoken them."
 sleep 1;
-mv $location/locations/cave/barn/lake/garden/cemetery/.@Garden2 $location/locations/cave/barn/lake/garden/cemetery/@Garden2
+mv $location/locations/cave/barn/lake/garden/.@Garden2 $location/locations/cave/barn/lake/garden/@Garden2
