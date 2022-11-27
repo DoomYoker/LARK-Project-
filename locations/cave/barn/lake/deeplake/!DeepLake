@@ -2,7 +2,7 @@
 
 #Option 1 (Deep Lake) - move to Deep Lake Directory
 
-echo "You "You proceed leftward as the lady directed. Following closely along the edge of the lake to a more dark blue area with a huge waterfall. There lay in the center of the lake a massive stone outcropping with a rod pointed out of it. You carefully navigate towards it, without falling in to the surrounding water. Climbing up the mound, you notice a voice singing to you." 
+echo "You proceed leftward as the lady directed. Following closely along the edge of the lake to a more dark blue area with a huge waterfall. There lay in the center of the lake a massive stone outcropping with a rod pointed out of it. You carefully navigate towards it, without falling in to the surrounding water. Climbing up the mound, you notice a voice singing to you." 
 read -p "What do you do?[continue or notice]: " selection5
         case $selection5 in
         continue)
@@ -18,7 +18,7 @@ read -p "What do you do?[continue or notice]: " selection5
               sleep 1;
               echo "She then dives underneath the water as you look on in confusion."
               sleep 1;
-              echo "You turn towards the now free sword and read the word 'Excalibur' engraved on it's side. "
+              echo "You turn towards the now free sword and read the word | Excalibur | engraved on it's side. "
               sleep 1;
               ;;
         notice)
@@ -32,6 +32,6 @@ read -p "What do you do?[continue or notice]: " selection5
               echo "The creatures all hiss at you as you aim it in their directions, drawing you into a battle against three different sirens."
               mv .excalibur \$collected
               tput bold; echo "This part is not implemented yet. The final product will show a system of confrontation."; tput sgr0;
-              echo "They all leave in fear as you stand there in suprise of your successful vanquish. You look at the sword and see the engraving on the side 'Excalibur'. "
+              echo "They all leave in fear as you stand there in suprise of your successful vanquish. You look at the sword and see the engraving on the side | Excalibur |. "
               ;;
 esac
