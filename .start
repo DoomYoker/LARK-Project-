@@ -88,9 +88,23 @@ read -p "Looking forward, our hero decides whether to go left as the amulet told
 	sleep 1;
 	echo " The amulet suddenly flies off of your neck and hovers before you"
 	sleep 1
-      	tput bold; echo "Amulet: " ; tput sgr0 ; echo "Before you lies many different stories, in order to interact with and trigger these stories here is what you must do
+      	tput bold; echo "Amulet: " ; tput sgr0 ; echo "Before you lies many different stories,locations,and creatures in order to interact with and trigger these stories here is what you must do
 	. <scriptname>
-      - This allows you to trigger scripts (scripts will begin with a !)
-      ex. . !chest"
+      	-> This allows you to trigger scripts (scripts will begin with a @)
+     	 ex. . @chest
+      	cd <locationname>
+     	 -> This will allow you to move to this new location
+     	 ex. cd cave
+      	cd ..
+	-> This will allow you to go back to the previous location
+	ex. returning from barn to cabin
+	cat <itemName>
+	-> This will allow you to read a brief description on each different item (Be sure not to use this on any scripts as that will display things hidden away)\
+	ex. cat &RustyPlate
+	ls 
+	-> This command will search the current location and display what you can do currently."
+
 cd $location/locations/cave
+echo "select any button to continue"
+read
 break
