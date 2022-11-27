@@ -3,13 +3,22 @@
 #(To the cemetery) - move to Cemetery Directory
 
 echo "You soon enter the cemetery and see tombstones."
-sleep 1
+sleep 1;
 echo "You look around and see another similar statue to the human-horse in the garden."
+sleep 1;
 echo "This one seems to resemble the Lady of the Lake, with her hand reaching out."
+sleep 1;
 echo "In her hand, she has hold of a key mentioned by Merlin."
+sleep 1;
 echo "You move towards it, but stop when the ground begins to shake."
+sleep 1;
 echo "You see hands popping out from some of the graves."
+sleep 1;
 echo "You begin to see skeletons climbing out and moving towards the statue, as if they are trying to protect it."
+sleep 1;
 echo "You rush into they surrounding group, hoping to push past them."
+sleep 1;
 echo "However, they are able to force you off and throw you to the ground."
-echo "You turn around and leave, hoping to ask Merlin for help."  
+sleep 1;
+echo "You turn around and leave, hoping to ask Merlin for help." 
+sleep 1;
