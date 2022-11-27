@@ -11,4 +11,4 @@ tput bold; echo "Merlin: "; tput srg0; echo "Those pesky imps. The basilisk must
 echo "You slowly bring your hand back as the phoenix flys out of the cave. The griffen lays her head back down, sighing. You turn back and head to the cross roads and out of the cave."
 
 
-rm $location
+rm $location/locations/cave/Cave
