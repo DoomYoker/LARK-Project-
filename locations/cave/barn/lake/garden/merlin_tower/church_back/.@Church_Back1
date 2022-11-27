@@ -17,5 +17,4 @@ sleep 1;
 echo "The get scared and scurry away out the front door, leaving the egg alone."
 mv .~egg /~egg
 sleep 1;
-rm @BackChurch1
-;
+
