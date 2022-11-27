@@ -6,7 +6,8 @@ echo "Following the route. You come across a calm body of water. This appears to
 sleep 1;
 echo "You feel eerily calm, but are in no rush to leave."
 sleep 1;
-echo "You scout out a dark deeper part of the lake to your left, an arch way looming directly infront of you and across the lake leading to a lush green garden, and to your right lies an eery unmarked path with dark vines and dead looking trees."
+echo "You scout out a dark deeper part of the lake to your left, an arch way looming directly infront of you and across the lake leading to a lush green garden."
+echo " Then to your right you spot an eery unmarked path with dark vines and dead looking trees."
 sleep 1;
 echo "Before deciding whether to continue on with any of these paths, you spot a bubbling mark appear on the otherwise smooth lake surface."
 sleep 1;
@@ -25,7 +26,7 @@ EOF
           1)
               echo "I am the Lady of this Lake. I come from this fair land of Avalon, a community laying below this reservoir."
               sleep 1;
-              echo "The Lady turns toward the deeper lake, directing you to see the deeper part of the lake."
+              echo "The Lady turns toward the deeper lake, directing you to see that part of the lake."
               sleep 1;
               tput bold; echo "Lady of the Lake: "; tput sgr0; echo "Follow this path. There is an item you will need. It is most important for your travels."
               sleep 1;
