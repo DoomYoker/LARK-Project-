@@ -15,7 +15,6 @@ read -p "$name feels intrigued to pickup this item. But will he do so?[yes or no
 	yes)
 		echo "$name bends over and spreads a hand to grasp on the item. Bringing it to his face, he sees that it is an unknown amulet with a giant gemstone in the center. He carefully caresses it and lays his thumb over the gem, evoking a bright light that illuminates the room."
 		sleep 1;
-		break
 		;;
 	no)
 		echo "$name understands that the amulet could be potentially dangerous, understanding the risks involved in picking up something that could inflict harm on himself. However, his interest overcomes common sense and decides to firmly grasp the item on the ground. When doing so, the identified amulet nearly blinds him, illuminating the room."
