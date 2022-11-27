@@ -3,8 +3,11 @@
 #(In cave) - move to Cave Directory
 
 echo "You go back inside the cave and travel to where the griffen is. When coming face to face with her, she notices the egg you are holding and proceeds to stand up. You then bring it to her nest and lay it down delicately. She then steps towards the egg and caresses it with delight. She turns to you and leans her head down, as you reach your hand out and pat. She now trusts you and will help you travel over the moat."
+sleep 1;
 
 #(At exit of cave) 
 
 echo "The griffen prepares to fly you over the castle walls from the cave entrance. You hop on and she soars high into the sky."
+sleep 1;
 echo "As you both fly through the over the moat, you notice the basilisk is inside a tower. You scout and see an open balcony, pointing the griffen to land there."
+sleep 1;
