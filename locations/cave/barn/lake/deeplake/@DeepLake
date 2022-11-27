@@ -20,18 +20,31 @@ read -p "What do you do?[continue or notice]: " selection5
               sleep 1;
               echo "You turn towards the now free sword and read the word | Excalibur | engraved on it's side. "
               sleep 1;
+              tput bold; echo "Amulet: "; tput sgr0; echo "make sure to collect that sword it will be hopeless for you to succeed without it"
+              mv .excalibur \excalibur
               ;;
         notice)
               echo "You turn to see a fish-like human being, staring at you."
+              sleep 1;
               echo "You feel the urgue to head towards her."
+              sleep 1;
               echo "But as soon as you take one step down towards her, a hand grabs your ankle as a terrifying hiss comes from below."
-              echo "Startled, you look down to see the menacing physique of a similar creature with a firm grasp on your foot, hissing and preparing to rip your foot apart with it's razor sharp teeth. "
+              sleep 1;
+              echo "Startled, you look down to see the menacing physique of a similar creature with a firm grasp on your foot, 
+              hissing and preparing to rip your foot apart with it's razor sharp teeth. "
+              sleep 1;
               echo "You manage the strength to yank your foot away and glance quickly around to see multiple mermaids coming towards you."
+              sleep 1;
               echo "You quickly climb the mound to get higher ground, seeing the sword in a stone. "
+              sleep 1;
               echo "You scramble towards the stone and immediately try pulling it out, upon which the sword slides out smoothly. "
+              sleep 1;
               echo "The creatures all hiss at you as you aim it in their directions, drawing you into a battle against three different sirens."
-              mv .excalibur \$collected
+              sleep 1;
+              mv .excalibur \excalibur
+              mv excalibur \$collected
               tput bold; echo "This part is not implemented yet. The final product will show a system of confrontation."; tput sgr0;
               echo "They all leave in fear as you stand there in suprise of your successful vanquish. You look at the sword and see the engraving on the side | Excalibur |. "
               ;;
+              
 esac
