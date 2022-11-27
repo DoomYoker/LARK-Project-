@@ -9,8 +9,8 @@ sleep 1;
 tput bold; echo "Merlin: "; tput srg0; echo "Take this, a Potion of Bezoar. This should help you when you face off. Just make sure to drink it beforehand."
 sleep 1;
 echo "You obtained a potion!"
-mv .~Potion-Of-Bezoar /~Potion-Of-Bezoar
-mv \~Potion-Of-Bezoar /$collected
+mv .+Potion-Of-Bezoar /+Potion-Of-Bezoar
+mv \+Potion-Of-Bezoar /$collected
 sleep 1;
 tput bold; echo "Merlin: "; tput srg0; echo "I can see that you have everything you need. Head to the bridge next to the lake."
 sleep 1;
@@ -24,8 +24,8 @@ sleep 1;
 tput bold; echo "Merlin: "; tput srg0; echo "This is not good. He is growing thin. Go with him. There is a friend who can help you cross over the castle walls."
 sleep 1;
 echo "She should be located in the";tput bold; echo " cave"; tput sgr0; echo " I originally called to you at. The phoenix is now flying with you."
-mv .~phoenix /~phoenix
-mv \~phoenix /$collected
+mv .+phoenix /+phoenix
+mv \+phoenix /$collected
 mv $location/locations/cave/.@Cave $location/locations/cave/@Cave
 sleep 1;
 fi
