@@ -18,16 +18,16 @@ read -p "Do you look inside or head back outside?[inside or outside]: " selectio
           sleep 1;
           echo "as you approach the light you are able to make out the form of a rusted platemail vest."
           sleep 1;
-          mv .~rusted-platemail \~rusted-platemail
+          mv .+rusted-platemail \+rusted-platemail
           echo "The amulet suddenly flies off of your neck and hovers before you"
           sleep 1;
           tput bold; echo "Amulet: " ; tput sgr0 ; echo "Before you lies multiple different options, in order to interact with and use these items here is what you must do"
           echo "mv <scriptname> \$collected"
           echo "        - This command is used to move files(items) to your collection."
           echo "\"\$collected\" is the variable that holds the path to your inventory"
-          echo "(be wary with moving items because if you move anything without an ~ infront of it you can break this game)"
+          echo "(be wary with moving items because if you move anything without an + infront of it you can break this game)"
           echo " -> OPEN collected: ls \$collected"
-          echo "equip &rusted-platemail"
+          echo "equip +rusted-platemail"
           echo "        -> This is another command implemented for the different armors special to this game."
           echo "This command uses the platemail armor you find to increase your defense"
           echo "by doing so this will remove the platmail"
