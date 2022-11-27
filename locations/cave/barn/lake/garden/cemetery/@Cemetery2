@@ -20,7 +20,4 @@ sleep 1;
 "The last remaining skeleton uses its last strength to crawl towards the key, but before it can reach the key it gets rammed by the centaur statue."
 sleep 1;
 echo "This causes the skeleton to explode into bones that are flung everywhere, the key being left shining on the tombstone"
-sleep 1;
 mv .@key /key
-echo "As the centaur is continuing with the other skeletons in the cemetery, you and the phoenix proceed to head back out."
-sleep 1;
