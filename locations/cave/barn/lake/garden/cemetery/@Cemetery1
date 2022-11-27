@@ -26,3 +26,4 @@ echo "However, you are able to push them off of yourself enough to move away."
 sleep 1;
 echo "You turn around and leave hastily, hoping to ask Merlin for help."
 sleep 1;
+mv $location/
