@@ -17,7 +17,7 @@ Do you look inside or head back outside?[inside or outside]: " selection2
 esac
 
 echo "Further exploring the recesses of this barn you spot a shining light from an old shelf, as you approach the light you are able to make out the form of a rusted platemail vest"
-mv .&platemail \&platemail
+mv .&rusted-platemail \&rusted-platemail
 echo " The amulet suddenly flies off of your neck and hovers before you"
       tput bold; echo "Amulet: " ; tput sgr0 ; echo "Before you lies multiple different options, in order to interact with and use these items here is what you must do
 mv <scriptname> \$collection
