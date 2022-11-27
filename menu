@@ -111,11 +111,11 @@ fi
 }
 function useItem() {
 clear
-echo "		Usable items - Description		"
-echo "--------------------------------------------------"
-for FILE in $location/usables; echo FILE " - $FILE"; done
-echo ""
-echo ""
+#echo "		Usable items - Description		"
+#echo "--------------------------------------------------"
+#for FILE in $location/usables; echo FILE " - $FILE"; done
+#echo ""
+#echo ""
 while [[ $REPLY != "none" ]]
 do
 echo "Enter item to be used or enter 'none' to return to menu (be sure to enter the item exactly as entered above)"
