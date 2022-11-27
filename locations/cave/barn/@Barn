@@ -57,15 +57,30 @@ read -p "Do you look inside or head back outside?[inside or outside]: " selectio
           echo "The amulet suddenly flies off of your neck and hovers before you"
           sleep 1;
           tput bold; echo "Amulet: " ; tput sgr0 ; echo "Before you lies multiple different options, in order to interact with and use these items here is what you must do"
+          sleep 1;
           echo "mv <scriptname> \$collected"
+          sleep 1;
           echo "        - This command is used to move files(items) to your collection."
+          sleep 1;
           echo "\"\$collected\" is the variable that holds the path to your inventory"
+          sleep 1;
           echo "(be wary with moving items because if you move anything without an ~ infront of it you can break this game)"
+          sleep 1;
           echo " -> OPEN collected: ls \$collected"
+          sleep 1;
           echo "equip &rusted-platemail"
+          sleep 1;
           echo "        -> This is another command implemented for the different armors special to this game."
+          sleep 1;
           echo "This command uses the platemail armor you find to increase your defense"
+          sleep 1;
           echo "by doing so this will remove the platmail"
+          sleep 1;
+          echo "Further digging through the insides of the barn you find some suspicious looking hay bales."
+          sleep 1;
+          echo "Digging through the hay bales, you push them apart to uncover a sealed chest. This chest shows to have an engraved lock of a skull."
+          sleep 1;
+          mv .@chest \@chest
           ;;
 esac
 echo "press any button to continue"
