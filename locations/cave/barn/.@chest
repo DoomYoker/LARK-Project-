@@ -2,11 +2,15 @@
 
 #(Arriving at barn) - move to Barn Directory 
 if [ -e key $location/collected ]; then
-echo "You come across the chest sitting in the corner of the barn. 
-With the skull engraving on the lock matching the skull-shape of the key, you go to unlock it. 
-You open the lid and come across the herb Merlin asked for. 
-You grab it and leave the barn."
-
+echo "You come across the chest sitting in the corner of the barn."
+sleep 1;
+echo "With the skull engraving on the lock matching the skull-shape of the key, you go to unlock it." 
+sleep 1;
+echo "You open the lid and come across the herb Merlin asked for." 
+sleep 1;
+echo "You grab it and leave the barn."
+sleep 1;
 else 
 echo "The chest is locked up tight the only way to open it seems to come from the skull shaped lock engraved on the surface."
+sleep 1;
 fi
