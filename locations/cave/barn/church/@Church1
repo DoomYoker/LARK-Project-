@@ -1,10 +1,10 @@
 echo "Deciding to follow them from behind, you come across a large church in the distance."
 sleep 1;
-echo "This rustic structure looks to be warn down. You do see the creatures heading inside,"
+echo "This rustic structure looks to be warn down. You do see the creatures heading inside."
 sleep 1;
-echo "as the last one looks back before closing the door with a slam."
+echo "And can just make out the last one as it looks back before closing the door with a slam."
 sleep 1;
-echo "You take note of its demonic look."
+echo "You take note of its demonic features."
 sleep 1;
 echo "You approach the doors to which the little creatures entered.
 sleep 1;
@@ -13,7 +13,7 @@ sleep 1;
 echo "You try looking around the building, but find trees and fauna blocking their paths."
 sleep 1;
 echo "However, you do see a potion on the ground tilting on the side of the building."
-mv .health-potion \health-potion
+mv .~health-potion \~health-potion
 sleep 1;
 echo "You then turn around and leave, heading back to the path towards the lake."
 sleep 1;
