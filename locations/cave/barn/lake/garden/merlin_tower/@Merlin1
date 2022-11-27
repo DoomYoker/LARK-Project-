@@ -35,7 +35,7 @@ EOF
             echo "One glance and your done for. With this potion I can make you immune to his gaze if you can get the basil herb.
             There is a chest-locked away with this herb."
             sleep 1;
-            echo "However, there is a key you need for it. It should just be down towards"; tput bold; echo " cemetery"; tput sgr0; echo " along the path at the garden you did not take."
+            echo "However, there is a key you need for it. It should just be down towards the "; tput bold; echo "cemetery"; tput sgr0; echo "along the path at the garden you did not take."
             sleep 1;
             break
             ;;
