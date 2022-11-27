@@ -12,8 +12,9 @@ echo "You go close to it and reach out your hand to grab the key."
 sleep 1;
 echo "You proceed to hold the key in your hand, when a skeleton grabs the end."
 sleep 1;
-echo "You both pull back and forth between who has it, the key slips from both of your hands and lands on a nearby tombstone.
-You and the skeleton draw your weapons as more approach to fight."
+echo "You both pull back and forth between who has it, the key slips from both of your hands and lands on a nearby tombstone."
+sleep 1;
+echo "You and the skeleton draw your weapons as more approach to fight."
 sleep 1;
 tput bold; echo "This part is not implemented yet. The final product will show a system of confrontation."; tput sgr0;
 sleep 1;
