@@ -25,3 +25,4 @@ echo "She should be located in the";tput bold; echo " cave"; tput sgr0; echo " I
 mv .phoenix /phoenix
 mv phoenix /$collected
 sleep 1;
+fi
