@@ -8,7 +8,11 @@ tput bold; echo "Mysterious Voice: "; tput sgr0; echo "Wake up..."
 sleep 1;
 tput bold; echo "Mysterious Voice: "; tput sgr0; echo "Please $name, we need you..."
 
-echo "Our hero slowly awakes. Pushing himself to a standing position, he is unaware of his surroundings. The darkness comes too close to a resemblance of any kind. However, he notices a small light bright enough to be noticeable."
+echo "Our hero slowly awakes. Pushing himself to a standing position, he is unaware of his surroundings."
+sleep 1;
+echo "The darkness comes too close to a resemblance of any kind."
+sleep 1;
+echo "However, he notices a small light bright enough to be noticeable."
 sleep 1;
 read -p "$name feels intrigued to pickup this item. But will he do so?[yes or no]: " firstchoice
 	case $firstchoice in
