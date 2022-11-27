@@ -15,11 +15,11 @@ read -p "What do you do?[continue or notice]: " selection5
               echo "You turn towards the now free sword and read the word 'Excalibur' engraved on it's side. "
               ;;
         notice)
-              echo "You turn to see a fish-like human being, staring at you. "
-              echo "You feel the urgue to head towards her. "
-              echo "But as soon as you take one step down towards her, a hand grabs your ankle as a terrifying hiss comes from below. "
+              echo "You turn to see a fish-like human being, staring at you."
+              echo "You feel the urgue to head towards her."
+              echo "But as soon as you take one step down towards her, a hand grabs your ankle as a terrifying hiss comes from below."
               echo "Startled, you look down to see the menacing physique of a similar creature with a firm grasp on your foot, hissing and preparing to rip your foot apart with it's razor sharp teeth. "
-              echo "You manage the strength to yank your foot away and glance quickly around to see multiple mermaids coming towards you. "
+              echo "You manage the strength to yank your foot away and glance quickly around to see multiple mermaids coming towards you."
               echo "You quickly climb the mound to get higher ground, seeing the sword in a stone. "
               echo "You scramble towards the stone and immediately try pulling it out, upon which the sword slides out smoothly. "
               echo "The creatures all hiss at you as you aim it in their directions, drawing you into a battle against three different sirens."
