@@ -127,13 +127,17 @@ EOF
 	
 	If you wish to avoid seeing and altering any of the game code be sure to follow the games instructions."
 	sleep 1;
+	echo "Press any button to select a different option"
+	read
+	
 	;;
 	c) 
 	tput rmcup
 	echo "Exiting Game"
 	break
 	;;
-	*) echo "Invalid Option: Make sure to enter only [a-c] for this menu."
+	*) echo "Invalid Option: Press any button to return then make sure to enter only [a-c] for this menu. "
+	read
 	;;
 esac
 done
