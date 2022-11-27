@@ -112,6 +112,7 @@ else
 fi
 }
 collected=$location/collected
+export collected
 tput smcup
 while [[ $REPLY != "c" ]]
 do
