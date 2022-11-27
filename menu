@@ -93,16 +93,18 @@ equip() {
 if ( $1 = "&rusted-platemail" )
 then
 defense="0.7"
-mv $collected/$1 $location/equip
+echo "Defense increased"
+rm $collected/$1 
 elif ( $1 = "&platemail" )
 then 
 defense="0.5"
-mv $collected/$1 $location/equip
+echo "Defense increased"
+rm $collected/$1 
 elif ( $1 = "&blessed-platemail" )
-mv $collected/$1 $location/equip
 then
 defense="0.3"
-mv $collected/$1 $location/equip
+echo "Defense increased"
+rm $collected/$1 
 else 
 	echo" Invalid equip try equipping a piece of platemail"
 fi
