@@ -111,7 +111,7 @@ else
 	echo" Invalid equip try equipping a piece of platemail"
 fi
 }
-collected=$location/collected
+collected=$PWD/collected
 export collected
 tput smcup
 while [[ $REPLY != "c" ]]
