@@ -1,7 +1,7 @@
 #!bin/bash/
 
 #Option 2 (Garden) - move to Garden Directory
-
+attack="10"
 echo "You head to the entrance of a garden, seeing many lush plants and bushes laying about with another crossroads."
 sleep 1;
 echo "Directly in the center, you see a statue of a half-horse half-human creature. You approach it, noticing a bird sitting ontop of it."
