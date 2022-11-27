@@ -151,11 +151,13 @@ EOF
 	. .start
 	;;
 	b) clear 
-	echo "___________ is a terminal based game that was made to showcase a few basics commands used in the linux terminal.
-	This is done so that the player can learn a bit about how to utilize the bash shell in an entertaining way.
-	To begin the game be sure to choose option a). After choosing option a) your goal as the hero of this story is to explore this mystical forest and confront the evil being causing more and more evils to infect this peaceful land.
-	
-	If you wish to avoid seeing and altering any of the game code be sure to follow the games instructions."
+	echo "Legend of Cornwall is a terminal based game that was made to showcase a few basics commands used in the linux terminal."
+	sleep 1;
+	echo "This is done so that the player can learn a bit about how to utilize the bash shell in an entertaining way."
+	sleep 1;
+	echo "your goal as the hero of this story is to explore this mystical forest and confront the evil being causing more and more evils to infect this peaceful land."
+	sleep 1;
+	echo "If you wish to avoid seeing and altering any of the game code be sure to follow the games instructions."
 	sleep 1;
 	echo "Press any button to select a different option"
 	read
@@ -164,6 +166,7 @@ EOF
 	c) 
 	tput rmcup
 	echo "Exiting Game"
+	sleep 1;
 	break
 	;;
 	*) echo "Invalid Option: Press any button to return then make sure to enter only [a-c] for this menu. "
