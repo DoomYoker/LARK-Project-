@@ -3,6 +3,10 @@
 #(head back to tower) - move back to Tower Directory 
 
 echo "You approach Merlin and tell him of the undead."
+sleep 1;
 tput bold; echo "Merlin: "; tput srg0; echo "Skeletons blocking your path? The basilisk must have sent these troops to prevent you from continuing on."
+sleep 1;
 echo "Merlin looks toward his phoenix and whispers something in another language to him. He then flies off and merlin turns back."
+sleep 1;
 tput bold; echo "Merlin: "; tput srg0; echo "I am sending him off to the centaur statue. Go back to it, it should aid you with them."
+sleep 1;
