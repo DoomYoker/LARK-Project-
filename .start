@@ -58,5 +58,5 @@ sleep 1
       tput bold; echo "Amulet: " ; tput sgr0 ; echo "Before you lies many different stories, in order to interact with and trigger these stories here is what you must do
 . <scriptname>
       - This allows you to trigger scripts (scripts will begin with a !)
-      ex. . !chest
+      ex. . !chest"
 cd $location/locations/cave
