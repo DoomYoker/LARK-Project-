@@ -12,9 +12,10 @@ echo "Before deciding whether to continue on with any of these paths, you spot a
 sleep 1;
 echo "You move closer to get a clearer view of the movement, as a head begins to slowly rises. A woman emerges."
 sleep 1;
-tput bold; echo "Lady of the Lake: "; tput srg0; echo "Hello traveler. You must be unaware of what is happening."
+tput bold; echo "Lady of the Lake: "; tput sgr0; echo "Hello traveler. You must be unaware of what is happening."
 sleep 1;
-while [[ $REPLY != 0 ]]; do
+while [[ $REPLY != 0 ]] 
+do
 cat <<EOF
         1. Who are you?
         2. Someone called out to me with this amulet.
@@ -26,11 +27,11 @@ EOF
               sleep 1;
               echo "The Lady turns toward the deeper lake, directing you to see the deeper part of the lake."
               sleep 1;
-              tput bold; echo "Lady of the Lake: "; tput srg0; echo "Follow this path. There is an item you will need. It is most important for your travels."
+              tput bold; echo "Lady of the Lake: "; tput sgr0; echo "Follow this path. There is an item you will need. It is most important for your travels."
               sleep 1;
               echo "She turns to you."
               sleep 1;
-              tput bold; echo "Lady of the Lake: "; tput srg0; echo "Travel quietly. Don't be fooled by the beings who are there, they only have your worst interests in mind."
+              tput bold; echo "Lady of the Lake: "; tput sgr0; echo "Travel quietly. Don't be fooled by the beings who are there, they only have your worst interests in mind."
               sleep 1;
               echo "Once you get this item, come back here and head through the archway."
               sleep 1;
@@ -40,15 +41,15 @@ EOF
           2)
               echo "You take the necklace off and show her. She briefly grabs onto it and studies it's design intently. She then proceeds to hand it back."
               sleep 1;
-              tput bold; echo "Lady of the Lake"; tput srg0; echo "That amulet is not mine, but I know of the being to whom it belongs."
+              tput bold; echo "Lady of the Lake"; tput sgr0; echo "That amulet is not mine, but I know of the being to whom it belongs."
               sleep 1;
               echo "The Lady turns toward the deeper lake, directing you to see the deeper part of the lake."
               sleep 1;
-              tput bold; echo "Lady of the Lake: "; tput srg0; echo "Follow this path. There is an item you will need. It is most important for your travels."
+              tput bold; echo "Lady of the Lake: "; tput sgr0; echo "Follow this path. There is an item you will need. It is most important for your travels."
               sleep 1;
               echo "She turns to you."
               sleep 1;
-              tput bold; echo "Lady of the Lake: "; tput srg0; echo "Travel quietly. Don't be fooled by the beings who are there, they only have your worst interests in mind."
+              tput bold; echo "Lady of the Lake: "; tput sgr0; echo "Travel quietly. Don't be fooled by the beings who are there, they only have your worst interests in mind."
               sleep 1;
               echo "Once you get this item, come back here and head through the archway. You shall soon meet the being who speaks trough your amulet."
               sleep 1;
