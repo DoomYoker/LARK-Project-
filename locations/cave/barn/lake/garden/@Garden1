@@ -10,11 +10,11 @@ echo "However, this bird appears to be glowing with a fire hue. As you move towa
 sleep 1;
 read -p "Which path do you go?[left or right]: " selectionA
       case $selectionA in
-      left)
+      right)
             echo "You choose to run after it, following the right path."
             sleep 1;
             ;;
-      right)
+      left)
             echo "As you look to start heading down the left path, the amulet speaks to you."
             sleep 1;
             tput bold; echo "Mysterious Voice: "; tput srg0; echo "Do not head here yet, you need to follow the phoenix."
