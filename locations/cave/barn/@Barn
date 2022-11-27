@@ -26,7 +26,7 @@ mv <scriptname> \$collected
         - OPEN collected: ls \$collected
 equip &rusted-platemail
         - This is another command implemented for the different armors special to this game. This command uses the platemail armor you find to increase your defense
-          by doing so this will remove the platmail
+          by doing so this will remove the platmail"
 #(exiting barn) - action to go outside of barn
 
 read -p "As you open the door, you see multiple tiny creatures running off in a frantic mean. 
