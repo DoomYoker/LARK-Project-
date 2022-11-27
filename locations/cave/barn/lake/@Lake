@@ -37,6 +37,7 @@ EOF
               sleep 1;
               echo "She proceeds to turn around, walking gracefully into the water to see ripples dissipate."
               sleep 1;
+              break
               ;;
           2)
               echo "You take the necklace off and show her. She briefly grabs onto it and studies it's design intently. She then proceeds to hand it back."
@@ -55,6 +56,7 @@ EOF
               sleep 1;
               echo "She proceeds to turn around, walking gracefully into the water to see ripples dissipate."
               sleep 1;
+              break
               ;;
 esac
 done
