@@ -15,11 +15,11 @@ sleep 1;
 tput bold; echo "This part is not implemented yet. The final product will show a system of confrontation."; tput sgr0;
 sleep 1;
 echo "The get scared and scurry away out the front door, leaving the egg alone."
-mv .~egg /~egg
+mv .+egg /+egg
 sleep 1;
 echo "With the imps gone and the egg before you, you take a look around the inside of the church."
 echo "Throught this glance you are able to spot two potions sitting against different pews."
 echo "One glowing a deep maroon and another a bright reddish orange"
-mv .~Strong-Health-Potion /~Strong-Health-Potion
-mv .~Strong-Strength-Potion /~Strong-Strength-Potion
+mv .+Strong-Health-Potion /+Strong-Health-Potion
+mv .+Strong-Strength-Potion /+Strong-Strength-Potion
 mv $location/locations/cave/.@Cave2 $location/locations/cave/@Cave2 
