@@ -14,3 +14,6 @@ else
 echo "The chest is locked up tight the only way to open it seems to come from the skull shaped lock engraved on the surface."
 sleep 1;
 fi
+echo "press any button to continue"
+read 
+clear
