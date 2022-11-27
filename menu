@@ -3,6 +3,7 @@
 location=$PWD
 
 function reset_var () {	
+bridgeraise="no"
 priority="0"
 attack="5"
 health="20"
@@ -22,6 +23,7 @@ merlintalk="no"
 siren="no"
 basilisk="no"
 
+export bridgeraise
 export health
 export attack
 export defense
