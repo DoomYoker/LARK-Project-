@@ -2,10 +2,15 @@
 
 #(inside barn) - action to go inside barn
 
-read -p "You slowly approach the barn. Seeing the doors wide open, you enter to see an open area with vacant stables and hay bales sprawled out. Nobody is around, but you see something poking out behind a few bales of hay. Do you look inside or head back outside?[inside or outside]: " selection2
+read -p "You slowly approach the barn. 
+Seeing the doors wide open, you enter to see an open area with vacant stables and hay bales sprawled out. 
+Nobody is around, but you see something poking out behind a few bales of hay.
+Do you look inside or head back outside?[inside or outside]: " selection2
     case $selection2 in
     inside)
-          echo "Digging through the hay bales, you push them apart to uncover a sealed chest. This chest shows to have an engraved lock of a skull. You take note of this as you decide to leave the barn, finding nothing else notable."
+          echo "Digging through the hay bales, you push them apart to uncover a sealed chest. This chest shows to have an engraved lock of a skull. 
+          You take note of this as you decide to leave the barn, finding nothing else notable."
+          mv .?chest \?chest
           ;;
     outside)
           echo "You choose to note mess with the thing inside, as it could be potentially dangerous. You then leave the barn."
