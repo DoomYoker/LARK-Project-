@@ -24,5 +24,6 @@ sleep 1;
 echo "She should be located in the";tput bold; echo " cave"; tput sgr0; echo " I originally called to you at. The phoenix is now flying with you."
 mv .phoenix /phoenix
 mv phoenix /$collected
+mv $location/
 sleep 1;
 fi
