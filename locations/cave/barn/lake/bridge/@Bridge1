@@ -17,6 +17,9 @@ sleep 1;
 echo "looking at the giant moat before you, a sparkling flask of a deep maroon color stands out to you against the moats bank."
 mv .~strength-potion /~strength-potion
 bridgeraise="yes";
+if [ -e \~Potion-Of-Bezoar $location/collected ]; then
+mv $location/locations/
+fi
 echo "press any button to continue"
 read 
 clear
