@@ -120,7 +120,7 @@ while [[ $REPLY != "none" ]]
 do
 echo "Enter item to be used or enter 'none' to return to menu (be sure to enter the item exactly as entered above)"
 read item
-case item in 
+case $item in 
 Healing-Potion) #change health in player data
 
 ;;
@@ -137,7 +137,8 @@ echo "No item used"
 *)
 echo "Invalid input - be sure to use a valid item"
 ;;
-esac}
+esac
+}
 collected=$location/collected
 tput smcup
 while [[ $REPLY != "c" ]]
