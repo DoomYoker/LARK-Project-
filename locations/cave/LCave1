@@ -1,0 +1,11 @@
+#!bin/bash/
+
+#(Entering Cave) - move to Cave Directory
+
+echo "As you arrive in the cave to the crossroads, your amulet begins to glow as the phoenix decides to take off ahead and fly through the right path. This was the one you scurried back out of."
+echo "Approaching the path, you come to notice that the screams you heard are now silent. You can make out the light of the phoenix in the distance, to where the big shadowy figure was. You slowly approach to realize that this being was mearly just a griffen. A mother griffen in fact, for which a gigantic nest lay under her. She seems to be caressing its empty bowl as the phoenix sits next to it, nodding to you to come closer. You move closer, slowly approaching as the mother bird glances at you and calls out."
+echo "You slowly raise your hand, as the mother bird lowers her head. You move it over her head and carefully pat it, noticing the tears from her eyes. As you see the sad state the mother bird is in, the amulet springs from your chest and floats to your side facing the nest. It then turns to you."
+tput bold; echo "Merlin: "; tput srg0; echo "Poor innocent creature. Who would have done something like this."
+echo "The amulet turns to see the skull on the ground. It then turns back to you."
+tput bold; echo "Merlin: "; tput srg0; echo "Those pesky imps. The basilisk must have sent them. I will send the phoenix off to scout for their wereabouts. Make your way back to me. I can give you a location as you travel."
+echo "You slowly bring your hand back as the phoenix flys out of the cave. The griffen lays her head back down, sighing. You turn back and head to the cross roads and out of the cave."
