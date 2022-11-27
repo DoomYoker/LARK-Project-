@@ -63,3 +63,4 @@ sleep 1
       - This allows you to trigger scripts (scripts will begin with a !)
       ex. . !chest"
 cd $location/locations/cave
+break
