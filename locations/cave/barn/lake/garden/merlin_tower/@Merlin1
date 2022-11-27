@@ -10,13 +10,14 @@ echo "You see the bird take off and fly towards the entrance on the ground, as t
 sleep 1;
 echo "You approach the open door and see a man emerge. He appears to be of older age, wearing a matching gown and pointed hat."
 sleep 1;
-echo "You stop as he slowly waddles to you."
+echo "You stop as he slowly strides to you."
 sleep 1;
 tput bold; echo "Merlin: "; tput srg0; echo "I was the one talking to you through the talisman you are wearing. My name is Merlin."
 sleep 1;
 echo "I am a protector of these lands against evil. This is my companion. I had him lead you here to me to ask you, $name, for help."
 sleep 1;
-while [[ $REPLY != 0 ]]; do
+while [[ $REPLY != 0 ]] 
+do
 cat <<EOF
         1. Why do you need me to help you?
         2. What do you need me to do?
@@ -30,9 +31,11 @@ EOF
             sleep 1;
             ;;
         2)
-            echo "I need you to go on a fetch quest. The basilisk is a prickly fellow. His gaze is a deadly weapon."
+            echo "I need you to go retrieve an important ingredient for a potion. 
+            The basilisk is a deadly foe. His gaze is deadly and your only chance for survival is this potion."
             sleep 1;
-            echo "One glance and your done for. I can make invulnerable if you can get the basil herb. There is a chest-locked away with this herb."
+            echo "One glance and your done for. With this potion I can make you immune to his gaze if you can get the basil herb.
+            There is a chest-locked away with this herb."
             sleep 1;
             echo "However, there is a key you need for it. It should just be down towards cemetery along the path at the garden you did not take."
             sleep 1;
