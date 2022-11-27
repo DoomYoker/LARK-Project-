@@ -18,7 +18,7 @@ echo "looking at the giant moat before you, a sparkling flask of a deep maroon c
 mv .+strength-potion /+strength-potion
 bridgeraise="yes";
 if [ -e \+Potion-Of-Bezoar $location/collected ]; then
-mv $location/locations/
+mv $location/locations/cave/barn/lake/garden/merlin_tower/.@Merlin4 $location/locations/cave/barn/lake/garden/merlin_tower/@Merlin4
 fi
 echo "press any button to continue"
 read 
