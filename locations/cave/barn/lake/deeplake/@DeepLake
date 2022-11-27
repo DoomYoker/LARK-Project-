@@ -46,5 +46,6 @@ read -p "What do you do?[continue or notice]: " selection5
               tput bold; echo "This part is not implemented yet. The final product will show a system of confrontation."; tput sgr0;
               echo "They all leave in fear as you stand there in suprise of your successful vanquish. You look at the sword and see the engraving on the side | Excalibur |. "
               ;;
+              Attack="10"
               
 esac
