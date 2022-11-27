@@ -101,6 +101,8 @@ EOF
             ;;
         2)
             echo "I need you to go on a fetch quest. The basilisk is a prickly fellow. His gaze is a deadly weapon. One glance and your done for. I can make invulnerable if you can get the basil herb. There is a chest-locked away with this herb. However, there is a key you need for it. It should just be down towards cemetery along the path at the garden you did not take."
+            ;;
+esac
 -----------------------------------------------------
 (To the cemetery) - move to Cemetery Directory
 
