@@ -94,7 +94,7 @@ function move_items() {
   mv $location/collection/basilisk $location/collected 2>/dev/null
   rm $location/collection/.basilisk 2>/dev/null
 }
-talisman() { less "$location/scripts/listofcommands"; }
+amulet() { less "$location/scripts/listofcommands"; }
 function equip() { 
 if ( $1 = "~rusted-platemail" )
 then
