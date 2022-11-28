@@ -68,3 +68,8 @@ echo "She soars into the sky, showing a beautiful view of the safer landscape."
 sleep 1;
 echo "As you travel along, you are glad that you were able to do justice for all those living in the great land of Cornwall."
 sleep 1;
+
+tput bold; echo "You WIN, congratulations this is the end of the current build of Legend of Cornwall.
+We are working to add in more combat like that seen in the cemetery or just changing it up completely.
+We hope you enjoyed the game and hope to add more later."
+
