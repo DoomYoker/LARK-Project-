@@ -75,7 +75,7 @@ read -p "Do you look inside or head back outside?[inside or outside]: " selectio
           sleep 1;
           echo "(be wary with moving items because if you move anything without an ~ infront of it you can break this game)"
           sleep 1;
-          echo " -> OPEN collected: ls \$collected"
+          echo " -> OPEN collected: ls /\$collected"
           sleep 1;
           echo "equip &rusted-platemail"
           sleep 1;
