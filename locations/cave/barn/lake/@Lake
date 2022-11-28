@@ -61,6 +61,6 @@ EOF
               ;;
 esac
 done
-echo "press any button to continue"
-read 
+echo "Press any button to continue: "
+read hi
 clear
