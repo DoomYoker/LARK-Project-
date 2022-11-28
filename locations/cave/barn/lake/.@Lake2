@@ -4,5 +4,5 @@ sleep 1;
 echo "As you take in the splendor of the now empty looking lake you clearly glimpse a large whetstone laying near where the lady once was."
 mv .+whetstone /+whetstone
 echo "press any button to continue"
-read 
+read hi
 clear
