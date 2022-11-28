@@ -13,7 +13,7 @@ sleep 1;
 tput bold; echo "Centaur: "; tput srg0; echo "Take me to them."
 sleep 1;
 echo "The centaur statue hops down from the pedastal it was standing on. It has now joined your party."
-mv .+centaur /+centaur
+mv .+centaur \+centaur
 mv +centaur /$collected
 sleep 1;
 echo "Now that the centaur has hopped off it's pedestal you can see a shiny set of armor in a gap beneath the centaurs old resting place."
