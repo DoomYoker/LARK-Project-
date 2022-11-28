@@ -85,7 +85,8 @@ read -p "Do you look inside or head back outside?[inside or outside]: " selectio
           sleep 1;
           echo "by doing so this will remove the platmail"
           sleep 1;
-          echo "Further digging through the insides of the barn you find some suspicious looking hay bales."
+          tput bold; echo "Currently equip isn't working so be sure to not use this command"
+          tput sgr0; echo "Further digging through the insides of the barn you find some suspicious looking hay bales."
           sleep 1;
           echo "Digging through the hay bales, you push them apart to uncover a sealed chest. This chest shows to have an engraved lock of a skull."
           sleep 1;
