@@ -1,7 +1,7 @@
 #!bin/bash/
 
 #(Arriving at barn) - move to Barn Directory 
-if ( chestopen = "yes" )
+if [ -e +key $collected ]
 then
 echo "You come across the chest sitting in the corner of the barn."
 sleep 1;
