@@ -41,7 +41,8 @@ EOF
             ;;
         2)
             echo "I need you to go retrieve an important ingredient for a potion. 
-            The basilisk is a deadly foe. His gaze is deadly and your only chance for survival is this potion."
+            The reason for this is a monstrous creature called the basilisk that is bringing greats evils to this valley.
+            The basilisk is a formidable foe. His gaze is deadly and your only chance for survival is this potion."
             sleep 1;
             echo "One glance and your done for. With this potion I can make you immune to his gaze if you can get the basil herb.
             There is a chest-locked away with this herb."
