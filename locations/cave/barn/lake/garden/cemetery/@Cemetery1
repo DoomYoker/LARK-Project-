@@ -1,33 +1,81 @@
-#!bin/bash/
-
+#!/bin/bash
 #(To the cemetery) - move to Cemetery Directory
 
 echo "You soon enter the cemetery and see tombstones."
-sleep 1;
+sleep 1
 echo "You look around and see another similar statue to the human-horse in the garden."
-sleep 1;
 echo "This one seems to resemble the Lady of the Lake, with her hand reaching out."
-sleep 1;
 echo "In her hand, she has hold of a key mentioned by Merlin."
-sleep 1;
 echo "You move towards it, but stop when the ground begins to shake."
-sleep 1;
 echo "You see hands popping out from some of the graves."
-sleep 1;
 echo "You begin to see skeletons climbing out and moving towards the statue, as if they are trying to protect it."
-sleep 1;
 echo "Three skeletons rush towards you."
-sleep 1;
-tput bold; echo "This part is not implemented yet. The final product will show a system of confrontation."; tput sgr0;
-sleep 1;
-echo "You began to feel overwhelmed with fighting, as more of them rise from the graves and come at you."
-sleep 1;
-echo "However, you are able to push them off of yourself enough to move away."
-sleep 1;
-echo "You turn around and leave hastily, hoping to ask Merlin for help."
-sleep 1;
-mv $location/locations/cave/barn/lake/garden/merlin_tower/.@Merlin2 $location/locations/cave/barn/lake/garden/merlin_tower/@Merlin2
+echo " "
+echo " "
 
-echo "Press any button to continue: "
-read hi
-clear
+echo "You have two choices: "
+echo "A) Retreat and keep exploring the cemetary    B) Fight the three skeletons"
+read ans
+if [ $ans = 'B' ]
+then
+echo " "
+echo " "
+echo "You will fight the skeletons by rolling random numbers between 0-10, the skeletons each have a health of 10"
+echo "Each time you strike one skeleton it hits back with a hit of 5, you have a health of 25. "
+echo "Basically, you must roll 30 total points in 5 turns (each turn is up to 10 points) Good Luck!"
+PlayerHealth=25;
+SkeletonHealthTotal=30;
+NumberRolls=0;
+AttacksLeft=5;
+while [ $NumberRolls -lt 6 ]
+do
+AttacksLeft=$((5-$NumberRolls))
+echo " "
+echo "Player Health: $PlayerHealth   Skeleton Health Total: $SkeletonHealthTotal   Attacks Left:  $AttacksLeft "
+echo "Press A to Attack, and B to Surrender: "
+read response
+if [ $response = 'A' ]
+then
+DIV=$((10+1))
+RandAttack=$(($RANDOM%$DIV))
+SkeletonHealthTotal=$(($SkeletonHealthTotal-$RandAttack))
+DIV2=$((10+1))
+RandAttack2=$(($RANDOM%$DIV2))
+PlayerHealth=$(($PlayerHealth-$RandAttack2))
+else
+echo " "
+echo "You have surrendered, take some time to heal, then try your luck again by using ./Cemetary1 in the cemetary"
+NumberRolls=6
+fi
+if [ $SkeletonHealthTotal -le 19 ]
+then
+if [ $SkeletonHealthTotal -le 9 ]
+then
+echo "Only one skeleton remains!"
+else
+echo "Only two skeletons remain!"
+fi
+fi
+if [ $PlayerHealth -le 0 ]
+then
+echo " "
+echo "You have been defeated"
+NumberRolls=6
+fi
+if [ $SkeletonHealthTotal -le 0 ]
+then
+echo " "
+echo "Congratulations, You have defeated all three skeletons"
+NumberRolls=6
+fi
+NumberRolls=$(($NumberRolls+1))
+done
+echo " "
+echo "Good luck exploring the cemetary, use ./Cemetery1 to"
+echo "Interact with the three skeletons again in the future"
+else
+echo " "
+echo " "
+echo "You have chosen to reatreat and keep exploring the cemetary. Good luck, use ./Cemetary1 to"
+echo "Interact with the three skeletons again in the future"
+fi
