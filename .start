@@ -120,5 +120,5 @@ read -p "Looking forward, our hero decides whether to go left as the amulet told
 
 cd $location/locations/cave
 echo "Press any button to continue: "
-read
+read hi
 break
