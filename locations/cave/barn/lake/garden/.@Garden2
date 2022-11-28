@@ -4,7 +4,7 @@
 
 echo "You enter the garden, seeing the phoenix sitting again on the statue."
 sleep 1;
-echo "As you move closer, you see the phoenix peck the the of the statue's head." 
+echo "As you move closer, you see the phoenix peck the top of the statue's head." 
 sleep 1;
 echo "The statue becomes animated as it arises from a slumber of who knows how long."
 sleep 1;
