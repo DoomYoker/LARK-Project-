@@ -1,7 +1,7 @@
 #!/bin/bash
 
 location=$PWD
-collected=$PWD/collected
+collected=$location/collected
 
 function reset_var () {	
 bridgeraise="no"
