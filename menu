@@ -4,6 +4,7 @@ location=$PWD
 collected=$location/collected
 
 function reset_var () {	
+chestopen="no"
 bridgeraise="no"
 priority="0"
 attack="5"
@@ -24,6 +25,7 @@ merlintalk="no"
 siren="no"
 basilisk="no"
 
+export chestopen
 export bridgeraise
 export health
 export attack
