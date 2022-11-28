@@ -23,8 +23,8 @@ sleep 1;
 echo "The defeated commander uses its last strength to crawl towards the key, but before it can reach the key it gets rammed by the centaur statue."
 sleep 1;
 echo "This causes the skeleton to explode into bones and fragments of it's once great armor that are flung everywhere, the key being left shining on the tombstone"
-mv .+key /+key
-chestopen="yes";
+mv .+key \+key
+
 echo "Press any button to continue: "
 read hi
 clear
