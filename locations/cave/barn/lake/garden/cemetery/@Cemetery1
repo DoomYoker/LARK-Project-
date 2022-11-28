@@ -79,3 +79,4 @@ echo " "
 echo "You have chosen to reatreat and keep exploring the cemetary. Good luck, use ./Cemetary1 to"
 echo "Interact with the three skeletons again in the future"
 fi
+mv $location/locations/cave/barn/lake/garden/merlin_tower/.@Merlin2 $location/locations/cave/barn/lake/garden/merlin_tower/@Merlin2
