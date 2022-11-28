@@ -92,8 +92,8 @@ read -p "Do you look inside or head back outside?[inside or outside]: " selectio
           mv .@chest \@chest
           ;;
 esac
-echo "press any button to continue"
-read
+echo "Press any button to continue: "
+read hi
 clear
 #(exiting barn) - action to go outside of barn
 
