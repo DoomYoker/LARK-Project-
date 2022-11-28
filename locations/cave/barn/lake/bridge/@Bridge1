@@ -13,7 +13,7 @@ sleep 1;
 echo "You cannot cross over to the castle."
 sleep 1;
 echo "looking at the giant moat before you, a sparkling flask of a deep maroon color stands out to you against the moats bank."
-mv .+Strength-Potion /+Strength-Potion
+mv .+Strength-Potion \+Strength-Potion
 bridgeraise="yes";
 if [ -e \+Potion-Of-Bezoar $location/collected ]
 then
