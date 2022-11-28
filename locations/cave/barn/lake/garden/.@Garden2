@@ -17,5 +17,5 @@ mv .+centaur /+centaur
 mv +centaur /$collected
 sleep 1;
 echo "Now that the centaur has hopped off it's pedestal you can see a shiny set of armor in a gap beneath the centaurs old resting place."
-mv .+platemail /+platemail
+mv .+platemail \+platemail
 mv $location/locations/cave/barn/lake/garden/cemetery/.@Cemetery2 $location/locations/cave/barn/lake/garden/cemetery/@Cemetery2 
