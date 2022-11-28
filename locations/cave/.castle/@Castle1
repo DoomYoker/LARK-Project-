@@ -27,9 +27,9 @@ echo "You pull out Excalibur and raise it high, for which the basilisk immediate
 sleep 1;
 echo "You see him full charge at you, engaging yourself into a final showdown."
 sleep 1;
-tput bold; echo "This part is not implemented yet. The final product will show a system of confrontation."; tput sgr0;
+tput bold; echo "This part is not implemented yet. The final product will show a system of confrontation."
 sleep 1;
-echo "The snake readies his last move, wrapping his tail around you and lifting you upwards."
+tput sgr0; echo "The snake readies his last move, wrapping his tail around you and lifting you upwards."
 sleep 1;
 echo "You get whiplash, but immediately maintain you senses as you struggle to break free."
 sleep 1;
