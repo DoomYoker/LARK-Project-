@@ -16,7 +16,7 @@ tput bold; echo "Merlin: "; tput srg0; echo "I can see that you have everything 
 sleep 1;
 echo "It should take you directly to the castle and face off with the credent."
 sleep 1;
-if [ bridgeraise = "yes" ]
+if [[ "$bridgeraise" = "yes" ]]
 then
 sleep 1;
 echo "You tell Merlin that the basilisk had risen the drawbridge."
