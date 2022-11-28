@@ -12,3 +12,7 @@ sleep 1;
 echo "As you both fly through the over the moat, you notice the basilisk is inside a tower. You scout and see an open balcony, pointing the griffen to land there."
 sleep 1;
 cd .castle
+
+echo "Press any button to continue: "
+read hi
+clear
