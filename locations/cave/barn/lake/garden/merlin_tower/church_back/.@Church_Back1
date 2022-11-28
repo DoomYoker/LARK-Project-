@@ -12,9 +12,9 @@ echo "Below, you see three imps crowding around the egg placed on the pulpit. Yo
 sleep 1;
 echo "They get alarmed and engage into combat."
 sleep 1;
-tput bold; echo "This part is not implemented yet. The final product will show a system of confrontation."; tput sgr0;
+tput bold; echo "This part is not implemented yet. The final product will show a system of confrontation."
 sleep 1;
-echo "The get scared and scurry away out the front door, leaving the egg alone."
+tput sgr0; echo "The get scared and scurry away out the front door, leaving the egg alone."
 mv .+egg \+egg
 sleep 1;
 echo "With the imps gone and the egg before you, you take a look around the inside of the church."
