@@ -26,7 +26,7 @@ tput bold; echo "Merlin: "; tput srg0; echo "This is not good. He is growing war
 sleep 1;
 echo "She should be located in the";tput bold; echo " cave"; tput sgr0; echo " I originally called to you at. The phoenix is now flying with you."
 mv .+phoenix /+phoenix
-mv \+phoenix /$collected
+mv +phoenix /$collected
 mv $location/locations/cave/.@Cave $location/locations/cave/@Cave
 sleep 1;
 fi
