@@ -23,3 +23,6 @@ echo "One glowing a deep maroon and another a bright reddish orange"
 mv .+Strong-Health-Potion \+Strong-Health-Potion
 mv .+Strong-Strength-Potion \+Strong-Strength-Potion
 mv $location/locations/cave/.@Cave2 $location/locations/cave/@Cave2 
+echo "Press any button to continue: "
+read hi
+clear
