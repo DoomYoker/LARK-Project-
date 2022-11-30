@@ -69,8 +69,6 @@ function move_items() {
 }
 amulet() { less "$location/scripts/listofcommands"; }
 function equip() { 
-
-
 echo "Enter armor to be equipped (if it is inside of collected)"
 cat <<EOF
 0. none
@@ -82,7 +80,6 @@ read choice
 case $choice in
 0)
 echo "no change in defense"
-break
 ;;
 1)
 if [ -e "$collected/+rusted-platemail" ]
@@ -93,7 +90,6 @@ rm $collected/$1
 else 
 echo "The chosen platemail is not currently collected"
 fi
-break
 ;;
 2)
 if [ -e "$collected/+platemail" ]
@@ -104,7 +100,6 @@ rm $collected/+platemail
 else 
 echo "The chosen platemail is not currently collected"
 fi
-break
 ;;
 3)
 if [ -e "$collected/+blessed-platemail" ]
@@ -115,8 +110,8 @@ rm $collected/$1
 else 
 echo "The chosen platemail is not currently collected"
 fi
-break
 ;;
+break
 }
 #function quit() {}
 
