@@ -34,6 +34,14 @@ read -p "$name feels intrigued to pickup this item. But will he do so?[yes or no
 		echo "When doing so, the identified amulet nearly blinds him, illuminating the room."
 		sleep 1;
 		;;
+	*)
+		echo "$name being unsure of what to do with the amulet find himself picking it up"
+		sleep 1;
+		echo "Bringing it to his face, he sees that it is an unknown amulet with a giant gemstone in the center."
+		sleep 1;
+		echo "He carefully caresses it and lays his thumb over the gem, evoking a bright light that illuminates the room."
+		sleep 1;
+		;;
 	esac
 echo "As the lights shine to reveal the walls of a cave, the amulet begins to vibrate."
 sleep 1;
@@ -58,13 +66,16 @@ sleep 1;
 read -p "Looking forward, our hero decides whether to go left as the amulet told him, or follow right instead? [left or right]: " splitcave
 	case $splitcave in
 	left)
-		echo "Feeling as if the amulet is helping, $name decides to head left. Travelling down this path, the hero stumbles upon an exit to the outside."
+		echo "Feeling as if the amulet is helping, $name decides to head left."
+		echo "Travelling down this path, the hero stumbles upon an exit to the outside."
 	      	sleep 1;
 		;;
 	right)
 		echo "Feeling as if the amulet could harm him, $name decides to try and navigate the right path."
 		sleep 1;
-		echo "As he approaches the right path, he notices that the ground along the path lays a skull of a creature with large eye sockets and pointed horns upon the top."
+		echo "As he approaches the right path, he notices that the ground along the path lays a skull of a creature."
+		sleep 1;
+		echo "The skulls features stand out as the inhuman thing has large eye sockets and pointed hornsupon the top."
 		sleep 1;
 		echo "As this sends a shiver down his spine, he chooses to continue pressing on."
 		sleep 1;
@@ -79,6 +90,9 @@ read -p "Looking forward, our hero decides whether to go left as the amulet told
 		echo "He then comes towards a big cave opening leading to the outside."
 		sleep 1;
 		;;
+	*)
+		echo "Unsure of the choice before him, our hero decides that the amulet is his bet bet and decides to head left."
+		echo "Travelling down this path, the hero stumbles upon an exit to the outside."
 	esac
 	echo "He quickly leaves to reveal open fields of grass and lush trees."
 	sleep 1;
@@ -94,26 +108,28 @@ read -p "Looking forward, our hero decides whether to go left as the amulet told
 	sleep 1;
       	echo "		-> This allows you to trigger scripts (scripts will begin with a @)"
 	sleep 1;
-     	 echo "	ex. . @chest"
+     	 echo "	ex.) . @chest"
 	 sleep 1;
       	echo "cd <locationname>"
 	sleep 1;
      	 echo "		-> This will allow you to move to this new location"
 	 sleep 1;
-     	 echo "	ex. cd cave"
+     	 echo "	ex.) cd cave"
 	 sleep 1;
       	echo "cd .."
 	sleep 1;
 	echo "		-> This will allow you to go back to the previous location"
 	sleep 1;
-	echo "	ex. returning from barn to cabin"
+	echo "	ex.) returning from barn to cabin"
 	sleep 1;
 	echo "cat <itemName>"
 	sleep 1;
 	echo "		-> This will allow you to read a brief description on each different item"
 	sleep 1;
+	echo "		(if you wish to look at in item that you have collected instead enter)"
+	echo "cat \$collected/itemName"
 	echo "	(Be sure not to use this on any scripts as that will display things hidden away)"
-	echo "	ex. cat \$collected/+Rusted-Platemail"
+	echo "	ex.) cat \$collected/+Rusted-Platemail"
 	sleep 1;
 	echo "ls"
 	sleep 1;
