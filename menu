@@ -86,7 +86,7 @@ function equip() {
 			then
 			defense+=2
 			echo "Defense increased"
-			rm $collected/$1
+			rm $collected/+rusted-platemail
 			else 
 			echo "The chosen platemail is not currently collected"
 			fi
@@ -106,7 +106,7 @@ function equip() {
 			then
 			defense+=6
 			echo "Defense increased"
-			rm $collected/$1
+			rm $collected/+blessed-platemail
 			else 
 			echo "The chosen platemail is not currently collected"
 			fi
