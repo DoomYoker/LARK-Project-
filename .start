@@ -110,7 +110,9 @@ read -p "Looking forward, our hero decides whether to go left as the amulet told
 	sleep 1;
 	echo "cat <itemName>"
 	sleep 1;
-	echo "		-> This will allow you to read a brief description on each different item (Be sure not to use this on any scripts as that will display things hidden away)"
+	echo "		-> This will allow you to read a brief description on each different item"
+	sleep 1;
+	echo "	(Be sure not to use this on any scripts as that will display things hidden away)"
 	echo "	ex. cat \$collected/+Rusted-Platemail"
 	sleep 1;
 	echo "ls"
