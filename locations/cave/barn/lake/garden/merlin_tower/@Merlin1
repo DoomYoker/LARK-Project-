@@ -37,6 +37,9 @@ EOF
             sleep 1;
             echo "However, there is a key you need for it. It should just be down towards the "; tput bold; echo "cemetery"; tput sgr0; echo "along the path at the garden you did not take."
             sleep 1;
+            echo "Press any button to continue: "
+            read hi
+            clear
             break
             ;;
         2)
@@ -49,6 +52,9 @@ EOF
             sleep 1;
             echo "However, there is a key you need for it. It should just be down towards cemetery along the path at the garden you did not take."
             sleep 1;
+            echo "Press any button to continue: "
+            read hi
+            clear
             break
             ;;
 esac
