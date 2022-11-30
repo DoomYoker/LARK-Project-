@@ -13,3 +13,6 @@ sleep 1;
 echo "Go back there, my phoenix should already have awoken them."
 sleep 1;
 mv $location/locations/cave/barn/lake/garden/.@Garden2 $location/locations/cave/barn/lake/garden/@Garden2
+echo "Press any button to continue: "
+read hi
+clear
