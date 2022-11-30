@@ -30,3 +30,6 @@ mv +phoenix /$collected
 mv $location/locations/cave/.@Cave $location/locations/cave/@Cave
 sleep 1;
 fi
+echo "Press any button to continue: "
+read hi
+clear
