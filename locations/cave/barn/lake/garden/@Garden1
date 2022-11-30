@@ -22,5 +22,10 @@ read -p "Which path do you go?[left or right]: " selectionA
             echo "As you listen to the words of the unknown voice, you proceed right onwards to where the phoenix is going."
             sleep 1;
             ;;
+       *)
+           echo "Unsure of which path to follow you find yourself following after the bird"
+           sleep 1;
+           ;;
 esac
 cd merlin_tower
+
