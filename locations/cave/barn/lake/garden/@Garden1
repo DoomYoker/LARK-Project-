@@ -28,4 +28,7 @@ read -p "Which path do you go?[left or right]: " selectionA
            ;;
 esac
 cd merlin_tower
+echo "press any button to continue"
+read hi
+clear
 
