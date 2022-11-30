@@ -1,7 +1,7 @@
 #!/bin/bash
 #(To the cemetery) - move to Cemetery Directory
 
-echo "You soon enter the cemetery and see tombstones."
+echo "You enter the cemetery and see rows of tombstones."
 sleep 1
 echo "You look around and see another similar statue to the human-horse in the garden."
 echo "This one seems to resemble the Lady of the Lake, with her hand reaching out."
@@ -83,3 +83,7 @@ echo "After your encounter with the tree skeletons, you are forced to back away 
 sleep 1;
 echo "You hurry out of the graveyard to tell Merlin of this new development."
 mv $location/locations/cave/barn/lake/garden/merlin_tower/.@Merlin2 $location/locations/cave/barn/lake/garden/merlin_tower/@Merlin2
+echo "press any button to continue"
+read hi
+clear
+
