@@ -88,13 +88,7 @@ else
 	echo" Invalid equip try equipping a piece of platemail"
 fi
 }
-function quit() {
-
-
-
-
-
-}
+#function quit() {}
 
 tput smcup
 while [[ $REPLY != "c" ]]
