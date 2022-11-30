@@ -11,3 +11,6 @@ mv .+phoenix /+phoenix
 mv \+phoenix /$collected
 mv $location/
 sleep 1;
+echo "Press any button to continue: "
+read hi
+clear
