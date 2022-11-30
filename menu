@@ -84,7 +84,7 @@ case $choice in
 	1)
 		if [ -e "$collected/+rusted-platemail" ]
 		then
-		defense += 2
+		defense+=2
 		echo "Defense increased"
 		rm $collected/$1
 		else 
@@ -94,7 +94,7 @@ case $choice in
 	2)
 		if [ -e "$collected/+platemail" ]
 		then 
-		defense += 4
+		defense+=4
 		echo "Defense increased"
 		rm $collected/+platemail
 		else 
@@ -104,7 +104,7 @@ case $choice in
 	3)
 		if [ -e "$collected/+blessed-platemail" ]
 		then
-		defense += 6
+		defense+=6
 		echo "Defense increased"
 		rm $collected/$1
 		else 
