@@ -5,10 +5,10 @@ collected=$location/collected
 
 function reset_var () {	
 bridgeraise="no"
-priority="0"
-attack="5"
-health="20"
-defense="1"
+priority=0
+attack=5
+health=20
+defense=0
 
 
 
@@ -88,7 +88,7 @@ break
 1)
 if [ -e "$collected/+rusted-platemail" ]
 then
-defense="0.7"
+defense += 2
 echo "Defense increased"
 rm $collected/$1
 else 
@@ -99,7 +99,7 @@ break
 2)
 if [ -e "$collected/+platemail" ]
 then 
-defense="0.5"
+defense += 4
 echo "Defense increased"
 rm $collected/+platemail
 else 
@@ -110,7 +110,7 @@ break
 3)
 if [ -e "$collected/+blessed-platemail" ]
 then
-defense="0.3"
+defense += 6
 echo "Defense increased"
 rm $collected/$1
 else 
