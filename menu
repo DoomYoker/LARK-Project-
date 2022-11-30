@@ -70,8 +70,7 @@ function move_items() {
 amulet() { less "$location/scripts/listofcommands"; }
 function equip() { 
 
-while [[ $REPLY != "0" ]]
-do 
+
 echo "Enter armor to be equipped (if it is inside of collected)"
 cat <<EOF
 0. none
@@ -118,7 +117,6 @@ echo "The chosen platemail is not currently collected"
 fi
 break
 ;;
-done
 }
 #function quit() {}
 
