@@ -38,6 +38,9 @@ EOF
               sleep 1;
               echo "She proceeds to turn around, walking gracefully into the water to see ripples dissipate."
               sleep 1;
+              echo "Press any button to continue: "
+              read hi
+              clear
               break
               ;;
           2)
@@ -57,12 +60,13 @@ EOF
               sleep 1;
               echo "She proceeds to turn around, walking gracefully into the water to see ripples dissipate."
               sleep 1;
+              echo "Press any button to continue: "
+              read hi
+              clear
               break
               ;;
             *)
               ;;
 esac
 done
-echo "Press any button to continue: "
-read hi
-clear
+
