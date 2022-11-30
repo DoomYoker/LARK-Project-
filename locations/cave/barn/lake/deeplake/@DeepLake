@@ -59,9 +59,38 @@ read -p "What do you do?[continue or notice]: " selection5
               echo "They all leave in fear as you stand there in suprise of your successful vanquish. You look at the sword and see the engraving on the side | Excalibur |. "
               sleep 1;
               ;;
+          *) 
+              echo "Unsure of what you do you are instinctively drawn to the beautiful song that is coming from all around you"
+              sleep 1;
+              echo "You turn to see a fish-like human being, staring at you."
+              sleep 1;
+              echo "You feel the urgue to head towards her."
+              sleep 1;
+              echo "But as soon as you take one step down towards her, a hand grabs your ankle as a terrifying hiss comes from below."
+              sleep 1;
+              echo "Startled, you look down to see the menacing physique of a similar creature with a firm grasp on your foot, 
+              hissing and preparing to rip your foot apart with it's razor sharp teeth. "
+              sleep 1;
+              echo "You manage the strength to yank your foot away and glance quickly around to see multiple mermaids coming towards you."
+              sleep 1;
+              echo "You quickly climb the mound to get higher ground, seeing the sword in a stone. "
+              sleep 1;
+              echo "You scramble towards the stone and immediately try pulling it out, upon which the sword slides out smoothly. "
+              sleep 1;
+              echo "The creatures all hiss at you as you aim it in their directions, drawing you into a battle against three different sirens."
+              sleep 1;
+              mv .+excalibur \+excalibur
+              mv +excalibur \$collected
               
+              attack="10"
+              tput bold; echo "This part is not implemented yet. The final product will show a system of confrontation."; tput sgr0;
+              sleep 1;
+              echo "They all leave in fear as you stand there in suprise of your successful vanquish. You look at the sword and see the engraving on the side | Excalibur |. "
+              sleep 1;
+              ;;
+          
 esac
 mv $location/locations/cave/barn/lake/.@Lake2 $location/locations/cave/barn/lake/@Lake2
 echo "press any button to continue"
-read 
+read hi
 clear
