@@ -69,17 +69,17 @@ function move_items() {
 }
 amulet() { less "$location/scripts/listofcommands"; }
 function equip() { 
-if ( $1 = "~rusted-platemail" )
+if ( $1 = "+rusted-platemail" )
 then
 defense="0.7"
 echo "Defense increased"
 rm $collected/$1 
-elif ( $1 = "~platemail" )
+elif ( $1 = "+platemail" )
 then 
 defense="0.5"
 echo "Defense increased"
 rm $collected/$1 
-elif ( $1 = "~blessed-platemail" )
+elif ( $1 = "+blessed-platemail" )
 then
 defense="0.3"
 echo "Defense increased"
@@ -88,6 +88,14 @@ else
 	echo" Invalid equip try equipping a piece of platemail"
 fi
 }
+function quit() {
+
+
+
+
+
+}
+
 tput smcup
 while [[ $REPLY != "c" ]]
 do
