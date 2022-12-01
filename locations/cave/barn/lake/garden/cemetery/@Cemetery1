@@ -23,7 +23,7 @@ echo " "
 echo "You will fight the skeletons by rolling random numbers between 0-10, the skeletons each have a health of 10"
 echo "Each time you strike one skeleton it hits back with a hit of 5, you have a health of 25. "
 echo "Basically, you must roll 30 total points in 5 turns (each turn is up to 10 points) Good Luck!"
-PlayerHealth=25;
+PlayerHealth=health;
 SkeletonHealthTotal=30;
 NumberRolls=0;
 AttacksLeft=5;
@@ -69,6 +69,9 @@ echo "Congratulations, You have defeated all three skeletons"
 NumberRolls=6
 fi
 NumberRolls=$(($NumberRolls+1))
+echo "with the skeletons defeated you suddenly feel a burst of energy"
+
+health+=5;
 done
 echo " "
 echo "Good luck exploring the cemetary, use ./Cemetery1 to"
