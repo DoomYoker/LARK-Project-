@@ -68,6 +68,7 @@ function move_items() {
   rm $location/collection/.basilisk 2>/dev/null
 }
 amulet() { less "$location/scripts/listofcommands"; }
+#function useItem() {}
 function equip() { 
 	echo "Enter armor to be equipped (if it is inside of collected)"
 	echo "
