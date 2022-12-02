@@ -150,7 +150,7 @@ EOF
 	echo "Excellent. Now it is time to tell the story of our new hero $name."
 	sleep 1;
 	echo "(If at any point you need to exit the game, just type 'quit' .)"
-	PS1="[ $name: $health $attack $defense ]
+	PS1="[ $name: $health $attack $defense ]"
 	echo "[ $name: $health $attack $defense ]"
 	echo "            ^This shows your current health"
 	sleep 1;
