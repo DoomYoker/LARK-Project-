@@ -85,7 +85,7 @@ function equip() {
 		1)
 			if [ -e "$collected/+rusted-platemail" ]
 			then
-			defense=$"(( $defense + 2 ))";
+			defense=$(( $defense + 2 ));
 			echo "Defense increased"
 			rm $collected/+rusted-platemail
 			PS1="[ $name: $health $attack $defense ] "
@@ -96,7 +96,7 @@ function equip() {
 		2)
 			if [ -e "$collected/+platemail" ]
 			then 
-			defense=$"(( $defense + 4 ))";
+			defense=$(( $defense + 4 ));
 			echo "Defense increased"
 			rm $collected/+platemail
 			PS1="[ $name: $health $attack $defense ] "
@@ -107,7 +107,7 @@ function equip() {
 		3)
 			if [ -e "$collected/+blessed-platemail" ]
 			then
-			defense=$"(( $defense + 6 ))";
+			defense=$(( $defense + 6 ));
 			echo "Defense increased"
 			rm $collected/+blessed-platemail
 			PS1="[ $name: $health $attack $defense ] "
