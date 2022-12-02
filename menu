@@ -158,10 +158,10 @@ EOF
 	echo "  ^This shows your current health"
 	sleep 1;
 	echo "[ $health $attack $defense ] "
-	echo "      ^This shows your current attack"
+	echo "     ^This shows your current attack"
 	sleep 1;
 	echo "[ $health $attack $defense ] "
-	echo "        ^This shows your current defense"
+	echo "       ^This shows your current defense"
 	sleep 1;
 	echo "press any button to continue"
 	read hi
