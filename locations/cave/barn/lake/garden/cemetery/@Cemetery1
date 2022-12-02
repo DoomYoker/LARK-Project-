@@ -101,7 +101,10 @@ echo "$name healed and health increased"
 maxhealth=$(( $maxhealth + 5 ));
 health=$(( $maxhealth ));
 PS1="[ $name: $health $attack $defense ] ";
-
+echo "After your encounter with the tree skeletons, you are forced to back away as many more rise to take their place and outnumber you 10 to 1."
+sleep 1;
+echo "You hurry out of the graveyard to tell Merlin of this new development."
+mv $location/locations/cave/barn/lake/garden/merlin_tower/.@Merlin2 $location/locations/cave/barn/lake/garden/merlin_tower/@Merlin2 2>/dev/null
 fi
 done
 echo " "
@@ -110,13 +113,9 @@ echo "Interact with the three skeletons again in the future"
 else
 echo " "
 echo " "
-echo "You have chosen to reatreat and keep exploring the cemetary. Good luck, use ./Cemetary1 to"
+echo "You have chosen to retreat and keep gear up. Good luck, use ./Cemetary1 to"
 echo "Interact with the three skeletons again in the future"
 fi
-echo "After your encounter with the tree skeletons, you are forced to back away as many more rise to take their place and outnumber you 10 to 1."
-sleep 1;
-echo "You hurry out of the graveyard to tell Merlin of this new development."
-mv $location/locations/cave/barn/lake/garden/merlin_tower/.@Merlin2 $location/locations/cave/barn/lake/garden/merlin_tower/@Merlin2 2>/dev/null
 echo "press any button to continue"
 read hi
 clear
