@@ -84,7 +84,9 @@ echo "with the skeletons defeated you suddenly feel a burst of energy"
 sleep 1;
 echo "health healed and increased"
 PS1="[ $name: $health $attack $defense ] ";
-health=$(( $health + 5 ));
+maxhealth=$(( $maxhealth + 5 ));
+health=$(( $maxhealth ));
+
 fi
 done
 echo " "
