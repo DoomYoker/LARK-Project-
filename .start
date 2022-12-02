@@ -35,7 +35,7 @@ read -p "$name feels intrigued to pickup this item. But will he do so?[yes or no
 		sleep 1;
 		;;
 	*)
-		echo "$name being unsure of what to do with the amulet find himself picking it up"
+		echo "$name being unsure of what to do with the amulet finds himself picking it up"
 		sleep 1;
 		echo "Bringing it to his face, he sees that it is an unknown amulet with a giant gemstone in the center."
 		sleep 1;
