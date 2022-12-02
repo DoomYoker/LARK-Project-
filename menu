@@ -85,6 +85,9 @@ function useItem() {
 	case $choice2 in
 		0)
 			echo "no item used"
+			echo "press any button to continue"
+			read hi
+			clear
 		;;
 		1)
 			if [ -e "$collected/+health-potion" ]
@@ -93,12 +96,18 @@ function useItem() {
 			if [ $health -gt $maxhealth ]
 			then 
 			health=$(( $maxhealth ));
+			fi
 			echo "$name healed"
 			rm $collected/+health-potion
 			PS1="[ $name: $health $attack $defense ] "
-			fi
+			echo "press any button to continue"
+			read hi
+			clear
 			else 
 			echo "The health-potion is not currently collected"
+			echo "press any button to continue"
+			read hi
+			clear
 			fi
 		;;
 		2)
@@ -108,8 +117,14 @@ function useItem() {
 			echo "Attack increased"
 			rm $collected/+whetstone
 			PS1="[ $name: $health $attack $defense ] "
+			echo "press any button to continue"
+			read hi
+			clear
 			else 
 			echo "The whetstone is not currently collected"
+			echo "press any button to continue"
+			read hi
+			clear
 			fi
 		;;
 		3)
@@ -119,8 +134,14 @@ function useItem() {
 			echo "Attack increased"
 			rm $collected/+attack-potion
 			PS1="[ $name: $health $attack $defense ] "
+			echo "press any button to continue"
+			read hi
+			clear
 			else 
 			echo "The strength-potion is not currently collected"
+			echo "press any button to continue"
+			read hi
+			clear
 			fi
 		;;
 		4)
@@ -130,8 +151,14 @@ function useItem() {
 			echo "Attack increased"
 			rm $collected/+strong-attack-potion
 			PS1="[ $name: $health $attack $defense ] "
+			echo "press any button to continue"
+			read hi
+			clear
 			else 
 			echo "The strong-strength-potion is not currently collected"
+			echo "press any button to continue"
+			read hi
+			clear
 			fi
 		;;
 		5)
@@ -141,12 +168,18 @@ function useItem() {
 			if [ $health -gt $maxhealth ]
 			then
 			health=$(( $maxhealth ));
+			fi
 			echo "$name healed"
 			rm $collected/+strong-health-potion
 			PS1="[ $name: $health $attack $defense ] "
-			fi
+			echo "press any button to continue"
+			read hi
+			clear
 			else 
 			echo "The strong-health-potion is not currently collected"
+			echo "press any button to continue"
+			read hi
+			clear
 			fi
 		;;
 		6)
@@ -156,8 +189,14 @@ function useItem() {
 			echo "$name is now immune to the basilisk's powerful stare"
 			rm $collected/+potion-of-bezoar
 			PS1="[ $name: $health $attack $defense ] "
+			echo "press any button to continue"
+			read hi
+			clear
 			else 
 			echo "The strong-health-potion is not currently collected"
+			echo "press any button to continue"
+			read hi
+			clear
 			fi
 		;;
 	esac
@@ -175,6 +214,9 @@ function equip() {
 	case $choice in
 		0)
 			echo "no change in defense"
+			echo "press any button to continue"
+			read hi
+			clear
 		;;
 		1)
 			if [ -e "$collected/+rusted-platemail" ]
@@ -183,8 +225,16 @@ function equip() {
 			echo "Defense increased"
 			rm $collected/+rusted-platemail
 			PS1="[ $name: $health $attack $defense ] "
+			echo "press any button to continue"
+			read hi
+			clear
+
 			else 
 			echo "The chosen platemail is not currently collected"
+			echo "press any button to continue"
+			read hi
+			clear
+
 			fi
 		;;
 		2)
@@ -194,8 +244,14 @@ function equip() {
 			echo "Defense increased"
 			rm $collected/+platemail
 			PS1="[ $name: $health $attack $defense ] "
+			echo "press any button to continue"
+			read hi
+			clear
 			else 
 			echo "The chosen platemail is not currently collected"
+			echo "press any button to continue"
+			read hi
+			clear
 			fi
 		;;
 		3)
@@ -205,14 +261,20 @@ function equip() {
 			echo "Defense increased"
 			rm $collected/+blessed-platemail
 			PS1="[ $name: $health $attack $defense ] "
+			echo "press any button to continue"
+			read hi
+			clear
 			else 
 			echo "The chosen platemail is not currently collected"
+			echo "press any button to continue"
+			read hi
+			clear
 			fi
 		;;
 	esac
 	clear
 	}
-function quit() {  cd $FILELOCATION; PS1="[\u@\h \W]$ "; }
+function quit() {  move_items; reset_var; cd $location; PS1="[\u@\h \W]$ "; }
 
 tput smcup
 while [[ $REPLY != "c" ]]
