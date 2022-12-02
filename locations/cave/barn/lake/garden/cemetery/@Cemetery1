@@ -98,9 +98,9 @@ sleep 1;
 echo "with the skeletons defeated you suddenly feel a burst of energy"
 sleep 1;
 echo "$name healed and health increased"
-PS1="[ $name: $health $attack $defense ] ";
 maxhealth=$(( $maxhealth + 5 ));
 health=$(( $maxhealth ));
+PS1="[ $name: $health $attack $defense ] ";
 
 fi
 done
