@@ -88,10 +88,10 @@ function useItem() {
 		;;
 		1)
 			if [ -e "$collected/+health-potion" ]
-			then
+			then 
 			health=$(( $health + 10 ));
 			if [ $health -gt $maxhealth ]
-			then
+			then 
 			health=$(( $maxhealth ));
 			echo "$name healed"
 			rm $collected/+health-potion
@@ -103,6 +103,7 @@ function useItem() {
 		;;
 		2)
 			if [ -e "$collected/+whetstone" ]
+			then
 			attack=$(( $attack + 2 ));
 			echo "Attack increased"
 			rm $collected/+whetstone
