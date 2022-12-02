@@ -6,7 +6,7 @@ collected=$location/collected
 function reset_var () {	
 bridgeraise="no"
 priority=0
-attack=5
+attack=2
 health=20
 defense=0
 NunberRollse=5
