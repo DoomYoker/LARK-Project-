@@ -124,6 +124,7 @@ read -p "Do you look inside or head back outside?[inside or outside]: " selectio
           echo "This command uses the platemail armor you find to increase your defense"
           sleep 1;
           echo "by doing so this will remove the platmail"
+          echo ""
           sleep 1;
           echo "Opening the door, you see multiple tiny creatures running off in a frantic mean."
           sleep 1;
