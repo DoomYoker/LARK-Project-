@@ -6,18 +6,15 @@ collected=$location/collected
 function reset_var () {	
 bridgeraise="no"
 potionused="no"
-priority=0
 attack=2
 health=20
 defense=0
-NunberRollse=5
 maxhealth=20
 
 export potionused
 export bridgeraise
 export maxhealth
 export health
-export priority
 export attack
 export defense
 export location
