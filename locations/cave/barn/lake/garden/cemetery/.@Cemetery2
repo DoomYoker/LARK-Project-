@@ -36,7 +36,7 @@ echo "Basically, you must roll 30 total points in 5 turns (each turn is up to 10
 sleep 1;
 clear
 PlayerHealth=$(( $health ));
-SkeletonHealthTotal=30;
+SkeletonHealthTotal=50;
 while [ $SkeletonHealthTotal -gt 0 ] && [ $PlayerHealth -gt 0 ]
 do
 echo " "
@@ -67,7 +67,7 @@ fi
 PlayerHealth=$(($PlayerHealth-$RandAttack2))
 else
 echo " "
-echo "Your indecision costs you as the skeleton gets a free hit"
+echo "Your indecision costs you as the commander gets a free hit"
 RandAttack2=$(($RANDOM%$DIV2 - $defense))
 if [ $RandAttack2 -lt 0 ]
 then
@@ -75,13 +75,13 @@ RandAttack2=0
 fi
 PlayerHealth=$(($PlayerHealth-$RandAttack2))
 fi
-if [ $SkeletonHealthTotal -le 19 ]
+if [ $SkeletonHealthTotal -le 29 ]
 then
 if [ $SkeletonHealthTotal -le 9 ]
 then
-echo "Only one skeleton remains!"
+echo "The Commander is on his last legs, finish this!"
 else
-echo "Only two skeletons remain!"
+echo "The Commander grows weary!"
 fi
 fi
 if [ $PlayerHealth -le 0 ]
@@ -92,9 +92,9 @@ fi
 if [ $SkeletonHealthTotal -le 0 ]
 then
 echo " "
-echo "Congratulations, You have defeated all three skeletons"
+echo "Congratulations, You have defeated the commander"
 sleep 1;
-echo "with the skeletons defeated you suddenly feel a burst of energy"
+echo "with the commander defeated you suddenly feel a burst of energy"
 sleep 1;
 echo "$name healed and health increased"
 maxhealth=$(( $maxhealth + 5 ));
@@ -115,7 +115,7 @@ sleep 1;
 echo "Attempt the fight with the commander again."
 echo "( The commander must be defeated to proceed )"
 fi
-if [ "$health" = "0" ]
+if [ "$health" = "0" ] || [ $health -lt 0 ]
 then
 health=$(( $maxhealth ));
 PS1="[ $name: $health $attack $defense ] ";
