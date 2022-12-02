@@ -77,7 +77,7 @@ read -p "Looking forward, our hero decides whether to go left as the amulet told
 		sleep 1;
 		echo "As he approaches the right path, he notices that the ground along the path lays a skull of a creature."
 		sleep 1;
-		echo "The skulls features stand out as the inhuman thing has large eye sockets and pointed hornsupon the top."
+		echo "The skulls features stand out as the inhuman thing has large eye sockets and pointed horns upon it's head."
 		sleep 1;
 		echo "As this sends a shiver down his spine, he chooses to continue pressing on."
 		sleep 1;
