@@ -150,14 +150,14 @@ EOF
 	echo "Excellent. Now it is time to tell the story of our new hero $name."
 	sleep 1;
 	echo "(If at any point you need to exit the game, just type 'quit' .)"
-	PS1="[ $health $attack $defense ]"
-	echo "[ $health $attack $defense ]"
+	PS1="[ $health $attack $defense ] "
+	echo "[ $health $attack $defense ] "
 	echo "  ^This shows your current health"
 	sleep 1;
-	echo "[ $health $attack $defense ]"
+	echo "[ $health $attack $defense ] "
 	echo "      ^This shows your current attack"
 	sleep 1;
-	echo "[ $health $attack $defense ]"
+	echo "[ $health $attack $defense ] "
 	echo "        ^This shows your current defense"
 	sleep 1;
 	echo "press any button to continue"
