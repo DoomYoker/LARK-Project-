@@ -88,7 +88,7 @@ function equip() {
 			defense = defense + 2;
 			echo "Defense increased"
 			rm $collected/+rusted-platemail
-			PS1="[ $health $attack $defense ] "
+			PS1="[ $name: $health $attack $defense ] "
 			else 
 			echo "The chosen platemail is not currently collected"
 			fi
@@ -99,7 +99,7 @@ function equip() {
 			defense = defense + 4;
 			echo "Defense increased"
 			rm $collected/+platemail
-			PS1="[ $health $attack $defense ] "
+			PS1="[ $name: $health $attack $defense ] "
 			else 
 			echo "The chosen platemail is not currently collected"
 			fi
@@ -110,7 +110,7 @@ function equip() {
 			defense = defense + 6;
 			echo "Defense increased"
 			rm $collected/+blessed-platemail
-			PS1="[ $health $attack $defense ] "
+			PS1="[ $name: $health $attack $defense ] "
 			else 
 			echo "The chosen platemail is not currently collected"
 			fi
@@ -153,15 +153,15 @@ EOF
 	echo "Excellent. Now it is time to tell the story of our new hero $name."
 	sleep 1;
 	echo "(If at any point you need to exit the game, just type 'quit' .)"
-	PS1="[ $health $attack $defense ] "
+	PS1="[ $name: $health $attack $defense ] "
 	echo "[ $health $attack $defense ] "
-	echo "  ^This shows your current health"
+	echo "  ^This first value shows your current health"
 	sleep 1;
 	echo "[ $health $attack $defense ] "
-	echo "     ^This shows your current attack"
+	echo "     ^This second value shows your current attack"
 	sleep 1;
 	echo "[ $health $attack $defense ] "
-	echo "       ^This shows your current defense"
+	echo "       ^This third value shows your current defense"
 	sleep 1;
 	echo "press any button to continue"
 	read hi
