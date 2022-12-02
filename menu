@@ -114,7 +114,7 @@ function equip() {
 		;;
 	esac
 	}
-#function quit() {}
+function quit() {  cd $FILELOCATION; PS1="[\u@\h \W]$ "; }
 
 tput smcup
 while [[ $REPLY != "c" ]]
@@ -143,13 +143,22 @@ EOF
 	
 	case $choice in 
 	a) echo "Your Story can now begin"
-	sleep 1;
+	
 	read -p "Enter a name of the Legend: " name
 	
 	sleep 1;
 	echo "Excellent. Now it is time to tell the story of our new hero $name."
 	sleep 1;
-	echo "(If at any point you need to exit the game, just type quit.)"
+	echo "(If at any point you need to exit the game, just type 'quit' .)"
+	PS1="[ $name: $health $attack $defense ]
+	echo "[ $name: $health $attack $defense ]"
+	echo "            ^This shows your current health"
+	sleep 1;
+	echo "[ $name: $health $attack $defense ]"
+	echo "                 ^This shows your current attack"
+	sleep 1;
+	echo "[ $name: $health $attack $defense ]"
+	echo "                         ^This shows your current defense"
 	sleep 1;
 	echo "press any button to continue"
 	read hi
