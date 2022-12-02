@@ -21,7 +21,8 @@ read -p "Do you look inside or head back outside?[inside or outside]: " selectio
           mv .+rusted-platemail \+rusted-platemail
           echo "The amulet suddenly flies off of your neck and hovers before you"
           sleep 1;
-          tput bold; echo "Amulet: " ; tput sgr0 ; echo "Before you lies multiple different options, in order to interact with and use these items here is what you must do"
+          tput bold; echo "Amulet: " ; tput sgr0 ; echo "Along your path you will find many different items,"
+          echo "in order to interact with and use these items here is what you must do"
           sleep 1;
           echo "mv <scriptname> \$collected"
           sleep 1;
