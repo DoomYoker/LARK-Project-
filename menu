@@ -5,15 +5,17 @@ collected=$location/collected
 
 function reset_var () {	
 bridgeraise="no"
+potionused="no"
 priority=0
 attack=2
 health=20
 defense=0
 NunberRollse=5
+maxhealth=20
 
-
-
+export potionused
 export bridgeraise
+export maxhealth
 export health
 export priority
 export attack
@@ -82,39 +84,77 @@ function useItem() {
 	read choice
 	case $choice in
 		0)
-			echo "no change in defense"
+			echo "no item used"
 		;;
 		1)
-			if [ -e "$collected/+rusted-platemail" ]
+			if [ -e "$collected/+health-potion" ]
 			then
-			defense=$(( $defense + 2 ));
-			echo "Defense increased"
-			rm $collected/+rusted-platemail
+			health=$(( $health + 10 ));
+			if [ $health -gt $maxhealth ]
+			then
+			health=$(( $maxhealth ));
+			echo "$name healed"
+			rm $collected/+health-potion
 			PS1="[ $name: $health $attack $defense ] "
 			else 
-			echo "The chosen platemail is not currently collected"
+			echo "The health-potion is not currently collected"
 			fi
 		;;
 		2)
-			if [ -e "$collected/+platemail" ]
-			then 
-			defense=$(( $defense + 4 ));
-			echo "Defense increased"
-			rm $collected/+platemail
+			if [ -e "$collected/+whetstone" ]
+			attack=$(( $attack + 2 ));
+			echo "Attack increased"
+			rm $collected/+whetstone
 			PS1="[ $name: $health $attack $defense ] "
 			else 
-			echo "The chosen platemail is not currently collected"
+			echo "The whetstone is not currently collected"
 			fi
 		;;
 		3)
-			if [ -e "$collected/+blessed-platemail" ]
+			if [ -e "$collected/+strength-potion" ]
 			then
-			defense=$(( $defense + 6 ));
-			echo "Defense increased"
-			rm $collected/+blessed-platemail
+			attack=$(( $attack + 2 ));
+			echo "Attack increased"
+			rm $collected/+attack-potion
 			PS1="[ $name: $health $attack $defense ] "
 			else 
-			echo "The chosen platemail is not currently collected"
+			echo "The strength-potion is not currently collected"
+			fi
+		;;
+		4)
+			if [ -e "$collected/+strong-strength-potion" ]
+			then
+			attack=$(( $attack + 4 ));
+			echo "Attack increased"
+			rm $collected/+strong-attack-potion
+			PS1="[ $name: $health $attack $defense ] "
+			else 
+			echo "The strong-strength-potion is not currently collected"
+			fi
+		;;
+		5)
+			if [ -e "$collected/+strong-health-potion" ]
+			then
+			health=$(( $health + 50 ));
+			if [ $health -gt $maxhealth ]
+			then
+			health=$(( $maxhealth ));
+			echo "$name healed"
+			rm $collected/+strong-health-potion
+			PS1="[ $name: $health $attack $defense ] "
+			else 
+			echo "The strong-health-potion is not currently collected"
+			fi
+		;;
+		6)
+			if [ -e "$collected/+potion-of-bezoar" ]
+			then
+			potionused="yes"
+			echo "$name is now immune to the basilisk's powerful stare"
+			rm $collected/+potion-of-bezoar
+			PS1="[ $name: $health $attack $defense ] "
+			else 
+			echo "The strong-health-potion is not currently collected"
 			fi
 		;;
 	esac
