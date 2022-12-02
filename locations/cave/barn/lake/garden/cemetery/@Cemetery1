@@ -23,7 +23,7 @@ echo "You have two choices: "
 sleep 1;
 echo "A) Retreat and explore to better equip yourself    B) Fight the three skeletons"
 read ans
-if [ $ans = 'B' ]
+if [ $ans = 'B' ] || [ $ans = 'b' ]
 then
 echo " "
 echo " "
@@ -37,22 +37,22 @@ echo "Basically, you must roll 30 total points in 5 turns (each turn is up to 10
 sleep 1;
 PlayerHealth=$(( $health ));
 SkeletonHealthTotal=30;
-while [ $SkeletonHealthTotal -gt 0 && $PlayerHealth -gt 0 ]
+while [ $SkeletonHealthTotal -gt 0 ] && [ $PlayerHealth -gt 0 ]
 do
 echo " "
 PS1="[ $name: $PlayerHealth $attack $defense ] "
 echo "Player Health: $PlayerHealth   Skeleton Health Total: $SkeletonHealthTotal"
 echo "Press A to Attack, B to UseItem, or C to Surrender (any other option will surrender): "
 read response
-if [ $response = 'A' || $response = 'a' ]
+if [ $response = 'A' ] || [ $response = 'a' ]
 then
-DIV=$((10+1))
-RandAttack=$(($RANDOM%$DIV + $attack))
-SkeletonHealthTotal=$(($SkeletonHealthTotal-$RandAttack))
-DIV2=$((10+1))
-RandAttack2=$(($RANDOM%$DIV2 - $defense))
-PlayerHealth=$(($PlayerHealth-$RandAttack2))
-elif [ $response = 'B' || $response = 'b' ]
+DIV=$((10+1));
+RandAttack=$(($RANDOM%$DIV + $attack));
+SkeletonHealthTotal=$(($SkeletonHealthTotal-$RandAttack));
+DIV2=$((10+1));
+RandAttack2=$(($RANDOM%$DIV2 - $defense));
+PlayerHealth=$(($PlayerHealth-$RandAttack2));
+elif [ $response = 'B' ] || [ $response = 'b' ]
 then
 useItem
 RandAttack2=$(($RANDOM%$DIV2 - $defense))
@@ -83,8 +83,8 @@ sleep 1;
 echo "with the skeletons defeated you suddenly feel a burst of energy"
 sleep 1;
 echo "health healed and increased"
-PS1="[ $name: $health $attack $defense ] "
-health=$(( $health + 5 ))
+PS1="[ $name: $health $attack $defense ] ";
+health=$(( $health + 5 ));
 fi
 done
 echo " "
