@@ -137,7 +137,7 @@ read -p "Looking forward, our hero decides whether to go left as the amulet told
 	sleep 1;
 	echo "-> This command will search the current location and display what you can do currently."
 	sleep 1;
-	echo "(If you need to see these commands again just type "; tput bold; echo "amulet" ; tput sgr0
+	echo "(If you need to see these commands again just type)"; tput bold; echo "amulet" ; tput sgr0
 cd $location/locations/cave
 echo "Press any button to continue: "
 read hi
