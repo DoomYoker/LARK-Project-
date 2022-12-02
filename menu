@@ -163,6 +163,7 @@ EOF
 	echo "[ $health $attack $defense ] "
 	echo "       ^This third value shows your current defense"
 	sleep 1;
+	echo ""
 	echo "press any button to continue"
 	read hi
 	echo "\(This game does require you to search around for items. "
