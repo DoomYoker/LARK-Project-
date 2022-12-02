@@ -19,7 +19,7 @@ echo "You look around to see the embellishment and notice a path straight ahead 
 sleep 1;
 echo "The eyes begin to engulf with a red hue, shining a beam directly towards you."
 sleep 1;
-echo "The beam bounces off your body and hits a wall, dessipating as it comes into contact."
+echo "The beam bounces off your body and hits a wall, dissipating as it comes into contact with the wall."
 sleep 1;
 echo "The serpernt looks at the dissolve, turning back at you with anger. His rage shakes the ground as he travels towards you."
 sleep 1;
