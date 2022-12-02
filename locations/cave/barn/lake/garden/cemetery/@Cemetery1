@@ -14,7 +14,7 @@ echo " "
 echo " "
 
 echo "You have two choices: "
-echo "A) Retreat and keep exploring the cemetary    B) Fight the three skeletons"
+echo "A) Retreat and explore to better equip yourself    B) Fight the three skeletons"
 read ans
 if [ $ans = 'B' ]
 then
@@ -31,6 +31,7 @@ while [ $NumberRolls -lt 6 ]
 do
 AttacksLeft=$((5-$NumberRolls))
 echo " "
+PS1="[ $name: $PlayerHealth $attack $defense ] "
 echo "Player Health: $PlayerHealth   Skeleton Health Total: $SkeletonHealthTotal   Attacks Left:  $AttacksLeft "
 echo "Press A to Attack, and B to Surrender: "
 read response
@@ -40,7 +41,7 @@ DIV=$((10+1))
 RandAttack=$(($RANDOM%$DIV))
 SkeletonHealthTotal=$(($SkeletonHealthTotal-$RandAttack))
 DIV2=$((10+1))
-RandAttack2=$(($RANDOM%$DIV2))
+RandAttack2=$(($RANDOM%$DIV2 - $defense))
 PlayerHealth=$(($PlayerHealth-$RandAttack2))
 else
 echo " "
@@ -70,8 +71,10 @@ NumberRolls=6
 fi
 NumberRolls=$(($NumberRolls+1))
 echo "with the skeletons defeated you suddenly feel a burst of energy"
-
-health+=5;
+sleep 1;
+echo "health healed and increased"
+PS1="[ $name: $health $attack $defense ] "
+health=$(( $health + 5 ))
 done
 echo " "
 echo "Good luck exploring the cemetary, use ./Cemetery1 to"
