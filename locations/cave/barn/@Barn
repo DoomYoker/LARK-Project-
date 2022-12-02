@@ -11,7 +11,9 @@ sleep 1;
 read -p "Do you look inside or head back outside?[inside or outside]: " selection2
     case $selection2 in
     inside)
-          echo "Digging through the hay bales, you push them apart to uncover a sealed chest. This chest shows to have an engraved lock of a skull."
+          echo "Digging through the hay bales, you push them apart to uncover a sealed chest."
+          sleep 1;
+          echo "This chest shows to have an engraved lock of a skull."
           sleep 1;
           mv .@chest \@chest
           echo "Further exploring the recesses of this barn you spot a shining light from an old shelf,"
