@@ -81,8 +81,8 @@ function useItem() {
 	5. +strong-health-potion
 	6. +potion-of-bezoar
 	"
-	read choice
-	case $choice in
+	read choice2
+	case $choice2 in
 		0)
 			echo "no item used"
 		;;
@@ -96,6 +96,7 @@ function useItem() {
 			echo "$name healed"
 			rm $collected/+health-potion
 			PS1="[ $name: $health $attack $defense ] "
+			fi
 			else 
 			echo "The health-potion is not currently collected"
 			fi
@@ -142,6 +143,7 @@ function useItem() {
 			echo "$name healed"
 			rm $collected/+strong-health-potion
 			PS1="[ $name: $health $attack $defense ] "
+			fi
 			else 
 			echo "The strong-health-potion is not currently collected"
 			fi
