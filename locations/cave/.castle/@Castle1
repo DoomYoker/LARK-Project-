@@ -87,7 +87,7 @@ sleep 1;
 tput bold; echo "                            VICTORY                            "
 tput sgr0; echo "---------------------------------------------------------------"
 sleep 1;
-tput bold; echo "congratulations this is the end Legend of Cornwall."
+tput bold; echo "Congratulations you have finished The Legend of Cornwall."
 echo "If you missed the initial Syren combat be sure to go back and try it out!"
 echo "It's a fun little combat with some interesting changes from the other combats."
 echo "And thank you so much for playing it really means a lot that you spent your time getting this far!"
