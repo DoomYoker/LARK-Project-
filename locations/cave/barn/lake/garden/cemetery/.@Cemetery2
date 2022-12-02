@@ -113,6 +113,7 @@ echo " "
 echo "You have chosen to retreat and to gear up. Good luck, use ./Cemetary2 to"
 sleep 1;
 echo "Attempt the fight with the commander again."
+sleep 1;
 echo "( The commander must be defeated to proceed )"
 fi
 if [ "$health" = "0" ] || [ $health -lt 0 ]
