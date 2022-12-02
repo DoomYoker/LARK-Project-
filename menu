@@ -116,6 +116,7 @@ function equip() {
 			fi
 		;;
 	esac
+	clear
 	}
 function quit() {  cd $FILELOCATION; PS1="[\u@\h \W]$ "; }
 
