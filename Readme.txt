@@ -9,4 +9,4 @@ Story: A legend told throughout the land. This brave adventure awoke in a cave t
 This mythical quest travels across a variety of locations, meeting friendly faces and unwelcoming figures. 
 But the greatest foe lies at the end of the crossroads.
 
-Instructions: Type into the command line ". menu" to begin the story. Make sure you read everything, as it will help you progress. Currently everything has a number for the vim files specifically. Make sure to only use a vim file once and to use them in the order they appear.
+Instructions: Type into the command line ". menu" to begin the story. Make sure you read everything, as it will help you progress. Currently everything has a number for the vim files specifically. Make sure to only use a vim file once and to use them in the order they appear. If you need any help just enter the 'amulet' command after running . menu
