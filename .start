@@ -58,7 +58,9 @@ echo "The amulet turns left, leaning in as if it were wanting him to head toward
 sleep 1;
 tput bold; echo "Mysterious Voice: "; tput sgr0; echo "Please head this way. We'll meet soon."
 sleep 1;
-echo "The amulet immediately drops onto the ground. $name leans over to pick it up and hangs it from his neck. This allows him to continue seeing dark areas."
+echo "The amulet immediately drops onto the ground. $name leans over to pick it up and hangs it from his neck."
+sleep 1;
+echo "This allows him to continue seeing dark areas."
 sleep 1;
 
 
@@ -100,7 +102,7 @@ read -p "Looking forward, our hero decides whether to go left as the amulet told
 	sleep 1;
 	echo "Knowing that this location may provide him help, he goes forth."
 	sleep 1;
-	echo " The amulet suddenly flies off of your neck and hovers before you"
+	echo "The amulet suddenly flies off of your neck and hovers before you"
 	sleep 1
       	tput bold; echo "Amulet: " ; tput sgr0 ; echo "Before you lies many different stories, locations, and creatures in order to interact with and trigger these here is what you must do"
 	sleep 1;
