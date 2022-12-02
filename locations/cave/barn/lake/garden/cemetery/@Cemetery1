@@ -12,7 +12,6 @@ echo "You begin to see skeletons climbing out and moving towards the statue, as 
 echo "Three skeletons rush towards you."
 echo " "
 echo " "
-
 echo "You have two choices: "
 echo "A) Retreat and explore to better equip yourself    B) Fight the three skeletons"
 read ans
@@ -25,20 +24,17 @@ echo "Each time you strike one skeleton it hits back with a hit of 5, you have a
 echo "Basically, you must roll 30 total points in 5 turns (each turn is up to 10 points) Good Luck!"
 PlayerHealth=health;
 SkeletonHealthTotal=30;
-NumberRolls=0;
-AttacksLeft=5;
-while [ $NumberRolls -lt 6 ]
+while [ $SkeletonHealthTotal -gt 0 && $PlayerHealth -gt 0 ]
 do
-AttacksLeft=$((5-$NumberRolls))
 echo " "
 PS1="[ $name: $PlayerHealth $attack $defense ] "
-echo "Player Health: $PlayerHealth   Skeleton Health Total: $SkeletonHealthTotal   Attacks Left:  $AttacksLeft "
+echo "Player Health: $PlayerHealth   Skeleton Health Total: $SkeletonHealthTotal"
 echo "Press A to Attack, and B to Surrender: "
 read response
 if [ $response = 'A' ]
 then
 DIV=$((10+1))
-RandAttack=$(($RANDOM%$DIV))
+RandAttack=$(($RANDOM%$DIV + $attack))
 SkeletonHealthTotal=$(($SkeletonHealthTotal-$RandAttack))
 DIV2=$((10+1))
 RandAttack2=$(($RANDOM%$DIV2 - $defense))
@@ -46,7 +42,6 @@ PlayerHealth=$(($PlayerHealth-$RandAttack2))
 else
 echo " "
 echo "You have surrendered, take some time to heal, then try your luck again by using ./Cemetary1 in the cemetary"
-NumberRolls=6
 fi
 if [ $SkeletonHealthTotal -le 19 ]
 then
@@ -61,15 +56,14 @@ if [ $PlayerHealth -le 0 ]
 then
 echo " "
 echo "You have been defeated"
-NumberRolls=6
 fi
 if [ $SkeletonHealthTotal -le 0 ]
 then
 echo " "
 echo "Congratulations, You have defeated all three skeletons"
-NumberRolls=6
+
 fi
-NumberRolls=$(($NumberRolls+1))
+
 echo "with the skeletons defeated you suddenly feel a burst of energy"
 sleep 1;
 echo "health healed and increased"
@@ -88,7 +82,7 @@ fi
 echo "After your encounter with the tree skeletons, you are forced to back away as many more rise to take their place and outnumber you 10 to 1."
 sleep 1;
 echo "You hurry out of the graveyard to tell Merlin of this new development."
-mv $location/locations/cave/barn/lake/garden/merlin_tower/.@Merlin2 $location/locations/cave/barn/lake/garden/merlin_tower/@Merlin2
+mv $location/locations/cave/barn/lake/garden/merlin_tower/.@Merlin2 $location/locations/cave/barn/lake/garden/merlin_tower/@Merlin2 2>/dev/null
 echo "press any button to continue"
 read hi
 clear
