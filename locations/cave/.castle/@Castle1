@@ -6,8 +6,6 @@ echo "You and the griffen land on the balcony."
 sleep 1;
 echo "You hop off and send the griffen away from danger."
 sleep 1;
-echo "You pull out the potion Merlin gave you and drink it. You then feel a rush of energy."
-sleep 1;
 
 #(move into castle room)
 
@@ -19,6 +17,8 @@ echo "You look around to see the embellishment and notice a path straight ahead 
 sleep 1;
 echo "The eyes begin to engulf with a red hue, shining a beam directly towards you."
 sleep 1;
+if [ "$potionused" = "yes" ]
+then
 echo "The beam bounces off your body and hits a wall, dissipating as it comes into contact with the wall."
 sleep 1;
 echo "The serpernt looks at the dissolve, turning back at you with anger. His rage shakes the ground as he travels towards you."
@@ -28,6 +28,7 @@ sleep 1;
 echo "You see him full charge at you, engaging yourself into a final showdown."
 sleep 1;
 tput bold; echo "This part is not implemented yet. The final product will show a system of confrontation."
+
 sleep 1;
 tput sgr0; echo "The snake readies his last move, wrapping his tail around you and lifting you upwards."
 sleep 1;
@@ -50,6 +51,21 @@ sleep 1;
 echo "You look forward to see the amulet move outward and face you one final time."
 sleep 1;
 
+#Death state from not using the potion before confronting the Basilisk
+else 
+echo "The beam shoots directly into you, as you look towards the Basilisk you can see it almost seem to smirk."
+sleep 1;
+echo "Your body starts to turn rigid as you look down and find yourself turning to stone."
+sleep 1;
+echo "Your last thoughts are occupied only by the mistake you made by forgetting to use merlins potion before this fight"
+sleep 1;
+tput bold; echo "                               Game Over                               "
+tput sgr0; echo "-----------------------------------------------------------------------"
+echo "Press any button to reset the game"
+read hi
+clear 
+quit
+fi
 #(go back to balcony)
 
 tput bold; echo "Merlin: "; tput sgr0; echo "Thank you for your saving Cornwall from the Basilisk."
@@ -68,9 +84,14 @@ echo "She soars into the sky, showing a beautiful view of the safer landscape."
 sleep 1;
 echo "As you travel along, you are glad that you were able to do justice for all those living in the great land of Cornwall."
 sleep 1;
-
-tput bold; echo "You WIN, congratulations this is the end of the current build of Legend of Cornwall.
-We are working to add in more combat like that seen in the cemetery or just changing it up completely.
-We hope you enjoyed the game and hope to add more later."
-
+tput bold; echo "                            VICTORY                            "
+tput sgr0; echo "---------------------------------------------------------------"
+sleep 1;
+tput bold; echo "congratulations this is the end Legend of Cornwall."
+echo "If you missed the initial Syren combat be sure to go back and try it out!"
+echo "It's a fun little combat with some interesting changes from the other combats."
+echo "And thank you so much for playing it really means a lot that you spent your time getting this far!"
+echo "Press any button to reset the game"
+read hi
+clear 
 quit
