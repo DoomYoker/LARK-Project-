@@ -35,6 +35,7 @@ echo "If you use an item the skeletons will still attack you"
 sleep 1;
 echo "Basically, you must roll 30 total points in 5 turns (each turn is up to 10 points) Good Luck!"
 sleep 1;
+clear
 PlayerHealth=$(( $health ));
 SkeletonHealthTotal=30;
 while [ $SkeletonHealthTotal -gt 0 ] && [ $PlayerHealth -gt 0 ]
@@ -42,7 +43,7 @@ do
 echo " "
 PS1="[ $name: $PlayerHealth $attack $defense ] "
 echo "Player Health: $PlayerHealth   Skeleton Health Total: $SkeletonHealthTotal"
-echo "Press A to Attack, B to UseItem, or C to Surrender (any other option will surrender): "
+echo "Press A to Attack, B to useitem: "
 read response
 if [ $response = 'A' ] || [ $response = 'a' ]
 then
@@ -51,15 +52,29 @@ RandAttack=$(($RANDOM%$DIV + $attack));
 SkeletonHealthTotal=$(($SkeletonHealthTotal-$RandAttack));
 DIV2=$((10+1));
 RandAttack2=$(($RANDOM%$DIV2 - $defense));
+if [ $RandAttack2 -lt 0 ]
+then
+RandAttack2=0
+fi
 PlayerHealth=$(($PlayerHealth-$RandAttack2));
 elif [ $response = 'B' ] || [ $response = 'b' ]
 then
 useItem
 RandAttack2=$(($RANDOM%$DIV2 - $defense))
+if [ $RandAttack2 -lt 0 ]
+then
+RandAttack2=0
+fi
 PlayerHealth=$(($PlayerHealth-$RandAttack2))
 else
 echo " "
-echo "You have surrendered, take some time to heal, collect upgrades, and then try your luck again by using ./Cemetary1 in the cemetary"
+echo "Your indecision costs you as the skeleton gets a free hit"
+RandAttack2=$(($RANDOM%$DIV2 - $defense))
+if [ $RandAttack2 -lt 0 ]
+then
+RandAttack2=0
+fi
+PlayerHealth=$(($PlayerHealth-$RandAttack2))
 fi
 if [ $SkeletonHealthTotal -le 19 ]
 then
@@ -82,7 +97,7 @@ echo "Congratulations, You have defeated all three skeletons"
 sleep 1;
 echo "with the skeletons defeated you suddenly feel a burst of energy"
 sleep 1;
-echo "health healed and increased"
+echo "$name healed and health increased"
 PS1="[ $name: $health $attack $defense ] ";
 maxhealth=$(( $maxhealth + 5 ));
 health=$(( $maxhealth ));
