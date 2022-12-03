@@ -102,18 +102,27 @@ then
               health=$(( $maxhealth ));
               lives=$(( $lives + 1 ));
               PS1="[ $name: $health $attack $defense ] ";
-              echo "The remaining syrens flee in fear as you stand there in suprise of your successful vanquish. You look at the sword and see the engraving on the side | Excalibur |. "
-              echo "You look at the sword and see the engraving on the side | Excalibur |. "
+              echo "The Imps lay defeated on the floor, leaving the egg alone on the pedastal."
               sleep 1;
-              fi
-
-              
+              sleep 1;
+              mv .+egg \+egg 
+              sleep 1;
+              echo "With the imps gone and the egg before you, you take a look around the inside of the church."
+              sleep 1;
+              echo "Throught this glance you are able to spot two potions sitting against different pews."
+              sleep 1;
+              echo "One glowing a deep maroon and another a bright reddish orange"
+              sleep 1;
+              mv .+strong-health-potion \+strong-health-potion
+              mv .+strong-strength-potion \+strong-strength-potion
+              mv $location/locations/cave/.@Cave2 $location/locations/cave/@Cave2 
+              fi 
               done
               else
               echo " "
               echo " "
-              echo "You have chosen to retreat and keep gear up. Good luck, use ./Cemetary1 to"
-              echo "Interact with the three skeletons again in the future"
+              echo "You have chosen to retreat and keep gear up. Good luck, use . @Church_Back1 to"
+              echo "interact with the four Imps again in the future"
               if [ "$health" = "0" ] || [ "$health" -lt "0" ]
               then
               lives=$(( $lives - 1 ));
@@ -135,27 +144,8 @@ then
               fi
               health=$(( $maxhealth ));
               PS1="[ $name: $health $attack $defense ] ";
-              echo "The remaining syrens flee in fear as you stand there in suprise of your successful vanquish."
-              sleep 1;
-              echo "You look at the sword and see the engraving on the side | Excalibur |. "
-              sleep 1;
-              echo "press any button to continue"
-              read hi
-              clear
-              ;;
+ 
 
-
-
-sleep 1;
-tput sgr0; echo "The get scared and scurry away out the front door, leaving the egg alone."
-mv .+egg \+egg
-sleep 1;
-echo "With the imps gone and the egg before you, you take a look around the inside of the church."
-echo "Throught this glance you are able to spot two potions sitting against different pews."
-echo "One glowing a deep maroon and another a bright reddish orange"
-mv .+strong-health-potion \+strong-health-potion
-mv .+strong-strength-potion \+strong-strength-potion
-mv $location/locations/cave/.@Cave2 $location/locations/cave/@Cave2 
 echo "Press any button to continue: "
 read hi
 clear
