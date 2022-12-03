@@ -26,25 +26,25 @@ read -p "Do you look inside or head back outside?[inside or outside]: " selectio
           tput bold; echo "Amulet: " ; tput sgr0 ; echo "Along your path you will find many different items,"
           echo "in order to interact with and use these items here is what you must do"
           sleep 1;
-          echo "mv <scriptname> \$collected"
+          echo "mv <scriptname> \$collected" >> "$location/scripts/listofcommands"
           sleep 1;
-          echo "        - This command is used to move files(items) to your collection."
+          echo "        - This command is used to move files(items) to your collection." >> "$location/scripts/listofcommands"
           sleep 1;
-          echo "\"\$collected\" is the variable that holds the path to your inventory"
+          echo "\"\$collected\" is the variable that holds the path to your inventory" >> "$location/scripts/listofcommands"
           sleep 1;
-          echo "(be wary with moving items because if you move anything without an + infront of it you can break this game)"
+          echo "(be wary with moving items because if you move anything without an + infront of it you can break this game)" >> "$location/scripts/listofcommands"
           sleep 1;
-          echo " -> view collected items: ls \$collected"
+          echo " -> view collected items: ls \$collected" >> "$location/scripts/listofcommands"
           sleep 1;
-          echo "equip +rusted-platemail"
+          echo "equip " >> "$location/scripts/listofcommands"
           sleep 1;
-          echo "        -> This is another command implemented for the different armors special to this game."
+          echo "        -> This is another command implemented for the different armors special to this game." >> "$location/scripts/listofcommands"
           sleep 1;
-          echo "This command uses the platemail armor you find to increase your defense"
+          echo "This command uses the platemail armor you find to increase your defense" >> "$location/scripts/listofcommands"
           sleep 1;
-          echo "by doing so this will remove the platmail"
+          echo "by doing so this will remove the platmail" >> "$location/scripts/listofcommands"
           sleep 1;
-          echo "Opening the door, you see multiple tiny creatures running off in a frantic mean."
+          echo "Opening the door, you see multiple tiny creatures running off in a frantic mean." 
           sleep 1;
           echo "You notice that they are carrying something large with them from the way you came from."
           sleep 1;
@@ -70,26 +70,25 @@ read -p "Do you look inside or head back outside?[inside or outside]: " selectio
           sleep 1;
           tput bold; echo "Amulet: " ; tput sgr0 ; echo "Before you lies multiple different options, in order to interact with and use these items here is what you must do"
           sleep 1;
-          echo "mv <scriptname> \$collected"
+          echo "mv <scriptname> \$collected" >> "$location/scripts/listofcommands"
           sleep 1;
           echo "        - This command is used to move files(items) to your collection."
           sleep 1;
-          echo "\"\$collected\" is the variable that holds the path to your inventory"
+          echo "\"\$collected\" is the variable that holds the path to your inventory" >> "$location/scripts/listofcommands"
           sleep 1;
-          echo "(be wary with moving items because if you move anything without an ~ infront of it you can break this game)"
+          echo "(be wary with moving items because if you move anything without an ~ infront of it you can break this game)" >> "$location/scripts/listofcommands"
           sleep 1;
-          echo " -> view collected items: ls /\$collected"
+          echo " -> view collected items: ls /\$collected" >> "$location/scripts/listofcommands"
           sleep 1;
-          echo "equip +rusted-platemail"
+          echo "equip +rusted-platemail" >> "$location/scripts/listofcommands"
           sleep 1;
-          echo "        -> This is another command implemented for the different armors special to this game."
+          echo "        -> This is another command implemented for the different armors special to this game." >> "$location/scripts/listofcommands"
           sleep 1;
-          echo "This command uses the platemail armor you find to increase your defense"
+          echo "This command uses the platemail armor you find to increase your defense" >> "$location/scripts/listofcommands"
           sleep 1;
-          echo "by doing so this will remove the platmail"
+          echo "by doing so this will remove the platmail" >> "$location/scripts/listofcommands"
           sleep 1;
-          tput bold; echo "Currently equip isn't working so be sure to not use this command"
-          tput sgr0; echo "Further digging through the insides of the barn you find some suspicious looking hay bales."
+          echo "Further digging through the insides of the barn you find some suspicious looking hay bales."
           sleep 1;
           echo "Digging through the hay bales, you push them apart to uncover a sealed chest. This chest shows to have an engraved lock of a skull."
           sleep 1;
@@ -109,23 +108,23 @@ read -p "Do you look inside or head back outside?[inside or outside]: " selectio
           sleep 1;
           tput bold; echo "Amulet: " ; tput sgr0 ; echo "Before you lies multiple different options, in order to interact with and use these items here is what you must do"
           sleep 1;
-          echo "mv <scriptname> \$collected"
+          echo "mv <scriptname> \$collected" >> "$location/scripts/listofcommands"
           sleep 1;
-          echo "        - This command is used to move files(items) to your collection."
+          echo "        - This command is used to move files(items) to your collection." >> "$location/scripts/listofcommands"
           sleep 1;
-          echo "\"\$collected\" is the variable that holds the path to your inventory"
+          echo "\"\$collected\" is the variable that holds the path to your inventory" >> "$location/scripts/listofcommands"
           sleep 1;
-          echo "(be wary with moving items because if you move anything without an + infront of it you can break this game)"
+          echo "(be wary with moving items because if you move anything without an + infront of it you can break this game)" >> "$location/scripts/listofcommands"
           sleep 1;
-          echo " -> view collected items: ls \$collected"
+          echo " -> view collected items: ls \$collected" >> "$location/scripts/listofcommands"
           sleep 1;
-          echo "equip +rusted-platemail"
+          echo "equip +rusted-platemail" >> "$location/scripts/listofcommands"
           sleep 1;
-          echo "        -> This is another command implemented for the different armors special to this game."
+          echo "        -> This is another command implemented for the different armors special to this game." >> "$location/scripts/listofcommands"
           sleep 1;
-          echo "This command uses the platemail armor you find to increase your defense"
+          echo "This command uses the platemail armor you find to increase your defense" >> "$location/scripts/listofcommands"
           sleep 1;
-          echo "by doing so this will remove the platmail"
+          echo "by doing so this will remove the platmail" >> "$location/scripts/listofcommands"
           echo ""
           sleep 1;
           echo "Opening the door, you see multiple tiny creatures running off in a frantic mean."
