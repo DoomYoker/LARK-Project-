@@ -29,7 +29,7 @@ echo " "
 echo " "
 echo "You will fight the skeletons by rolling random numbers between 0-10, the skeletons each have a health of 10"
 sleep 1;
-echo "Each time you strike one skeleton it hits back with a hit of 5, you have a health of 25. "
+echo "Each time you strike one skeleton it hits back with a hit of 5, you have a health of $health. "
 sleep 1;
 echo "If you use an item the skeletons will still attack you"
 sleep 1;
