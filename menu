@@ -39,10 +39,12 @@ unset collected
 
 function move_items() {
   for FILE in $collected; do rm $collected/FILE; done
-  mv $+amulet /$collected
-  rm $location/locations/cave/barn/+rusted-platemail
-  mv $location/collection $location/locations/cave/barn/+rusted-platemail
-  
+  mv $+amulet /$collected 2>/dev/null
+  rm $location/locations/cave/barn/.+rusted-platemail 2>/dev/null
+  rm $location/locations/cave/barn/+rusted-platemail 2>/dev/null
+  cp $location/collection/.+rusted-platemail $location/locations/cave/barn/ 2>/dev/null
+  rm $location/locations/cave/barn/lake/.+whetstone
+  rm $location/locations/cave/barn/lake/+whetstone
   
   
 }
