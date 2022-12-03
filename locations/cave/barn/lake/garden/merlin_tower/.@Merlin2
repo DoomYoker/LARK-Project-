@@ -13,7 +13,7 @@ sleep 1;
 echo "Go back there, my phoenix should already have awoken them."
 sleep 1;
 echo "As you prepare to leave merlin also brings out a red flask"
-tput bold; echo "Merlin: "; tput sgr0; echo "You may also take this health potion to help with any issues that may occur"\
+tput bold; echo "Merlin: "; tput sgr0; echo "You may also take this health potion to help with any issues that may arise."
 mv .+medium-health-potion \+medium-health-potion
 mv $location/locations/cave/barn/lake/garden/.@Garden2 $location/locations/cave/barn/lake/garden/@Garden2
 echo "Press any button to continue: "
