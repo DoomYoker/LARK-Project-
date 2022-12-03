@@ -26,9 +26,8 @@ then
               echo "press any button to begin"
               read hi
               clear
-              PlayerHealth=$(( $health ));
               ImpHealthTotal=80;
-              while [ $ImpHealthTotal -gt 0 ] && [ $PlayerHealth -gt 0 ]
+              while [ $ImpHealthTotal -gt 0 ] && [ "$health" -gt "0" ]
               do
               echo " "
               PS1="[ $name: $PlayerHealth $attack $defense ] "
@@ -57,7 +56,7 @@ then
               then
               useItem
               RandAttack2=$(($RANDOM%$DIV2 - $defense))
-              if [ $RandAttack2 -lt 0 ]
+              if [ "$RandAttack2" -lt "0" ]
               then
               RandAttack2=0
               fi
@@ -66,7 +65,7 @@ then
               echo " "
               echo "Your think too long to let the Imps ravage you for some damage."
               RandAttack2=$(($RANDOM%$DIV2 - $defense))
-              if [ $RandAttack2 -lt 0 ]
+              if [ "$RandAttack2" -lt "0" ]
               then
               RandAttack2=0
               fi
@@ -102,7 +101,15 @@ then
               echo "You look at the sword and see the engraving on the side | Excalibur |. "
               sleep 1;
               fi
-              if [ "$Playerhealth" = "0" ] || [ $Playerhealth -lt 0 ]
+
+              
+              done
+              else
+              echo " "
+              echo " "
+              echo "You have chosen to retreat and keep gear up. Good luck, use ./Cemetary1 to"
+              echo "Interact with the three skeletons again in the future"
+              if [ "$health" = "0" ] || [ "$health" -lt "0" ]
               then
               lives=$(( $lives - 1 ));
               echo "You have lost a life."
@@ -121,7 +128,6 @@ then
               quit
               fi
               fi
-              done
               health=$(( $maxhealth ));
               PS1="[ $name: $health $attack $defense ] ";
               echo "The remaining syrens flee in fear as you stand there in suprise of your successful vanquish."
