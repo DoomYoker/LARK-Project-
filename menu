@@ -92,6 +92,7 @@ function useItem() {
 	4. +strong-strength-potion
 	5. +strong-health-potion
 	6. +potion-of-bezoar
+	7. +medium-health-potion
 	"
 	read choice2
 	case $choice2 in
@@ -105,7 +106,7 @@ function useItem() {
 			if [ -e "$collected/+health-potion" ]
 			then 
 			health=$(( $health + 10 ));
-			if [ $health -gt $maxhealth ]
+			if [ "$health" -gt "$maxhealth" ]
 			then 
 			health=$(( $maxhealth ));
 			fi
@@ -177,7 +178,7 @@ function useItem() {
 			if [ -e "$collected/+strong-health-potion" ]
 			then
 			health=$(( $health + 50 ));
-			if [ $health -gt $maxhealth ]
+			if [ "$health" -gt "$maxhealth" ]
 			then
 			health=$(( $maxhealth ));
 			fi
@@ -205,11 +206,38 @@ function useItem() {
 			read hi
 			clear
 			else 
-			echo "The strong-health-potion is not currently collected"
+			echo "The potion-of-bezoar is not currently collected"
 			echo "press any button to continue"
 			read hi
 			clear
 			fi
+		;;
+		7)
+			if [ -e "$collected/+medium-health-potion" ]
+			then
+			health=$(( $health + 20 ));
+			if [ "$health" -gt "$maxhealth" ]
+			then
+			health=$(( $maxhealth ));
+			fi
+			echo "$name healed"
+			rm $collected/+medium-health-potion
+			PS1="[ $name: $health $attack $defense ] "
+			echo "press any button to continue"
+			read hi
+			clear
+			else 
+			echo "The medium-health-potion is not currently collected"
+			echo "press any button to continue"
+			read hi
+			clear
+			fi
+		;;
+		*)
+			echo "no option selected"
+			echo "press any button to continue"
+			read hi
+			clear
 		;;
 	esac
 	clear
