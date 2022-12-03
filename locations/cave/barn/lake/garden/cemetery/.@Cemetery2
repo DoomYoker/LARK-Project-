@@ -135,6 +135,7 @@ read hi
 clear 
 quit
 fi
+fi
 echo "Press any button to continue: "
 read hi
 clear
