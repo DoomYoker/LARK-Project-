@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "As you re-enter the lake with excalibur in hand you notice that the lady of the lake is gone, seemingly having disappeared back beneath the water."
+sleep 1;
+echo "As you take in the splendor of the now empty looking lake you clearly glimpse a large whetstone laying near where the lady once was."
+mv .+whetstone \+whetstone
+echo "press any button to continue"
+read hi
+clear

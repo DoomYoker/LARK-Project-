@@ -1,0 +1,35 @@
+#!bin/bash/
+
+#(meet at tower) - Move to Tower Directory 
+
+echo "You hand merlin the basil plant. He takes the basil, carefully tearing the leaves and letting them float on the ground."
+rm $collected/+herb
+sleep 1;
+echo "He throws the stem and grabs a unknown book from behind him."
+sleep 1;
+tput bold; echo "Merlin: "; tput srg0; echo "Take this, a Potion of Bezoar. This should help you when you face off. Just make sure to drink it beforehand."
+sleep 1;
+echo "You obtained a potion!"
+mv .+potion-of-bezoar \+potion-of-bezoar
+mv +potion-of-bezoar /$collected
+sleep 1;
+tput bold; echo "Merlin: "; tput srg0; echo "I can see that you have everything you need. Head to the bridge next to the lake."
+sleep 1;
+echo "It should take you directly to the castle and face off with the credent."
+sleep 1;
+if [[ "$bridgeraise" = "yes" ]]
+then
+sleep 1;
+echo "You tell Merlin that the basilisk had risen the drawbridge."
+sleep 1;
+tput bold; echo "Merlin: "; tput srg0; echo "This is not good. He is growing wary. Go with my phoenix. There is a friend who can help you cross over the castle walls."
+sleep 1;
+echo "She should be located in the";tput bold; echo " cave"; tput sgr0; echo " I originally called to you at. The phoenix is now flying with you."
+mv .+phoenix /+phoenix
+mv +phoenix /$collected
+mv $location/locations/cave/.@Cave $location/locations/cave/@Cave
+sleep 1;
+fi
+echo "Press any button to continue: "
+read hi
+clear

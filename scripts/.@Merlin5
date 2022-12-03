@@ -1,0 +1,21 @@
+#!bin/bash/
+
+#(Arriving at Merlin Tower) - move to Tower Directory 
+
+echo "Merlin comes close to you and tells you important information on the wereabouts."
+sleep 1;
+tput bold; echo "Merlin: "; tput srg0; echo "We have identified the imps at location to church you passed by."
+sleep 1;
+echo "They should be just inside that building. I understand that you are unable to enter, as they have blocked you off."
+sleep 1;
+echo "The route to the left of me will lead you directly to the back entrance."
+sleep 1;
+echo "Also they may appear to be smaller and weaker than the other creatures you have faced so far but they come in many numbers."
+echo "Because of this you will need better protection."
+echo "merlin proceeds to bring out a glowing chest and opening it to the sight of a magnificent piece of blessed platemail enlaid with golden ornaments."
+tput bold; echo "Merlin: "; tput sgr0; echo "This will grant you immense protection from those dastardly imps."
+mv .+blessed-platemail \+blessed-platemail
+mv $location/locations/cave/barn/lake/garden/merlin_tower/church_back/.@Church_Back1 $location/locations/cave/barn/lake/garden/merlin_tower/church_back/@Church_Back1
+echo "Press any button to continue: "
+read hi
+clear
