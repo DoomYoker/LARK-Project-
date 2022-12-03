@@ -31,7 +31,6 @@ read -p "What do you do?[continue or notice]: " selection5
               sleep 1;
               tput bold; echo "Amulet: "; tput sgr0; echo "make sure to collect that sword it will be hopeless for you to succeed without it"
               mv .+excalibur \+excalibur
-              attack=$(( $attack + 4 ));
               ;;
         notice)
               echo "You turn to see a fish-like human being, staring at you."
@@ -152,16 +151,6 @@ read -p "What do you do?[continue or notice]: " selection5
               echo "You hurry out of the graveyard to tell Merlin of this new development."
               mv $location/locations/cave/barn/lake/garden/merlin_tower/.@Merlin2 $location/locations/cave/barn/lake/garden/merlin_tower/@Merlin2 2>/dev/null
               fi
-              done
-              echo " "
-              echo "Good luck exploring the cemetary, use ./Cemetery1 to"
-              echo "Interact with the three skeletons again in the future"
-              else
-              echo " "
-              echo " "
-              echo "You have chosen to retreat and keep gear up. Good luck, use ./Cemetary1 to"
-              echo "Interact with the three skeletons again in the future"
-              fi
               if [ "$Playerhealth" = "0" ] || [ $Playerhealth -lt 0 ]
               then
               lives=$(( $lives - 1 ));
@@ -180,6 +169,14 @@ read -p "What do you do?[continue or notice]: " selection5
               clear 
               quit
               fi
+              done
+              else
+              echo " "
+              echo " "
+              echo "You have chosen to retreat and keep gear up. Good luck, use ./Cemetary1 to"
+              echo "Return to Fight the skeletons again"
+              fi
+              
               health=$(( $maxhealth ));
               PS1="[ $name: $health $attack $defense ] ";
               fi
