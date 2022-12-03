@@ -116,7 +116,29 @@ echo " "
 echo "You have chosen to retreat and keep gear up. Good luck, use ./Cemetary1 to"
 echo "Interact with the three skeletons again in the future"
 fi
+if [ "$health" = "0" ] || [ $health -lt 0 ]
+then
+lives=$(( $lives - 1 ));
+echo "You have lost a life."
+sleep 1;
+echo "$lives lives remaining."
+sleep 1;
+if [ "$lives" = "0" ]
+then 
+echo "You Have lost all lives."
+tput bold; echo "                               Game Over                               "
+tput sgr0; echo "-----------------------------------------------------------------------"
+echo "be more careful next time"
+echo "Press any button to reset the game"
+read hi
+clear 
+quit
+fi
+health=$(( $maxhealth ));
+PS1="[ $name: $health $attack $defense ] ";
+fi
 echo "press any button to continue"
 read hi
 clear
+
 
