@@ -35,7 +35,7 @@ echo "If you use an item the skeletons will still attack you"
 sleep 1;
 echo "Basically, you must roll 30 total points in 5 turns (each turn is up to 10 points) Good Luck!"
 sleep 1;
-echo "Be warned you have 3 lives and if you lose 3 battles you will have to restart the game."
+echo "Be warned you have $lives lives and if you lose $lives battles you will have to restart the game."
 sleep 1;
 echo "However by winning a combat you will earn a life."
 echo "press any button to continue"
