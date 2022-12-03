@@ -52,12 +52,6 @@ read -p "What do you do?[continue or notice]: " selection5
               sleep 1;
               mv .+excalibur \+excalibur
               mv +excalibur /$collected
-              echo "You have two choices: "
-              sleep 1;
-              echo "A) Retreat and explore to better equip yourself    B) Fight the three syrens"
-              read ans
-              if [ $ans = 'B' ] || [ $ans = 'b' ]
-              then
               echo " "
               echo " "
               echo "You will fight the syren by rolling random numbers between 0-10, the skeletons each have a health of 15"
@@ -171,13 +165,6 @@ read -p "What do you do?[continue or notice]: " selection5
               fi
               fi
               done
-              else
-              echo " "
-              echo " "
-              echo "You have chosen to retreat and keep gear up. Good luck, use ./Cemetary1 to"
-              echo "Return to Fight the skeletons again"
-              fi
-              
               health=$(( $maxhealth ));
               PS1="[ $name: $health $attack $defense ] ";
               echo "The remaining syrens flee in fear as you stand there in suprise of your successful vanquish."
