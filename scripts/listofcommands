@@ -1,14 +1,2 @@
-
 Commands to use during the game:
 (press q to exit amulet)
-$PWD - lists the entire path to your current working directory(location)
-
-cd "pathname" - allows you to move to another accessible location (ex: cd cave)
-
-cd .. - moves you back to the previous location you were in
-
-ls - displays all current files and directories(other locations nearby) in the current directory(location) you are in
-
-cat "filename" - allows you to read the contents of a specific item you have collected or creature descriptions (ex: cat amulet)
-
-mv - allows you to change locations
