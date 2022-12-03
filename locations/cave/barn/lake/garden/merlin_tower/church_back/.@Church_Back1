@@ -10,8 +10,14 @@ echo "You look ahead to see a giant interior of a rustic chapel, seeing a giant 
 sleep 1;
 echo "Below, you see three imps crowding around the egg placed on the pulpit. You preceed to aim your sword and walk towards them."
 sleep 1;
-echo "They get alarmed and engage into combat."
+echo "They get alarmed and rush towards you."
 sleep 1;
+echo "You have two choices: "
+sleep 1;
+echo "A) Retreat and explore to better equip yourself    B) Fight the three skeletons"
+read ans
+if [ $ans = 'B' ] || [ $ans = 'b' ]
+then
 
               echo " "
               echo " "
