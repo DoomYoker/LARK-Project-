@@ -1,7 +1,0 @@
-if( $merlintalk == "no" )
-then tput bold; echo "Centaur: "; tput srg0; "Sorry, but I can't help you at the moment. Please speak to Merlin before coming to see me."
-else 
-tput bold; echo "Centaur: "; tput srg0; "Merlin told me you needed some assistance. I'll help you get past those undead vermin." 
-centaur="yes"
-
-fi
