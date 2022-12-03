@@ -89,7 +89,7 @@ read -p "What do you do?[continue or notice]: " selection5
               then 
               echo "The syrens aluring song stops you mid attack as you are put in a trance and they proceed to freely hit you."
               sleep 1;
-              SyrenHealthTotal=$(($SkeletonHealthTotal+$RandAttack));
+              SyrenHealthTotal=$(($SyrenHealthTotal+$RandAttack));
               fi
               if [ $RandAttack2 -lt 0 ]
               then
@@ -233,7 +233,7 @@ read -p "What do you do?[continue or notice]: " selection5
               then 
               echo "The syrens aluring song stops you mid attack as you are put in a trance and they proceed to freely hit you."
               sleep 1;
-              SyrenHealthTotal=$(($SkeletonHealthTotal+$RandAttack));
+              SyrenHealthTotal=$(($SyrenHealthTotal+$RandAttack));
               fi
               if [ "$RandAttack2" -lt 0 ]
               then
