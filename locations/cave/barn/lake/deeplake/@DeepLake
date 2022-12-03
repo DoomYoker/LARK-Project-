@@ -40,8 +40,8 @@ read -p "What do you do?[continue or notice]: " selection5
               sleep 1;
               echo "But as soon as you take one step down towards her, a hand grabs your ankle as a terrifying hiss comes from below."
               sleep 1;
-              echo "Startled, you look down to see the menacing physique of a similar creature with a firm grasp on your foot, 
-              hissing and preparing to rip your foot apart with it's razor sharp teeth. "
+              echo "Startled, you look down to see the menacing physique of a similar creature with a firm grasp on your foot,"
+              echo "hissing and preparing to rip your foot apart with it's razor sharp teeth. "
               sleep 1;
               echo "You manage the strength to yank your foot away and glance quickly around to see multiple mermaids coming towards you."
               sleep 1;
@@ -52,9 +52,7 @@ read -p "What do you do?[continue or notice]: " selection5
               echo "The creatures all hiss at you as you aim it in their directions, drawing you into a battle against three different syrens."
               sleep 1;
               mv .+excalibur \+excalibur
-              mv +excalibur \$collected
-              
-              attack=$(( $attack + 4 ));
+              mv +excalibur /$collected
               echo "You have two choices: "
               sleep 1;
               echo "A) Retreat and explore to better equip yourself    B) Fight the three syrens"
