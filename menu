@@ -24,6 +24,19 @@ export name
 export collected
 }
 
+function true_reset () {
+unset lives
+unset potionused
+unset bridgeraise
+unset maxhealth
+unset health
+unset attack
+unset defense
+unset location
+unset name
+unset collected
+}
+
 function move_items() {
   cp $location/collection/.talisman $location/collection/talisman 2>/dev/null
   mv $location/collection/talisman $location/collected 2>/dev/null
@@ -273,7 +286,7 @@ function equip() {
 	esac
 	clear
 	}
-function quit() {  move_items; reset_var; cd $location; PS1="[\u@\h \W]$ "; }
+function quit() {  move_items; true_reset; cd $location; PS1="[\u@\h \W]$ "; }
 
 tput smcup
 while [[ $REPLY != "c" ]]
