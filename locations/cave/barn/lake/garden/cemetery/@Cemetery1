@@ -43,7 +43,7 @@ read hi
 clear
 
 SkeletonHealthTotal=30;
-while [ $SkeletonHealthTotal -gt 0 ] && [ $PlayerHealth -gt 0 ]
+while [ "$SkeletonHealthTotal" -gt "0" ] && [ "$health" -gt "0" ]
 do
 echo " "
 PS1="[ $name: $health $attack $defense ] "
@@ -75,7 +75,7 @@ else
 echo " "
 echo "Your indecision costs you as the skeleton gets a free hit"
 RandAttack2=$(($RANDOM%$DIV2 - $defense))
-if [ "$RandAttack2" -lt 0 ]
+if [ "$RandAttack2" -lt "0" ]
 then
 RandAttack2=0
 fi
