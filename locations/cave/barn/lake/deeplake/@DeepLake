@@ -169,6 +169,7 @@ read -p "What do you do?[continue or notice]: " selection5
               clear 
               quit
               fi
+              fi
               done
               else
               echo " "
