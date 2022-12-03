@@ -57,7 +57,7 @@ RandAttack=$(($RANDOM%$DIV + $attack));
 SkeletonHealthTotal=$(($SkeletonHealthTotal-$RandAttack));
 DIV2=$((10+1));
 RandAttack2=$(($RANDOM%$DIV2 - $defense));
-if [ $RandAttack2 -lt 0 ]
+if [ "$RandAttack2" -lt 0 ]
 then
 RandAttack2=0
 fi
@@ -66,7 +66,7 @@ elif [ $response = 'B' ] || [ $response = 'b' ]
 then
 useItem
 RandAttack2=$(($RANDOM%$DIV2 - $defense))
-if [ $RandAttack2 -lt 0 ]
+if [ "$RandAttack2" -lt 0 ]
 then
 RandAttack2=0
 fi
@@ -75,7 +75,7 @@ else
 echo " "
 echo "Your indecision costs you as the skeleton gets a free hit"
 RandAttack2=$(($RANDOM%$DIV2 - $defense))
-if [ $RandAttack2 -lt 0 ]
+if [ "$RandAttack2" -lt 0 ]
 then
 RandAttack2=0
 fi
@@ -122,7 +122,7 @@ echo " "
 echo "You have chosen to retreat and keep gear up. Good luck, use ./Cemetary1 to"
 echo "Interact with the three skeletons again in the future"
 fi
-if [ "$health" = "0" ] || [ $health -lt 0 ]
+if [ "$health" = "0" ] || [ "$health" -lt "0" ]
 then
 lives=$(( $lives - 1 ));
 echo "You have lost a life."
