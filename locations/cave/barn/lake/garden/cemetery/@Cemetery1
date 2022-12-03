@@ -35,6 +35,11 @@ echo "If you use an item the skeletons will still attack you"
 sleep 1;
 echo "Basically, you must roll 30 total points in 5 turns (each turn is up to 10 points) Good Luck!"
 sleep 1;
+echo "Be warned you have 3 lives and if you lose 3 battles you will have to restart the game."
+sleep 1;
+echo "However by winning a combat you will earn a life."
+echo "press any button to continue"
+read hi
 clear
 PlayerHealth=$(( $health ));
 SkeletonHealthTotal=30;
@@ -100,6 +105,7 @@ sleep 1;
 echo "$name healed and health increased"
 maxhealth=$(( $maxhealth + 5 ));
 health=$(( $maxhealth ));
+lives=$(( $lives - 1 ));
 PS1="[ $name: $health $attack $defense ] ";
 echo "After your encounter with the tree skeletons, you are forced to back away as many more rise to take their place and outnumber you 10 to 1."
 sleep 1;
