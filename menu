@@ -96,7 +96,7 @@ function useItem() {
 	"
 	read choice2
 	case $choice2 in
-		0)
+		*)
 			echo "no item used"
 			echo "press any button to continue"
 			read hi
@@ -233,12 +233,6 @@ function useItem() {
 			clear
 			fi
 		;;
-		*)
-			echo "no option selected"
-			echo "press any button to continue"
-			read hi
-			clear
-		;;
 	esac
 	clear
 	}
@@ -252,7 +246,7 @@ function equip() {
 	"
 	read choice
 	case $choice in
-		0)
+		*)
 			echo "no change in defense"
 			echo "press any button to continue"
 			read hi
