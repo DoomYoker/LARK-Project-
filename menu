@@ -10,7 +10,7 @@ attack=2
 health=20
 defense=0
 maxhealth=20
-
+lives=3
 export potionused
 export bridgeraise
 export maxhealth
