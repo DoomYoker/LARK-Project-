@@ -31,7 +31,7 @@ read -p "What do you do?[continue or notice]: " selection5
               sleep 1;
               tput bold; echo "Amulet: "; tput sgr0; echo "make sure to collect that sword it will be hopeless for you to succeed without it"
               mv .+excalibur \+excalibur
-              mv $location/locations/cave/barn/lake/.@Lake2 $location/locations/cave/barn/lake/@Lake2
+              
               ;;
         notice)
               echo "You turn to see a fish-like human being, staring at you."
@@ -141,7 +141,9 @@ read -p "What do you do?[continue or notice]: " selection5
               health=$(( $maxhealth ));
               lives=$(( $lives + 1 ));
               PS1="[ $name: $health $attack $defense ] ";
-              mv $location/locations/cave/barn/lake/.@Lake2 $location/locations/cave/barn/lake/@Lake2
+              echo "The remaining syrens flee in fear as you stand there in suprise of your successful vanquish. You look at the sword and see the engraving on the side | Excalibur |. "
+              echo "You look at the sword and see the engraving on the side | Excalibur |. "
+              sleep 1;
               fi
               if [ "$Playerhealth" = "0" ] || [ $Playerhealth -lt 0 ]
               then
@@ -276,17 +278,17 @@ read -p "What do you do?[continue or notice]: " selection5
               echo " "
               echo "Congratulations, You have defeated all three skeletons"
               sleep 1;
-              echo "with the skeletons defeated you suddenly feel a burst of energy"
+              echo "with the syrens defeated you suddenly feel a burst of energy"
               sleep 1;
               echo "$name healed and health increased"
               maxhealth=$(( $maxhealth + 5 ));
               health=$(( $maxhealth ));
               lives=$(( $lives + 1 ));
               PS1="[ $name: $health $attack $defense ] ";
-              echo "After your encounter with the tree skeletons, you are forced to back away as many more rise to take their place and outnumber you 10 to 1."
+              echo "The remaining syrens flee in fear as you stand there in suprise of your successful vanquish. You look at the sword and see the engraving on the side | Excalibur |. "
+              echo "You look at the sword and see the engraving on the side | Excalibur |. "
               sleep 1;
-              echo "You hurry out of the graveyard to tell Merlin of this new development."
-              mv $location/locations/cave/barn/lake/.@Lake2 $location/locations/cave/barn/lake/@Lake2
+
               fi
               if [ "$Playerhealth" = "0" ] || [ "$Playerhealth" -lt 0 ]
               then
@@ -310,11 +312,7 @@ read -p "What do you do?[continue or notice]: " selection5
               done
               health=$(( $maxhealth ));
               PS1="[ $name: $health $attack $defense ] ";
-              echo "The remaining syrens flee in fear as you stand there in suprise of your successful vanquish."
-              sleep 1;
-              echo "The remaining syrens flee in fear as you stand there in suprise of your successful vanquish. You look at the sword and see the engraving on the side | Excalibur |. "
-              echo "You look at the sword and see the engraving on the side | Excalibur |. "
-              sleep 1;
+              
               ;;
           
 esac
