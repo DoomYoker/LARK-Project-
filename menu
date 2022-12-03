@@ -105,7 +105,7 @@ function useItem() {
 		1)
 			if [ -e "$collected/+health-potion" ]
 			then 
-			health=$(( $health + 10 ));
+			health=$(( $health + 15 ));
 			if [ "$health" -gt "$maxhealth" ]
 			then 
 			health=$(( $maxhealth ));
