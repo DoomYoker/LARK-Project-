@@ -180,7 +180,6 @@ read -p "What do you do?[continue or notice]: " selection5
               
               health=$(( $maxhealth ));
               PS1="[ $name: $health $attack $defense ] ";
-              fi
               echo "The remaining syrens flee in fear as you stand there in suprise of your successful vanquish."
               sleep 1;
               echo "You look at the sword and see the engraving on the side | Excalibur |. "
