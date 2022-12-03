@@ -41,9 +41,9 @@ then
               ImpHealthTotal=$(($SyrenHealthTotal-$RandAttack));
               DIV2=$((7+1));
               RandAttack2=$(($RANDOM%$DIV2 - $defense));
-              if [ $RandAttack2 == 8 ]  || [ "$RandAttack2" == 4 ]
+              if [ $RandAttack2 == 1 ]  || [ "$RandAttack2" == 5 ]
               then 
-              echo "The syrens aluring song stops you mid attack as you are put in a trance and they proceed to freely hit you."
+              echo "The Imps stack and fling the top one towards you, slicing you across the face as they destack and charge at you."
               sleep 1;
               ImpHealthTotal=$(($ImpHealthTotal+$RandAttack));
               fi
@@ -63,7 +63,7 @@ then
               PlayerHealth=$(($PlayerHealth-$RandAttack2))
               else
               echo " "
-              echo "Your think too long to let the Imps ravage you for some damage."
+              echo "You think too long to let the Imps ravage you for some damage."
               RandAttack2=$(($RANDOM%$DIV2 - $defense))
               if [ "$RandAttack2" -lt "0" ]
               then
@@ -71,13 +71,18 @@ then
               fi
               PlayerHealth=$(($PlayerHealth-$RandAttack2))
               fi
-              if [ $ImpHealthTotal -le 29 ]
+              if [ $ImpHealthTotal -le 59 ]
               then
-              if [ $ImpHealthTotal -le 14 ]
+              if [ $ImpHealthTotal -le 39 ]
               then
-              echo "Only one Syren remains!"
+              if [ $ImpHealthTotal -le 19 ]
+              then
+              echo "Only one Imp remains!"
               else
-              echo "Only two Syrens remain!"
+              echo "Only two Imps remain!"
+              fi
+              else
+              echo "Only three Imps remain!"
               fi
               fi
               if [ $PlayerHealth -le 0 ]
@@ -88,11 +93,11 @@ then
               if [ $ImpHealthTotal -le 0 ]
               then
               echo " "
-              echo "Congratulations, You have defeated all three syrens"
+              echo "Congratulations, You have defeated all four Imps."
               sleep 1;
-              echo "with the syrens defeated you suddenly feel a burst of energy"
+              echo "With the Imps defeated, you suddenly feel a burst of energy."
               sleep 1;
-              echo "$name healed and health increased"
+              echo "$name healed and health increased."
               maxhealth=$(( $maxhealth + 5 ));
               health=$(( $maxhealth ));
               lives=$(( $lives + 1 ));
