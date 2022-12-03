@@ -144,7 +144,7 @@ function useItem() {
 			then
 			attack=$(( $attack + 2 ));
 			echo "Attack increased"
-			rm $collected/+attack-potion
+			rm $collected/+strength-potion
 			PS1="[ $name: $health $attack $defense ] "
 			echo "press any button to continue"
 			read hi
