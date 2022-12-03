@@ -1,5 +1,6 @@
-Commands to use during the game:
 
+Commands to use during the game:
+(press q to exit amulet)
 $PWD - lists the entire path to your current working directory(location)
 
 cd "pathname" - allows you to move to another accessible location (ex: cd cave)
