@@ -2,7 +2,6 @@
 
 location=$PWD
 collected=$location/collected
-script=$location/scripts
 function reset_var () {	
 bridgeraise="no"
 potionused="no"
@@ -12,7 +11,7 @@ defense=0
 maxhealth=20
 lives=3
 
-export script
+
 export lives
 export potionused
 export bridgeraise
