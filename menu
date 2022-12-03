@@ -38,6 +38,10 @@ unset collected
 }
 
 function move_items() {
+  for FILE in $collected; do rm $collected/FILE; done
+  mv $amulet /$collected
+  
+  
   cp $location/collection/.talisman $location/collection/talisman 2>/dev/null
   mv $location/collection/talisman $location/collected 2>/dev/null
   rm $location/collection/.talisman 2>/dev/null
