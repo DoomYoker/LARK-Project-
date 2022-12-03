@@ -29,6 +29,16 @@ echo "You see him full charge at you, engaging yourself into a final showdown."
 sleep 1;
 tput bold; echo "This part is not implemented yet. The final product will show a system of confrontation."
 
+#COMBAT HERE
+
+
+
+
+
+
+
+
+
 sleep 1;
 tput sgr0; echo "The snake readies his last move, wrapping his tail around you and lifting you upwards."
 sleep 1;
