@@ -81,7 +81,7 @@ read -p "What do you do?[continue or notice]: " selection5
               then
               DIV=$((10+1));
               RandAttack=$(($RANDOM%$DIV + $attack));
-              SyrenHealthTotal=$(($SkeletonHealthTotal-$RandAttack));
+              SyrenHealthTotal=$(($SyrenHealthTotal-$RandAttack));
               DIV2=$((7+1));
               RandAttack2=$(($RANDOM%$DIV2 - $defense));
               if [ $RandAttack2 == 8 ]
