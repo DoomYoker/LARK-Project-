@@ -171,7 +171,7 @@ echo ". <scriptname>" >> "$location/scripts/listofcommands"
 	echo "		-> This will allow you to read a brief description on each different item" >> "$location/scripts/listofcommands"
 	sleep 1;
 	echo "		(if you wish to look at in item that you have collected instead enter)" >> "$location/scripts/listofcommands"
-	echo "cat \$collected/itemName"
+	echo "cat \$collected/itemName" >> "$location/scripts/listofcommands"
 	echo "	(Be sure not to use this on any scripts as that will display things hidden away)" >> "$location/scripts/listofcommands"
 	sleep 1;
 	echo "	ex.) cat \$collected/+Rusted-Platemail" >> "$location/scripts/listofcommands"
