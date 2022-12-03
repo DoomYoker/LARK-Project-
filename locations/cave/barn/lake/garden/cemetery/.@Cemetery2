@@ -119,7 +119,8 @@ fi
 if [ "$health" = "0" ] || [ $health -lt 0 ]
 then
 health=$(( $maxhealth ));
-PS1="[ $name: $health $attack $defense ] ";
+PS1="[ $name: $health $attack $defense ] "
+fi
 echo "Press any button to continue: "
 read hi
 clear
