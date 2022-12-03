@@ -111,8 +111,9 @@ read -p "Looking forward, our hero decides whether to go left as the amulet told
       	echo "		-> This allows you to trigger scripts (scripts will begin with a @)" >> "$location/scripts/listofcommands"
 	sleep 1;
      	 echo "	ex.) . @chest" >> "$location/scripts/listofcommands"
+	 echo "
 	 sleep 1;
-      	echo "cd <locationname>" >> "$location/scripts/listofcommands"
+      	echo "cd <locationname>" >> "$location/scripts/listofcommands" 
 	sleep 1;
      	 echo "		-> This will allow you to move to this new location" >> "$location/scripts/listofcommands"
 	 sleep 1;
