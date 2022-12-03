@@ -99,6 +99,7 @@ sleep 1;
 echo "$name healed and health increased"
 maxhealth=$(( $maxhealth + 5 ));
 health=$(( $maxhealth ));
+lives=$(( $lives + 1 ));
 PS1="[ $name: $health $attack $defense ] ";
 sleep 1;
 echo "The defeated commander uses its last strength to crawl towards the key, but before it can reach the key it gets rammed by the centaur statue."
@@ -118,8 +119,21 @@ echo "( The commander must be defeated to proceed )"
 fi
 if [ "$health" = "0" ] || [ $health -lt 0 ]
 then
-health=$(( $maxhealth ));
-PS1="[ $name: $health $attack $defense ] "
+lives=$(( $lives - 1 ));
+echo "You have lost a life."
+sleep 1;
+echo "$lives lives remaining."
+sleep 1;
+if [ "$lives" = "0" ]
+then 
+echo "You Have lost all lives."
+tput bold; echo "                               Game Over                               "
+tput sgr0; echo "-----------------------------------------------------------------------"
+echo "be more careful next time"
+echo "Press any button to reset the game"
+read hi
+clear 
+quit
 fi
 echo "Press any button to continue: "
 read hi
