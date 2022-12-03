@@ -162,7 +162,7 @@ read -p "What do you do?[continue or notice]: " selection5
               echo "You have chosen to retreat and keep gear up. Good luck, use ./Cemetary1 to"
               echo "Interact with the three skeletons again in the future"
               fi
-              if [ "$health" = "0" ] || [ $health -lt 0 ]
+              if [ "$Playerhealth" = "0" ] || [ $Playerhealth -lt 0 ]
               then
               lives=$(( $lives - 1 ));
               echo "You have lost a life."
