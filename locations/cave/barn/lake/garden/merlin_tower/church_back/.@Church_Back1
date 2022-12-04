@@ -116,6 +116,7 @@ then
               mv .+strong-health-potion \+strong-health-potion
               mv .+strong-strength-potion \+strong-strength-potion
               mv $location/locations/cave/.@Cave2 $location/locations/cave/@Cave2 
+              rm $location/locations/cave/barn/lake/garden/merlin_tower/church_back/@Church_Back1
               fi 
               done
               else
