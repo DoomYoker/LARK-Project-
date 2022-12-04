@@ -8,7 +8,7 @@ potionused="no"
 attack=2
 health=25
 defense=0
-maxhealth=20
+maxhealth=25
 lives=3
 itemseen="no"
 
@@ -42,13 +42,30 @@ function move_items() {
   rmdir -r $collected 2>/dev/null
   mkdir $location/collected 2>/dev/null
   mv $+amulet /$collected 2>/dev/null
+  rm $location/locations/cave/barn/.+herb 2>/dev/null
+  rm $location/locations/cave/barn/+herb 2>/dev/null
+  cp $location/collection/.+herb $location/locations/cave/barn/ 2>/dev/null
   rm $location/locations/cave/barn/.+rusted-platemail 2>/dev/null
   rm $location/locations/cave/barn/+rusted-platemail 2>/dev/null
   cp $location/collection/.+rusted-platemail $location/locations/cave/barn/ 2>/dev/null
   rm $location/locations/cave/barn/lake/.+whetstone 2>/dev/null
   rm $location/locations/cave/barn/lake/+whetstone 2>/dev/null
   cp $location/collection/.+whetstone $location/locations/cave/barn/lake 2>/dev/null
-  
+  rm $location/locations/cave/barn/lake/deeplake/.+excalibur 2>/dev/null
+  rm $location/locations/cave/barn/lake/deeplake/+excalibur 2>/dev/null
+  cp $location/collection/.+excalibur $location/locations/cave/barn/lake/deeplake 2>/dev/null
+  rm $location/locations/cave/barn/lake/bridge/.+excalibur 2>/dev/null
+  rm $location/locations/cave/barn/lake/deeplake/+excalibur 2>/dev/null
+  cp $location/collection/.+excalibur $location/locations/cave/barn/lake/deeplake 2>/dev/null
+  rm $location/locations/cave/barn/lake/bridge/.+strength-potion 2>/dev/null
+  rm $location/locations/cave/barn/lake/deeplake/+strength-potion 2>/dev/null
+  cp $location/collection/.+strength-potion $location/locations/cave/barn/lake/deeplake 2>/dev/null
+  rm $location/locations/cave/barn/lake/bridge/.+strength-potion 2>/dev/null
+  rm $location/locations/cave/barn/lake/deeplake/+strength-potion 2>/dev/null
+  cp $location/collection/.+strength-potion $location/locations/cave/barn/lake/deeplake 2>/dev/null
+  rm $location/locations/cave/barn/lake/garden/.+centaur 2>/dev/null
+  rm $location/locations/cave/barn/lake/deeplake/+centaur 2>/dev/null
+  cp $location/collection/.+centaur $location/locations/cave/barn/lake/deeplake 2>/dev/null
 }
 amulet() { less "$location/scripts/listofcommands"; }
 function useItem() { 
