@@ -111,6 +111,7 @@ echo "After your encounter with the tree skeletons, you are forced to back away 
 sleep 1;
 echo "You hurry out of the graveyard to tell Merlin of this new development."
 mv $location/locations/cave/barn/lake/garden/merlin_tower/.@Merlin2 $location/locations/cave/barn/lake/garden/merlin_tower/@Merlin2 2>/dev/null
+rm $location/locations/cave/barn/lake/garden/cemetery/@Cemetery1
 fi
 done
 echo " "
