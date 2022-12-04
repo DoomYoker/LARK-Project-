@@ -27,3 +27,4 @@ if [ "$itemseen" = "no" ]
 echo "press any button to continue"
 read hi
 clear
+rm $location/locations/cave/barn/lake/@Lake2
