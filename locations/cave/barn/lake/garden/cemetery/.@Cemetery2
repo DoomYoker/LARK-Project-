@@ -45,7 +45,7 @@ echo "Press A to Attack, B to useitem: "
 read response
 if [ $response = 'A' ] || [ $response = 'a' ]
 then
-DIV=$((10+1));
+DIV=$((6+1));
 RandAttack=$(($RANDOM%$DIV + $attack));
 SkeletonHealthTotal=$(($SkeletonHealthTotal-$RandAttack));
 DIV2=$((10+1));
