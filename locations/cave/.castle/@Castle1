@@ -31,14 +31,53 @@ tput bold; echo "This part is not implemented yet. The final product will show a
 
 #COMBAT HERE
 
-
-
-
-
-
-
-
-
+BasiliskHealthTotal=50;
+while [ "$BasiliskHealthTotal" -gt "0" ] && [ "$health" -gt "0" ]
+do
+echo " "
+PS1="[ $name: $health $attack $defense ] "
+echo "Player Health: $health   Basilisk Health Total: $SkeletonHealthTotal"
+echo "Press A to Attack, B to useitem: "
+read response
+if [ $response = 'A' ] || [ $response = 'a' ]
+then
+DIV=$((10+1));
+RandAttack=$(($RANDOM%$DIV + $attack));
+BasiliskHealthTotal=$(($SkeletonHealthTotal-$RandAttack));
+DIV2=$((10+1));
+RandAttack2=$(($RANDOM%$DIV2 - $defense));
+if [ "$RandAttack2" -lt 0 ]
+then
+RandAttack2=0
+fi
+health=$(($health-$RandAttack2));
+elif [ $response = 'B' ] || [ $response = 'b' ]
+then
+useItem
+RandAttack2=$(($RANDOM%$DIV2 - $defense))
+if [ "$RandAttack2" -lt 0 ]
+then
+RandAttack2=0
+fi
+health=$(($health-$RandAttack2))
+else
+echo " "
+echo "The Basilisk overpowers and slams you with a whirlwind attack."
+RandAttack2=$(($RANDOM%$DIV2 - $defense))
+if [ "$RandAttack2" -lt "0" ]
+then
+RandAttack2=0
+fi
+health=$(($health-$RandAttack2))
+fi
+if [ $health -le 0 ]
+then
+echo " "
+echo "You have been defeated"
+fi
+if [ $BasiliskHealthTotal -le 0 ]
+then
+echo " "
 sleep 1;
 tput sgr0; echo "The snake readies his last move, wrapping his tail around you and lifting you upwards."
 sleep 1;
@@ -60,6 +99,34 @@ echo "You move the beast aside and pull the sword out of its head."
 sleep 1;
 echo "You look forward to see the amulet move outward and face you one final time."
 sleep 1;
+fi
+done
+else
+fi
+if [ "$health" = "0" ] || [ "$health" -lt "0" ]
+then
+lives=$(( $lives - 1 ));
+echo "You have lost a life."
+sleep 1;
+echo "$lives lives remaining."
+sleep 1;
+if [ "$lives" = "0" ]
+then 
+echo "You Have lost all lives."
+tput bold; echo "                               Game Over                               "
+tput sgr0; echo "-----------------------------------------------------------------------"
+echo "be more careful next time"
+echo "Press any button to reset the game"
+read hi
+clear 
+quit
+fi
+health=$(( $maxhealth ));
+PS1="[ $name: $health $attack $defense ] ";
+fi
+echo "press any button to continue"
+read hi
+clear
 
 #Death state from not using the potion before confronting the Basilisk
 else 
