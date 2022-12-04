@@ -98,7 +98,8 @@ read -p "Do you look inside or head back outside?[inside or outside]: " selectio
           ;;
        *) echo "Unsure of what to do you decide to search inside of the barn"
           sleep 1;
-          echo "Digging through the hay bales, you push them apart to uncover a sealed chest. This chest shows to have an engraved lock of a skull."
+          echo "Digging through the hay bales, you push them apart to uncover a sealed chest."
+          echo "This chest shows to have an engraved lock of a skull."
           sleep 1;
           mv .@chest \@chest
           echo "Further exploring the recesses of this barn you spot a shining light from an old shelf,"
@@ -135,7 +136,8 @@ read -p "Do you look inside or head back outside?[inside or outside]: " selectio
           sleep 1;
           echo "You do note a path to the forking to the left towards a giant open lake."
           sleep 1;
-          echo "You choose to not take part with these creatures, seeing as their path may be a trap of intrigue. You look at the other path and procceed on."
+          echo "You choose to not take part with these creatures, seeing as their path may be a trap of intrigue."
+          echo "You look at the other path and procceed on."
           sleep 1;
           ;;
 esac
