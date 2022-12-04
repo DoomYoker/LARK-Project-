@@ -1,6 +1,6 @@
-#!bin/bash/
+#!/bin/bash
 
-#(Arriving Castle) - move to Castle Directory 
+#(Arriving Castle) - move to Castle Directory
 
 echo "You and the griffen land on the balcony."
 sleep 1;
@@ -8,7 +8,6 @@ echo "You hop off and send the griffen away from danger."
 sleep 1;
 
 #(move into castle room)
-
 echo "You walk forward into a dimly lit cathedral."
 sleep 1;
 echo "This massive enclosure high above the castle is spacious, lineing the walls with medieval apparel."
@@ -26,60 +25,88 @@ sleep 1;
 echo "You pull out Excalibur and raise it high, for which the basilisk immediately stops slithering and senses an embodiment of hatred."
 sleep 1;
 echo "You see him full charge at you, engaging yourself into a final showdown."
-sleep 1;
-tput bold; echo "This part is not implemented yet. The final product will show a system of confrontation."
+
+
+
 
 #COMBAT HERE
 
-BasiliskHealthTotal=50;
-while [ "$BasiliskHealthTotal" -gt "0" ] && [ "$health" -gt "0" ]
+echo "You have two choices: "
+sleep 1;
+echo "A) Retreat and explore to better equip yourself    B) Fight the basilisk"
+read ans
+if [ $ans = 'B' ] || [ $ans = 'b' ]
+then
+echo " "
+echo " "
+echo "You will fight the basilisk by rolling random numbers between 0-10, the basilisk has a health of 70"
+sleep 1;
+echo "Each time you strike the basilisk it hits back."
+sleep 1;
+echo "If you use an item the basilisk will still attack you"
+sleep 1;
+clear
+PlayerHealth=$(( $health ));
+BasiliskHealthTotal=70;
+while [ $BasiliskHealthTotal -gt 0 ] && [ $PlayerHealth -gt 0 ]
 do
 echo " "
-PS1="[ $name: $health $attack $defense ] "
-echo "Player Health: $health   Basilisk Health Total: $SkeletonHealthTotal"
+PS1="[ $name: $PlayerHealth $attack $defense ] "
+echo "Player Health: $PlayerHealth   Basilisk Health Total: $BasiliskHealthTotal"
 echo "Press A to Attack, B to useitem: "
 read response
 if [ $response = 'A' ] || [ $response = 'a' ]
 then
 DIV=$((10+1));
+DIV=$((10+1));
 RandAttack=$(($RANDOM%$DIV + $attack));
-BasiliskHealthTotal=$(($SkeletonHealthTotal-$RandAttack));
+BasiliskHealthTotal=$(($BasiliskHealthTotal-$RandAttack));
 DIV2=$((10+1));
 RandAttack2=$(($RANDOM%$DIV2 - $defense));
-if [ "$RandAttack2" -lt 0 ]
+if [ $RandAttack2 -lt 0 ]
 then
 RandAttack2=0
 fi
-health=$(($health-$RandAttack2));
+PlayerHealth=$(($PlayerHealth-$RandAttack2));
 elif [ $response = 'B' ] || [ $response = 'b' ]
 then
 useItem
 RandAttack2=$(($RANDOM%$DIV2 - $defense))
-if [ "$RandAttack2" -lt 0 ]
+if [ $RandAttack2 -lt 0 ]
 then
 RandAttack2=0
 fi
-health=$(($health-$RandAttack2))
+PlayerHealth=$(($PlayerHealth-$RandAttack2))
 else
 echo " "
-echo "The Basilisk overpowers and slams you with a whirlwind attack."
+echo "Your indecision costs you as the basilisk gets a free hit"
 RandAttack2=$(($RANDOM%$DIV2 - $defense))
-if [ "$RandAttack2" -lt "0" ]
+if [ $RandAttack2 -lt 0 ]
 then
 RandAttack2=0
 fi
-health=$(($health-$RandAttack2))
+PlayerHealth=$(($PlayerHealth-$RandAttack2))
 fi
-if [ $health -le 0 ]
+if [ $BasiliskHealthTotal -le 29 ]
+then
+if [ $BasiliskHealthTotal -le 9 ]
+then
+echo "The Basilisk nears death, finish this!"
+else
+echo "The Basilisk grows weary!"
+fi
+fi
+if [ $PlayerHealth -le 0 ]
 then
 echo " "
 echo "You have been defeated"
 fi
 if [ $BasiliskHealthTotal -le 0 ]
 then
+#Victory
 echo " "
 sleep 1;
-tput sgr0; echo "The snake readies his last move, wrapping his tail around you and lifting you upwards."
+tput sgr0; echo "The basilisk readies his last move, wrapping his tail around you and lifting you upwards."
 sleep 1;
 echo "You get whiplash, but immediately maintain you senses as you struggle to break free."
 sleep 1;
@@ -99,52 +126,6 @@ echo "You move the beast aside and pull the sword out of its head."
 sleep 1;
 echo "You look forward to see the amulet move outward and face you one final time."
 sleep 1;
-fi
-done
-else
-fi
-if [ "$health" = "0" ] || [ "$health" -lt "0" ]
-then
-lives=$(( $lives - 1 ));
-echo "You have lost a life."
-sleep 1;
-echo "$lives lives remaining."
-sleep 1;
-if [ "$lives" = "0" ]
-then 
-echo "You Have lost all lives."
-tput bold; echo "                               Game Over                               "
-tput sgr0; echo "-----------------------------------------------------------------------"
-echo "be more careful next time"
-echo "Press any button to reset the game"
-read hi
-clear 
-quit
-fi
-health=$(( $maxhealth ));
-PS1="[ $name: $health $attack $defense ] ";
-fi
-echo "press any button to continue"
-read hi
-clear
-
-#Death state from not using the potion before confronting the Basilisk
-else 
-echo "The beam shoots directly into you, as you look towards the Basilisk you can see it almost seem to smirk."
-sleep 1;
-echo "Your body starts to turn rigid as you look down and find yourself turning to stone."
-sleep 1;
-echo "Your last thoughts are occupied only by the mistake you made by forgetting to use merlins potion before this fight"
-sleep 1;
-tput bold; echo "                               Game Over                               "
-tput sgr0; echo "-----------------------------------------------------------------------"
-echo "Press any button to reset the game"
-read hi
-clear 
-quit
-fi
-#(go back to balcony)
-
 tput bold; echo "Merlin: "; tput sgr0; echo "Thank you for your saving Cornwall from the Basilisk."
 sleep 1;
 echo "You have my deference, Arthur. The griffen is awaiting for you outside."
@@ -176,5 +157,62 @@ echo "And thank you so much for playing it really means a lot that you spent you
 sleep 1;
 echo "Press any button to reset the game"
 read hi
-clear 
+clear
 quit
+#End Victory
+fi
+done
+else
+#Retreat
+echo " "
+echo " "
+echo "You have chosen to retreat and to gear up. Good luck, use ./@Castle1 to"
+sleep 1;
+echo "Attempt the fight with the basilisk again."
+sleep 1;
+echo "( The basilisk must be defeated to proceed )"
+#End Retreat
+fi
+if [ $health -le 0 ]
+then
+#Lose life
+lives=$(( $lives - 1 ));
+echo "You have lost a life."
+sleep 1;
+echo "$lives lives remaining."
+sleep 1;
+if [ "$lives" = "0" ]
+then
+#Lose all lives
+echo "You Have lost all lives."
+tput bold; echo "                               Game Over                               "
+tput sgr0; echo "-----------------------------------------------------------------------"
+echo "be more careful next time"
+echo "Press any button to reset the game"
+read hi
+clear
+quit
+fi
+health=$(( $maxhealth ));
+PS1="[ $name: $health $attack $defense ] ";
+fi
+
+
+#End Combat
+
+#Death state from not using the potion before confronting the Basilisk
+else
+echo "The beam shoots directly into you, as you look towards the Basilisk you can see it almost seem to smirk."
+sleep 1;
+echo "Your body starts to turn rigid as you look down and find yourself turning to stone."
+sleep 1;
+echo "Your last thoughts are occupied only by the mistake you made by forgetting to use merlins potion before this fight"
+sleep 1;
+tput bold; echo "                               Game Over                               "
+tput sgr0; echo "-----------------------------------------------------------------------"
+echo "Press any button to reset the game"
+read hi
+clear
+quit
+fi
+#(go back to balcony)
