@@ -22,3 +22,4 @@ mv $location/locations/cave/barn/lake/garden/cemetery/.@Cemetery2 $location/loca
 echo "press any button to continue"
 read hi
 clear
+rm $location/locations/cave/barn/lake/garden/@Garden2
