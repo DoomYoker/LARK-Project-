@@ -313,3 +313,4 @@ mv $location/locations/cave/barn/lake/.@Lake2 $location/locations/cave/barn/lake
 echo "press any button to continue"
 read hi
 clear
+rm $location/locations/cave/barn/lake/deeplake/@DeepLake
