@@ -25,12 +25,7 @@ sleep 1;
 echo "You pull out Excalibur and raise it high, for which the basilisk immediately stops slithering and senses an embodiment of hatred."
 sleep 1;
 echo "You see him full charge at you, engaging yourself into a final showdown."
-
-
-
-
 #COMBAT HERE
-
 echo "You have two choices: "
 sleep 1;
 echo "A) Retreat and explore to better equip yourself    B) Fight the basilisk"
