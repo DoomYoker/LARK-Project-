@@ -41,13 +41,12 @@ sleep 1;
 echo "If you use an item the basilisk will still attack you"
 sleep 1;
 clear
-PlayerHealth=$(( $health ));
 BasiliskHealthTotal=70;
-while [ $BasiliskHealthTotal -gt 0 ] && [ $PlayerHealth -gt 0 ]
+while [ "$BasiliskHealthTotal" -gt "0" ] && [ "$health" -gt "0" ]
 do
 echo " "
-PS1="[ $name: $PlayerHealth $attack $defense ] "
-echo "Player Health: $PlayerHealth   Basilisk Health Total: $BasiliskHealthTotal"
+PS1="[ $name: $health $attack $defense ] "
+echo "Player Health: $health   Basilisk Health Total: $BasiliskHealthTotal"
 echo "Press A to Attack, B to useitem: "
 read response
 if [ $response = 'A' ] || [ $response = 'a' ]
@@ -61,7 +60,7 @@ if [ $RandAttack2 -lt 0 ]
 then
 RandAttack2=0
 fi
-PlayerHealth=$(($PlayerHealth-$RandAttack2));
+health=$(($health-$RandAttack2));
 elif [ $response = 'B' ] || [ $response = 'b' ]
 then
 useItem
@@ -70,7 +69,7 @@ if [ $RandAttack2 -lt 0 ]
 then
 RandAttack2=0
 fi
-PlayerHealth=$(($PlayerHealth-$RandAttack2))
+health=$(($health-$RandAttack2))
 else
 echo " "
 echo "Your indecision costs you as the basilisk gets a free hit"
@@ -79,7 +78,7 @@ if [ $RandAttack2 -lt 0 ]
 then
 RandAttack2=0
 fi
-PlayerHealth=$(($PlayerHealth-$RandAttack2))
+health=$(($health-$RandAttack2))
 fi
 if [ $BasiliskHealthTotal -le 29 ]
 then
@@ -90,7 +89,7 @@ else
 echo "The Basilisk grows weary!"
 fi
 fi
-if [ $PlayerHealth -le 0 ]
+if [ $health -le 0 ]
 then
 echo " "
 echo "You have been defeated"
