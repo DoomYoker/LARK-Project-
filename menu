@@ -64,7 +64,7 @@ function useItem() {
 	"
 	read choice2
 	case $choice2 in
-		*)
+		0)
 			echo "no item used"
 			echo "press any button to continue"
 			read hi
@@ -201,6 +201,12 @@ function useItem() {
 			clear
 			fi
 		;;
+		*)
+		echo "no item used"
+			echo "press any button to continue"
+			read hi
+			clear
+		;;
 	esac
 	clear
 	}
@@ -214,7 +220,7 @@ function equip() {
 	"
 	read choice
 	case $choice in
-		*)
+		0)
 			echo "no change in defense"
 			echo "press any button to continue"
 			read hi
@@ -273,6 +279,12 @@ function equip() {
 			clear
 			fi
 		;;
+		*)
+			echo "no change in defense"
+			echo "press any button to continue"
+			read hi
+			clear
+		;;
 	esac
 	clear
 	}
@@ -300,7 +312,7 @@ cat <<EOF
 
 EOF
 	read -p "Enter choice [a-c]: " choice
-	#move_items
+	move_items
 	reset_var
 	
 	case $choice in 
