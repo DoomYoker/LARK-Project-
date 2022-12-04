@@ -105,6 +105,7 @@ echo "The defeated commander uses its last strength to crawl towards the key, bu
 sleep 1;
 echo "This causes the skeleton to explode into bones and fragments of it's once great armor that are flung everywhere, the key being left shining on the tombstone"
 mv .+key \+key
+rm $location/locations/cave/barn/lake/garden/cemetery/@Cemetery2
 fi
 done
 else
