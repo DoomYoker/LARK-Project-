@@ -31,4 +31,5 @@ cd merlin_tower
 echo "press any button to continue"
 read hi
 clear
+rm $location/locations/cave/barn/lake/garden/@Garden1
 
