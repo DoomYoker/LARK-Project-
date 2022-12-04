@@ -34,6 +34,7 @@
           echo "        -> This command gives you a prompt for which item to use and will then remove that item from collected." >> "$location/scripts/listofcommands"
           echo "(If you are unsure which items you are able to use remember the command below)" >> "$location/scripts/listofcommands"
           echo " -> view collected items: ls \$collected" >> "$location/scripts/listofcommands"
+          itemseen="yes"
   fi
   mv .+health-potion \+health-potion
   sleep 1;
