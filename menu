@@ -46,7 +46,7 @@ function move_items() {
   cp $location/collection/.+rusted-platemail $location/locations/cave/barn/ 2>/dev/null
   rm $location/locations/cave/barn/lake/.+whetstone
   rm $location/locations/cave/barn/lake/+whetstone
-  
+  cp $location/collection/.+whetstone $location/locations/cave/barn/lake 2>/dev/null
   
 }
 amulet() { less "$location/scripts/listofcommands"; }
