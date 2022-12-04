@@ -16,3 +16,4 @@ cd .castle
 echo "Press any button to continue: "
 read hi
 clear
+rm $location/locations/cave/@Cave2
