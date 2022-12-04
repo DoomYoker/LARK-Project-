@@ -39,13 +39,14 @@ unset collected
 }
 
 function move_items() {
-  for FILE in $collected; do rm $collected/FILE; done
+  rmdir -r $collected 2>/dev/null
+  mkdir $location/collected 2>/dev/null
   mv $+amulet /$collected 2>/dev/null
   rm $location/locations/cave/barn/.+rusted-platemail 2>/dev/null
   rm $location/locations/cave/barn/+rusted-platemail 2>/dev/null
   cp $location/collection/.+rusted-platemail $location/locations/cave/barn/ 2>/dev/null
-  rm $location/locations/cave/barn/lake/.+whetstone
-  rm $location/locations/cave/barn/lake/+whetstone
+  rm $location/locations/cave/barn/lake/.+whetstone 2>/dev/null
+  rm $location/locations/cave/barn/lake/+whetstone 2>/dev/null
   cp $location/collection/.+whetstone $location/locations/cave/barn/lake 2>/dev/null
   
 }
