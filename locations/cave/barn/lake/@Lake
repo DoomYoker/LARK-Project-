@@ -69,4 +69,5 @@ EOF
               ;;
 esac
 done
+rm $location/locations/cave/barn/lake/@Lake
 
