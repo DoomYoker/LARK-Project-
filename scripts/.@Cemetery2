@@ -32,8 +32,6 @@ echo "Each time you strike one skeleton it hits back."
 sleep 1;
 echo "If you use an item the commander will still attack you"
 sleep 1;
-echo "Basically, you must roll 30 total points in 5 turns (each turn is up to 10 points) Good Luck!"
-sleep 1;
 clear
 PlayerHealth=$(( $health ));
 SkeletonHealthTotal=50;
