@@ -47,3 +47,4 @@ mv $location/locations/cave/barn/lake/garden/merlin_tower/.@Merlin5 $location/lo
 echo "Press any button to continue: "
 read hi
 clear
+rm $location/locations/cave/@Cave
