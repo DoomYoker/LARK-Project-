@@ -269,7 +269,7 @@ read -p "What do you do?[continue or notice]: " selection5
               if [ $SyrenHealthTotal -le 0 ]
               then
               echo " "
-              echo "Congratulations, You have defeated all three skeletons"
+              echo "Congratulations, You have defeated all three syrens"
               sleep 1;
               echo "with the syrens defeated you suddenly feel a burst of energy"
               sleep 1;
