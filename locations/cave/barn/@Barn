@@ -153,3 +153,5 @@ read hi
 clear
 #(exiting barn) - action to go outside of barn
 
+rm $location/locations/cave/barn/@Barn
+
