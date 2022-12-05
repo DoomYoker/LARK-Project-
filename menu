@@ -97,7 +97,7 @@ function move_items() {
   rm $location/locations/cave/@Cave2 2>/dev/null
   cp $location/scripts/.@Cave2 $location/locations/cave 2>/dev/null
   rm $location/locations/cave/.castle/@Castle1 2>/dev/null
-  cp $location/scripts/@Castle1 $location/locations/cave/castle 2>/dev/null
+  cp $location/scripts/@Castle1 $location/locations/cave/.castle 2>/dev/null
   rm $location/locations/cave/barn/@Barn 2>/dev/null
   cp $location/scripts/@Barn $location/locations/cave/barn 2>/dev/null
   rm $location/locations/cave/barn/.@chest 2>/dev/null
