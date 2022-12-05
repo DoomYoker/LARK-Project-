@@ -27,7 +27,7 @@ then
               read hi
               clear
               ImpHealthTotal=80;
-              while [ $ImpHealthTotal -gt 0 ] && [ "$health" -gt "0" ]
+              while [ "$ImpHealthTotal" -gt "0" ] && [ "$health" -gt "0" ]
               do
               echo " "
               PS1="[ $name: $health $attack $defense ] "
