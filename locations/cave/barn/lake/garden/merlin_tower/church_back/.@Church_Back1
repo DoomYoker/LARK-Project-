@@ -14,7 +14,7 @@ echo "They get alarmed and rush towards you."
 sleep 1;
 echo "You have two choices: "
 sleep 1;
-echo "A) Retreat and explore to better equip yourself    B) Fight the three skeletons"
+echo "A) Retreat and explore to better equip yourself    B) Fight the three Imps"
 read ans
 if [ $ans = 'B' ] || [ $ans = 'b' ]
 then
@@ -31,7 +31,7 @@ then
               do
               echo " "
               PS1="[ $name: $health $attack $defense ] "
-              echo "Player Health: $health   Syren Health Total: $ImpHealthTotal"
+              echo "Player Health: $health   Imps Health Total: $ImpHealthTotal"
               echo "Press A to Attack, B to useitem: "
               read response
               if [ $response = 'A' ] || [ $response = 'a' ]
