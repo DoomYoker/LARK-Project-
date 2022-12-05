@@ -1,0 +1,62 @@
+#!bin/bash
+
+#Merlin Tower(goes to tower after garden) - move to Tower Directory/continue from tower directory in Option Uno 
+
+echo "Travelling around some bends by trees and curvy path structure, you come across a giant tower."
+sleep 1;
+echo "You notice the phoenix fly high to a balcony, landing for a second on a railing looking at a figure inside."
+sleep 1;
+echo "You see the bird take off and fly towards the entrance on the ground, as the door slowly opens."
+sleep 1;
+echo "You approach the open door and see a man emerge. He appears to be of older age, wearing a matching gown and pointed hat."
+sleep 1;
+echo "You stop as he slowly strides to you."
+sleep 1;
+tput bold; echo "Merlin: "; tput sgr0; echo "I was the one talking to you through the talisman you are wearing. My name is Merlin."
+sleep 1;
+echo "I am a protector of these lands against evil. This is my companion. I had him lead you here to me to ask you, $name, for help."
+sleep 1;
+while [[ $REPLY != 0 ]] 
+do
+cat <<EOF
+        1. Why do you need me to help you?
+        2. What do you need me to do?
+EOF
+    read -p "" selection6
+        case $selection6 in
+        1)
+            tput bold; echo "Merlin: "; tput sgr0; echo "Cornwall is in dismay. Legend has it that an adventurer of unknown origins will come to slay the beast glooming over the land."
+            sleep 1;
+            echo "I believe that hero is you."
+            sleep 1;
+            echo "I need you to go retrieve an important ingredient for a potion. 
+            The basilisk is a deadly foe. His gaze is deadly and your only chance for survival is this potion."
+            sleep 1;
+            echo "One glance and your done for. With this potion I can make you immune to his gaze if you can get the basil herb.
+            There is a chest-locked away with this herb."
+            sleep 1;
+            echo "However, there is a key you need for it. It should just be down towards the "; tput bold; echo "cemetery"; tput sgr0; echo "along the path at the garden you did not take."
+            sleep 1;
+            echo "Press any button to continue: "
+            read hi
+            clear
+            break
+            ;;
+        2)
+            echo "I need you to go retrieve an important ingredient for a potion. 
+            The reason for this is a monstrous creature called the basilisk that is bringing greats evils to this valley.
+            The basilisk is a formidable foe. His gaze is deadly and your only chance for survival is this potion."
+            sleep 1;
+            echo "One glance and your done for. With this potion I can make you immune to his gaze if you can get the basil herb.
+            There is a chest-locked away with this herb."
+            sleep 1;
+            echo "However, there is a key you need for it. It should just be down towards cemetery along the path at the garden you did not take."
+            sleep 1;
+            echo "Press any button to continue: "
+            read hi
+            clear
+            break
+            ;;
+esac
+done
+rm $location/locations/cave/barn/lake/garden/merlin_tower/@Merlin1
