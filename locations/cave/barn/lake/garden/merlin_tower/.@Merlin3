@@ -5,7 +5,7 @@
 echo "You hand merlin the basil plant. He takes the basil, carefully tearing the leaves and letting them float on the ground."
 rm $collected/+herb
 sleep 1;
-echo "He throws the stem and grabs a unknown book from behind him."
+echo "merlin throws the stem into a pot and stirs the contents up before filling a flask."
 sleep 1;
 tput bold; echo "Merlin: "; tput sgr0; echo "Take this, a Potion of Bezoar. This should help you when you face off. Just make sure to drink it beforehand."
 sleep 1;
