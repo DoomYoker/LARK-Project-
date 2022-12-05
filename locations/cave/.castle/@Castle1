@@ -20,7 +20,8 @@ if [ "$potionused" = "yes" ]
 then
 echo "The beam bounces off your body and hits a wall, dissipating as it comes into contact with the wall."
 sleep 1;
-echo "The serpernt looks at the dissolve, turning back at you with anger. His rage shakes the ground as he travels towards you."
+echo "The serpernt looks at the dissolve, turning back at you with anger."
+echo "His rage shakes the ground as he travels towards you."
 sleep 1;
 echo "You pull out Excalibur and raise it high, for which the basilisk immediately stops slithering and senses an embodiment of hatred."
 sleep 1;
