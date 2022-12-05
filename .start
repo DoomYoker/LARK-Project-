@@ -17,6 +17,7 @@ sleep 1;
 read -p "$name feels intrigued to pickup this item. But will he do so?[yes or no]: " firstchoice
 	case $firstchoice in
 	yes)
+		clear
 		echo "$name bends over and spreads a hand to grasp on the item."
 		sleep 1;
 		echo "Bringing it to his face, he sees that it is an unknown amulet with a giant gemstone in the center."
@@ -25,6 +26,7 @@ read -p "$name feels intrigued to pickup this item. But will he do so?[yes or no
 		sleep 1;
 		;;
 	no)
+		clear
 		echo "$name understands that the amulet could be potentially dangerous,"
 		sleep 1;
 		echo "understanding the risks involved in picking up something that could inflict harm on himself."
@@ -35,6 +37,7 @@ read -p "$name feels intrigued to pickup this item. But will he do so?[yes or no
 		sleep 1;
 		;;
 	*)
+		clear
 		echo "$name being unsure of what to do with the amulet finds himself picking it up."
 		sleep 1;
 		echo "Bringing it to his face, he sees that it is an unknown amulet with a giant gemstone in the center."
@@ -43,6 +46,8 @@ read -p "$name feels intrigued to pickup this item. But will he do so?[yes or no
 		sleep 1;
 		;;
 	esac
+echo "Press any button to continue reading: "
+read hi
 echo "As the lights shine to reveal the walls of a cave, the amulet begins to vibrate."
 sleep 1;
 echo "It jolts from his palm and floats infront of him."
@@ -63,11 +68,13 @@ read -p "Looking forward, our hero decides whether to go left as the amulet told
 or follow right instead? [left or right]: " splitcave
 	case $splitcave in
 	left)
+		clear
 		echo "Feeling as if the amulet is helping, $name decides to head left."
 		echo "Travelling down this path, the hero stumbles upon an exit to the outside."
 	      	sleep 1;
 		;;
 	right)
+		clear
 		echo "Feeling as if the amulet could harm him, $name decides to try and navigate the right path."
 		sleep 1;
 		echo "As he approaches the right path, he notices that the ground along the path lays a skull of a creature."
@@ -91,6 +98,9 @@ or follow right instead? [left or right]: " splitcave
 		echo "Unsure of the choice before him, our hero decides that the amulet is his bet bet and decides to head left."
 		echo "Travelling down this path, the hero stumbles upon an exit to the outside."
 	esac
+	echo "Press any button to continue reading: "
+	read hi
+	clear
 	echo "He quickly leaves to reveal open fields of grass and lush trees."
 	sleep 1;
 	echo "While glancing around, he notices a farm close by that may have others he can talk to."
