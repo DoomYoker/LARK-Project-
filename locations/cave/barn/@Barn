@@ -121,7 +121,7 @@ read -p "Do you look inside or head back outside?[inside or outside]: " selectio
           sleep 1;
           echo " -> view collected items: ls \$collected" 
           sleep 1;
-          echo "equip +rusted-platemail" 
+          echo "equip" 
           sleep 1;
           echo "        -> This is another command implemented for the different armors special to this game." 
           sleep 1;
