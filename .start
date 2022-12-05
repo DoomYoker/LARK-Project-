@@ -59,7 +59,8 @@ echo "The amulet immediately drops onto the ground. $name leans over to pick it 
 sleep 1;
 echo "This allows him to continue seeing dark areas."
 sleep 1;
-read -p "Looking forward, our hero decides whether to go left as the amulet told him, or follow right instead? [left or right]: " splitcave
+read -p "Looking forward, our hero decides whether to go left as the amulet told him,
+or follow right instead? [left or right]: " splitcave
 	case $splitcave in
 	left)
 		echo "Feeling as if the amulet is helping, $name decides to head left."
