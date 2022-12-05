@@ -103,7 +103,9 @@ tput sgr0; echo "The basilisk readies his last move, wrapping his tail around yo
 sleep 1;
 echo "You get whiplash, but immediately maintain you senses as you struggle to break free."
 sleep 1;
-echo "The snake raises you towards his mouth, preparing to engulf you. You eventually break free, moving the sword outward to slice off its tail."
+echo "The snake raises you towards his mouth, preparing to engulf you."
+sleep 1;
+echo "You eventually break free, moving the sword outward to slice off its tail."
 sleep 1;
 echo "The Basilisk screams in agony, dropping you to the ground as the sword leaves your hand."
 sleep 1;
