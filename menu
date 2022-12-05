@@ -36,6 +36,7 @@ unset defense
 unset location
 unset name
 unset collected
+unset itemseen
 }
 
 function move_items() {
