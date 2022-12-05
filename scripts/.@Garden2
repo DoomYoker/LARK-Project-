@@ -1,0 +1,25 @@
+#!bin/bash/
+
+#(enter garden) - move to Garden Directory
+
+echo "You enter the garden, seeing the phoenix sitting again on the statue."
+sleep 1;
+echo "As you move closer, you see the phoenix peck the top of the statue's head." 
+sleep 1;
+echo "The statue becomes animated as it arises from a slumber of who knows how long."
+sleep 1;
+echo "The Centaur shakes itself awake and soon becomes aware of its surroundings as it looks directly at you. He then speaks."
+sleep 1;
+tput bold; echo "Centaur: "; tput sgr0; echo "Take me to them."
+sleep 1;
+echo "The centaur statue hops down from the pedastal it was standing on. It has now joined your party."
+mv .+centaur \+centaur
+mv +centaur /$collected
+sleep 1;
+echo "Now that the centaur has hopped off it's pedestal you can see a shiny set of armor in a gap beneath the centaurs old resting place."
+mv .+platemail \+platemail
+mv $location/locations/cave/barn/lake/garden/cemetery/.@Cemetery2 $location/locations/cave/barn/lake/garden/cemetery/@Cemetery2 
+echo "press any button to continue"
+read hi
+clear
+rm $location/locations/cave/barn/lake/garden/@Garden2

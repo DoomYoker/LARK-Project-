@@ -1,0 +1,30 @@
+#!/bin/bash
+echo "As you re-enter the lake with excalibur in hand you notice that the lady of the lake is gone, seemingly having disappeared back beneath the water."
+sleep 1;
+echo "As you take in the splendor of the now empty looking lake you clearly glimpse a large whetstone laying near where the lady once was."
+mv .+whetstone \+whetstone
+if [ "$itemseen" = "no" ]
+  then
+          tput bold; echo "Amulet: " ; tput sgr0 ; echo "Over the course of your journey you may also find some flasks or stones,"
+          echo "these items are used to heal yourself or increase your damage."
+          sleep 1;
+          echo "To use these materials you must use this command."
+          sleep 1;
+          echo "useItem" 
+          sleep 1;
+          echo "        -> This command gives you a prompt for which item to use and will then remove that item from collected." 
+          sleep 1;
+          echo "(If you are unsure which items you are able to use remember the command below)" 
+          sleep 1;
+          echo " -> view collected items: ls \$collected"  >> "$location/scripts/listofcommands"
+          echo "To use these materials you must use this command." >> "$location/scripts/listofcommands"
+          echo "useItem" >> "$location/scripts/listofcommands"
+          echo "        -> This command gives you a prompt for which item to use and will then remove that item from collected." >> "$location/scripts/listofcommands"
+          echo "(If you are unsure which items you are able to use remember the command below)" >> "$location/scripts/listofcommands"
+          echo " -> view collected items: ls \$collected" >> "$location/scripts/listofcommands"
+          itemseen="yes"
+  fi
+echo "press any button to continue"
+read hi
+clear
+rm $location/locations/cave/barn/lake/@Lake2
