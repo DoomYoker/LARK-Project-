@@ -40,6 +40,8 @@ unset itemseen
 }
 
 function move_items() {
+  rm $location/scripts/listofcommands
+  cp $location/scripts/listofcommands-base /$location/scripts/listofcommands
   rmdir -r $collected 2>/dev/null
   mkdir $location/collected 2>/dev/null
   mv $+amulet /$collected 2>/dev/null
@@ -64,6 +66,9 @@ function move_items() {
   rm $location/locations/cave/barn/lake/garden/.+platemail 2>/dev/null
   rm $location/locations/cave/barn/lake/garden/+platemail 2>/dev/null
   cp $location/collection/.+platemail $location/locations/cave/barn/lake/garden 2>/dev/null
+  rm $location/locations/cave/barn/lake/garden/.+key 2>/dev/null
+  rm $location/locations/cave/barn/lake/garden/+key 2>/dev/null
+  cp $location/collection/.+key $location/locations/cave/barn/lake/garden 2>/dev/null
   rm $location/locations/cave/barn/lake/garden/merlin_tower/.+blessed-platemail 2>/dev/null
   rm $location/locations/cave/barn/lake/garden/merlin_tower/+blessed-platemail 2>/dev/null
   cp $location/collection/.+blessed-platemail $location/locations/cave/barn/lake/garden/merlin_tower/ 2>/dev/null
@@ -85,7 +90,34 @@ function move_items() {
   rm $location/locations/cave/barn/lake/garden/merlin_tower/church_back/.+strong-strength-potion 2>/dev/null
   rm $location/locations/cave/barn/lake/garden/merlin_tower/church_back/+strong-strength-potion 2>/dev/null
   cp $location/collection/.+strong-strength-potion $location/locations/cave/barn/lake/garden/merlin_tower/church_back/ 2>/dev/null
-
+  
+  rm $location/locations/cave/.@Cave 2>/dev/null
+  rm $location/locations/cave/@Cave 2>/dev/null
+  cp $location/scripts/.@Cave $location/locations/cave 2>/dev/null
+  rm $location/locations/cave/.@Cave2 2>/dev/null
+  rm $location/locations/cave/@Cave2 2>/dev/null
+  cp $location/scripts/.@Cave2 $location/locations/cave 2>/dev/null
+  rm $location/locations/cave/.castle/@Castle1 2>/dev/null
+  cp $location/scripts/@Castle1 $location/locations/cave/castle 2>/dev/null
+  rm $location/locations/cave/barn/@Barn 2>/dev/null
+  cp $location/scripts/@Barn $location/locations/cave/barn 2>/dev/null
+  rm $location/locations/cave/barn/.@chest 2>/dev/null
+  cp $location/scripts/.@chest $location/locations/cave/barn 2>/dev/null
+  rm $location/locations/cave/barn/church/@Church1 2>/dev/null
+  cp $location/scripts/@Church1 $location/locations/cave/barn/church 2>/dev/null
+  rm $location/locations/cave/barn/lake/@Lake 2>/dev/null
+  cp $location/scripts/@Lake $location/locations/cave/barn/lake 2>/dev/null
+  rm $location/locations/cave/barn/lake/.@Lake2 2>/dev/null
+  rm $location/locations/cave/barn/lake/@Lake2 2>/dev/null
+  cp $location/scripts/@Lake2 $location/locations/cave/barn/lake 2>/dev/null
+  rm $location/locations/cave/barn/lake/bridge/@Bridge1 2>/dev/null
+  cp $location/scripts/@Bridge1 $location/locations/cave/barn/lake/bridge 2>/dev/null
+  rm $location/locations/cave/barn/lake/deeplake/@DeepLake 2>/dev/null
+  cp $location/scripts/@DeepLake $location/locations/cave/barn/lake/deeplake 2>/dev/null
+  rm $location/locations/cave/barn/lake/.@Lake2 2>/dev/null
+  rm $location/locations/cave/barn/lake/@Lake2 2>/dev/null
+  cp $location/scripts/@Lake2 $location/locations/cave/barn/lake 2>/dev/null
+  
 }
 amulet() { less "$location/scripts/listofcommands"; }
 function useItem() { 
