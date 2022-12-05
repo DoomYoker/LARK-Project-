@@ -61,11 +61,24 @@ function move_items() {
   rm $location/locations/cave/barn/lake/deeplake/+strength-potion 2>/dev/null
   cp $location/collection/.+strength-potion $location/locations/cave/barn/lake/deeplake 2>/dev/null
   rm $location/locations/cave/barn/lake/bridge/.+strength-potion 2>/dev/null
-  rm $location/locations/cave/barn/lake/deeplake/+strength-potion 2>/dev/null
-  cp $location/collection/.+strength-potion $location/locations/cave/barn/lake/deeplake 2>/dev/null
+  rm $location/locations/cave/barn/lake/bridge/+strength-potion 2>/dev/null
+  cp $location/collection/.+strength-potion $location/locations/cave/barn/lake/bridge 2>/dev/null
   rm $location/locations/cave/barn/lake/garden/.+centaur 2>/dev/null
-  rm $location/locations/cave/barn/lake/deeplake/+centaur 2>/dev/null
+  rm $location/locations/cave/barn/lake/garden/+centaur 2>/dev/null
   cp $location/collection/.+centaur $location/locations/cave/barn/lake/deeplake 2>/dev/null
+  rm $location/locations/cave/barn/lake/garden/.+centaur 2>/dev/null
+  rm $location/locations/cave/barn/lake/garden/+centaur 2>/dev/null
+  cp $location/collection/.+centaur $location/locations/cave/barn/lake/garden 2>/dev/null
+  rm $location/locations/cave/barn/lake/garden/.+platemail 2>/dev/null
+  rm $location/locations/cave/barn/lake/garden/+platemail 2>/dev/null
+  cp $location/collection/.+platemail $location/locations/cave/barn/lake/garden 2>/dev/null
+  rm $location/locations/cave/barn/lake/garden/merlin_tower/.+blessed-platemail 2>/dev/null
+  rm $location/locations/cave/barn/lake/garden/merlin_tower/+blessed-platemail 2>/dev/null
+  cp $location/collection/.+blessed-platemail $location/locations/cave/barn/lake/garden/merlin_tower/ 2>/dev/null
+  rm $location/locations/cave/barn/lake/garden/merlin_tower/.+blessed-platemail 2>/dev/null
+  rm $location/locations/cave/barn/lake/garden/merlin_tower/+blessed-platemail 2>/dev/null
+  cp $location/collection/.+blessed-platemail $location/locations/cave/barn/lake/garden/merlin_tower/ 2>/dev/null
+  
 }
 amulet() { less "$location/scripts/listofcommands"; }
 function useItem() { 
