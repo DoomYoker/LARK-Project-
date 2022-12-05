@@ -10,6 +10,8 @@ echo "She turns to you and leans her head down, as you reach your hand out and p
 echo "She now trusts you and will help you travel over the moat."
 sleep 1;
 
+echo "Press any button to continue reading: "
+read hi
 #(At exit of cave) 
 
 echo "The griffen prepares to fly you over the castle walls from the cave entrance."
