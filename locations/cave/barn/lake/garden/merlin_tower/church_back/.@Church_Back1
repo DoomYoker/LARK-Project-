@@ -36,7 +36,7 @@ then
               read response
               if [ $response = 'A' ] || [ $response = 'a' ]
               then
-              DIV=$((10+1));
+              DIV=$((6+1));
               RandAttack=$(($RANDOM%$DIV + $attack));
               ImpHealthTotal=$(($ImpHealthTotal-$RandAttack));
               DIV2=$((7+1));
@@ -51,7 +51,7 @@ then
               then
               RandAttack2=0
               fi
-              PlayerHealth=$(($PlayerHealth-$RandAttack2));
+              health=$(($health-$RandAttack2));
               elif [ $response = 'B' ] || [ $response = 'b' ]
               then
               useItem
