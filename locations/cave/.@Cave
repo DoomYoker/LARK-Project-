@@ -27,6 +27,7 @@ echo "You move it over her head and carefully pat it, noticing the tears from he
 sleep 1;
 echo "Press any button to continue reading: "
 read hi
+clear
 echo "As you see the sad state the mother bird is in,"
 sleep 1;
 echo "the amulet springs from your chest and floats to your side facing the nest."
