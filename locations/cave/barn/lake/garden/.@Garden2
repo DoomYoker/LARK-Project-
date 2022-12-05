@@ -10,7 +10,7 @@ echo "The statue becomes animated as it arises from a slumber of who knows how l
 sleep 1;
 echo "The Centaur shakes itself awake and soon becomes aware of its surroundings as it looks directly at you. He then speaks."
 sleep 1;
-tput bold; echo "Centaur: "; tput srg0; echo "Take me to them."
+tput bold; echo "Centaur: "; tput sgr0; echo "Take me to them."
 sleep 1;
 echo "The centaur statue hops down from the pedastal it was standing on. It has now joined your party."
 mv .+centaur \+centaur
