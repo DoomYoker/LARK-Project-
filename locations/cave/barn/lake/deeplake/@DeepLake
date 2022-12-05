@@ -51,6 +51,8 @@ read -p "What do you do?[continue or notice]: " selection5
               sleep 1;
               echo "The creatures all hiss at you as you aim it in their directions, drawing you into a battle against three different syrens."
               sleep 1;
+              echo "Press any button to begin combat: "
+              read hi
               mv .+excalibur \+excalibur
               mv +excalibur /$collected
               echo " "
@@ -187,6 +189,8 @@ read -p "What do you do?[continue or notice]: " selection5
               sleep 1;
               echo "The creatures all hiss at you as you aim it in their directions, drawing you into a battle against three different sirens."
               sleep 1;
+              echo "Press any button to begin combat: "
+              read hi
               mv .+excalibur \+excalibur
               mv +excalibur \$collected
               echo " "
