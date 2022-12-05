@@ -114,9 +114,12 @@ function move_items() {
   cp $location/scripts/@Bridge1 $location/locations/cave/barn/lake/bridge 2>/dev/null
   rm $location/locations/cave/barn/lake/deeplake/@DeepLake 2>/dev/null
   cp $location/scripts/@DeepLake $location/locations/cave/barn/lake/deeplake 2>/dev/null
-  rm $location/locations/cave/barn/lake/.@Lake2 2>/dev/null
-  rm $location/locations/cave/barn/lake/@Lake2 2>/dev/null
-  cp $location/scripts/@Lake2 $location/locations/cave/barn/lake 2>/dev/null
+  rm $location/locations/cave/barn/lake/garden/.@Garden1 2>/dev/null
+  rm $location/locations/cave/barn/lake/garden/@Garden1 2>/dev/null
+  cp $location/scripts/.@Garden1 $location/locations/cave/barn/lake/garden 2>/dev/null
+  rm $location/locations/cave/barn/lake/garden/.@Garden2 2>/dev/null
+  rm $location/locations/cave/barn/lake/garden/@Garden2 2>/dev/null
+  cp $location/scripts/.@Garden2 $location/locations/cave/barn/lake/garden 2>/dev/null
   
 }
 amulet() { less "$location/scripts/listofcommands"; }
