@@ -39,7 +39,7 @@ then
               DIV=$((6+1));
               RandAttack=$(($RANDOM%$DIV + $attack));
               ImpHealthTotal=$(($ImpHealthTotal-$RandAttack));
-              DIV2=$((7+1));
+              DIV2=$((15+1));
               RandAttack2=$(($RANDOM%$DIV2 - $defense));
               if [ $RandAttack2 == 1 ]  || [ "$RandAttack2" == 5 ]
               then 
