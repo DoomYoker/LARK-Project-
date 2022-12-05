@@ -69,7 +69,22 @@ function move_items() {
   rm $location/locations/cave/barn/lake/garden/merlin_tower/.+medium-health-potion 2>/dev/null
   rm $location/locations/cave/barn/lake/garden/merlin_tower/+medium-health-potion 2>/dev/null
   cp $location/collection/.+medium-health-potion $location/locations/cave/barn/lake/garden/merlin_tower/ 2>/dev/null
-  
+  rm $location/locations/cave/barn/lake/garden/merlin_tower/.+phoenix 2>/dev/null
+  rm $location/locations/cave/barn/lake/garden/merlin_tower/+phoenix 2>/dev/null
+  cp $location/collection/.+phoenix $location/locations/cave/barn/lake/garden/merlin_tower/ 2>/dev/null
+  rm $location/locations/cave/barn/lake/garden/merlin_tower/.+potion-of-bezoar 2>/dev/null
+  rm $location/locations/cave/barn/lake/garden/merlin_tower/+potion-of-bezoar 2>/dev/null
+  cp $location/collection/.+potion-of-bezoar $location/locations/cave/barn/lake/garden/merlin_tower/ 2>/dev/null
+  rm $location/locations/cave/barn/lake/garden/merlin_tower/church_back/.+egg 2>/dev/null
+  rm $location/locations/cave/barn/lake/garden/merlin_tower/church_back/+egg 2>/dev/null
+  cp $location/collection/.+egg $location/locations/cave/barn/lake/garden/merlin_tower/church_back/ 2>/dev/null
+  rm $location/locations/cave/barn/lake/garden/merlin_tower/church_back/.+strong-health-potion 2>/dev/null
+  rm $location/locations/cave/barn/lake/garden/merlin_tower/church_back/+strong-health-potion 2>/dev/null
+  cp $location/collection/.+strong-health-potion $location/locations/cave/barn/lake/garden/merlin_tower/church_back/ 2>/dev/null
+  rm $location/locations/cave/barn/lake/garden/merlin_tower/church_back/.+strong-strength-potion 2>/dev/null
+  rm $location/locations/cave/barn/lake/garden/merlin_tower/church_back/+strong-strength-potion 2>/dev/null
+  cp $location/collection/.+strong-strength-potion $location/locations/cave/barn/lake/garden/merlin_tower/church_back/ 2>/dev/null
+
 }
 amulet() { less "$location/scripts/listofcommands"; }
 function useItem() { 
