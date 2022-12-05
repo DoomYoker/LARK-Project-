@@ -54,18 +54,9 @@ function move_items() {
   rm $location/locations/cave/barn/lake/deeplake/.+excalibur 2>/dev/null
   rm $location/locations/cave/barn/lake/deeplake/+excalibur 2>/dev/null
   cp $location/collection/.+excalibur $location/locations/cave/barn/lake/deeplake 2>/dev/null
-  rm $location/locations/cave/barn/lake/bridge/.+excalibur 2>/dev/null
-  rm $location/locations/cave/barn/lake/deeplake/+excalibur 2>/dev/null
-  cp $location/collection/.+excalibur $location/locations/cave/barn/lake/deeplake 2>/dev/null
-  rm $location/locations/cave/barn/lake/bridge/.+strength-potion 2>/dev/null
-  rm $location/locations/cave/barn/lake/deeplake/+strength-potion 2>/dev/null
-  cp $location/collection/.+strength-potion $location/locations/cave/barn/lake/deeplake 2>/dev/null
   rm $location/locations/cave/barn/lake/bridge/.+strength-potion 2>/dev/null
   rm $location/locations/cave/barn/lake/bridge/+strength-potion 2>/dev/null
   cp $location/collection/.+strength-potion $location/locations/cave/barn/lake/bridge 2>/dev/null
-  rm $location/locations/cave/barn/lake/garden/.+centaur 2>/dev/null
-  rm $location/locations/cave/barn/lake/garden/+centaur 2>/dev/null
-  cp $location/collection/.+centaur $location/locations/cave/barn/lake/deeplake 2>/dev/null
   rm $location/locations/cave/barn/lake/garden/.+centaur 2>/dev/null
   rm $location/locations/cave/barn/lake/garden/+centaur 2>/dev/null
   cp $location/collection/.+centaur $location/locations/cave/barn/lake/garden 2>/dev/null
