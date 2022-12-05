@@ -15,7 +15,7 @@ mv +potion-of-bezoar /$collected
 sleep 1;
 tput bold; echo "Merlin: "; tput sgr0; echo "I can see that you have everything you need. Head to the bridge next to the lake."
 sleep 1;
-echo "It should take you directly to the castle and face off with the credent."
+echo "It should take you directly to the castle and face off with the creature."
 sleep 1;
 if [[ "$bridgeraise" = "yes" ]]
 then
