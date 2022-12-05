@@ -204,7 +204,7 @@ function useItem() {
 		6)
 			if [ -e "$collected/+potion-of-bezoar" ]
 			then
-			potionused="yes"
+			potionused="yes";
 			echo "$name is now immune to the basilisk's powerful stare"
 			rm $collected/+potion-of-bezoar
 			PS1="[ $name: $health $attack $defense ] "
