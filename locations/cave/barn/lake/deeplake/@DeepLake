@@ -308,6 +308,7 @@ read -p "What do you do?[continue or notice]: " selection5
           
 esac
 mv $location/locations/cave/barn/lake/.@Lake2 $location/locations/cave/barn/lake/@Lake2
+mv $location/locations/cave/barn/lake/garden/.@Garden1 $location/locations/cave/barn/lake/garden/@Garden1
 echo "press any button to continue"
 read hi
 clear
