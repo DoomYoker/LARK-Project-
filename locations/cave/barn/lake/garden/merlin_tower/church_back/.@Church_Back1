@@ -30,15 +30,15 @@ then
               while [ $ImpHealthTotal -gt 0 ] && [ "$health" -gt "0" ]
               do
               echo " "
-              PS1="[ $name: $PlayerHealth $attack $defense ] "
-              echo "Player Health: $PlayerHealth   Syren Health Total: $ImpHealthTotal"
+              PS1="[ $name: $health $attack $defense ] "
+              echo "Player Health: $health   Syren Health Total: $ImpHealthTotal"
               echo "Press A to Attack, B to useitem: "
               read response
               if [ $response = 'A' ] || [ $response = 'a' ]
               then
               DIV=$((10+1));
               RandAttack=$(($RANDOM%$DIV + $attack));
-              ImpHealthTotal=$(($SyrenHealthTotal-$RandAttack));
+              ImpHealthTotal=$(($ImpHealthTotal-$RandAttack));
               DIV2=$((7+1));
               RandAttack2=$(($RANDOM%$DIV2 - $defense));
               if [ $RandAttack2 == 1 ]  || [ "$RandAttack2" == 5 ]
@@ -60,7 +60,7 @@ then
               then
               RandAttack2=0
               fi
-              PlayerHealth=$(($PlayerHealth-$RandAttack2))
+              health=$(($health-$RandAttack2))
               else
               echo " "
               echo "You think too long to let the Imps ravage you for some damage."
@@ -69,7 +69,7 @@ then
               then
               RandAttack2=0
               fi
-              PlayerHealth=$(($PlayerHealth-$RandAttack2))
+              health=$(($health-$RandAttack2))
               fi
               if [ $ImpHealthTotal -le 59 ]
               then
@@ -85,7 +85,7 @@ then
               echo "Only three Imps remain!"
               fi
               fi
-              if [ $PlayerHealth -le 0 ]
+              if [ $health -le 0 ]
               then
               echo " "
               echo "You have been defeated"
@@ -122,7 +122,7 @@ then
               else
               echo " "
               echo " "
-              echo "You have chosen to retreat and keep gear up. Good luck, use . @Church_Back1 to"
+              echo "You have chosen to retreat and gear up. Good luck, use . @Church_Back1 to"
               echo "interact with the four Imps again in the future"
               if [ "$health" = "0" ] || [ "$health" -lt "0" ]
               then
@@ -145,7 +145,7 @@ then
               fi
               health=$(( $maxhealth ));
               PS1="[ $name: $health $attack $defense ] ";
- 
+fi
 
 echo "Press any button to continue: "
 read hi
