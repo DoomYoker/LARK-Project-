@@ -41,7 +41,7 @@ unset itemseen
 
 function move_items() {
   rm $location/scripts/listofcommands
-  cp $location/scripts/listofcommands-base /$location/scripts/listofcommands
+  cp $location/scripts/listofcommands-base $location/scripts/listofcommands
   rmdir -r $collected 2>/dev/null
   mkdir $location/collected 2>/dev/null
   mv $+amulet /$collected 2>/dev/null
