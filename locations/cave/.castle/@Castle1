@@ -30,7 +30,7 @@ echo "You have two choices: "
 sleep 1;
 echo "A) Retreat and explore to better equip yourself    B) Fight the basilisk"
 read ans
-if [ $ans = 'B' ] || [ $ans = 'b' ]
+if [ "$ans" = "B" ] || [ "$ans" = "b" ]
 then
 echo " "
 echo " "
@@ -49,23 +49,23 @@ PS1="[ $name: $health $attack $defense ] "
 echo "Player Health: $health   Basilisk Health Total: $BasiliskHealthTotal"
 echo "Press A to Attack, B to useitem: "
 read response
-if [ $response = 'A' ] || [ $response = 'a' ]
+if [ "$response" = "A" ] || [ "$response" = "a" ]
 then
 DIV=$((6+1));
 RandAttack=$(($RANDOM%$DIV + $attack));
 BasiliskHealthTotal=$(($BasiliskHealthTotal-$RandAttack));
 DIV2=$((10+1));
 RandAttack2=$(($RANDOM%$DIV2 - $defense));
-if [ $RandAttack2 -lt 0 ]
+if [ "$RandAttack2" -lt "0" ]
 then
 RandAttack2=0
 fi
 health=$(($health-$RandAttack2));
-elif [ $response = 'B' ] || [ $response = 'b' ]
+elif [ "$response" = "B" ] || [ "$response" = "b" ]
 then
 useItem
 RandAttack2=$(($RANDOM%$DIV2 - $defense))
-if [ $RandAttack2 -lt 0 ]
+if [ "$RandAttack2" -lt "0" ]
 then
 RandAttack2=0
 fi
@@ -74,27 +74,27 @@ else
 echo " "
 echo "Your indecision costs you as the basilisk gets a free hit"
 RandAttack2=$(($RANDOM%$DIV2 - $defense))
-if [ $RandAttack2 -lt 0 ]
+if [ "$RandAttack2" -lt "0" ]
 then
 RandAttack2=0
 fi
 health=$(($health-$RandAttack2))
 fi
-if [ $BasiliskHealthTotal -le 29 ]
+if [ "$BasiliskHealthTotal" -le "29" ]
 then
-if [ $BasiliskHealthTotal -le 9 ]
+if [ "$BasiliskHealthTotal" -le "9" ]
 then
 echo "The Basilisk nears death, finish this!"
 else
 echo "The Basilisk grows weary!"
 fi
 fi
-if [ $health -le 0 ]
+if [ "$health" -le "0" ]
 then
 echo " "
 echo "You have been defeated"
 fi
-if [ $BasiliskHealthTotal -le 0 ]
+if [ "$BasiliskHealthTotal" -le "0" ]
 then
 #Victory
 echo " "
@@ -166,7 +166,7 @@ sleep 1;
 echo "( The basilisk must be defeated to proceed )"
 #End Retreat
 fi
-if [ $health -le 0 ]
+if [ "$health" -le "0" ]
 then
 #Lose life
 lives=$(( $lives - 1 ));
