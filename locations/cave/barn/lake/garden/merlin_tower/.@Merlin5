@@ -4,7 +4,7 @@
 
 echo "Merlin comes close to you and tells you important information on the wereabouts."
 sleep 1;
-tput bold; echo "Merlin: "; tput srg0; echo "We have identified the imps at location to church you passed by."
+tput bold; echo "Merlin: "; tput sgr0; echo "We have identified the imps at location to church you passed by."
 sleep 1;
 echo "They should be just inside that building. I understand that you are unable to enter, as they have blocked you off."
 sleep 1;
