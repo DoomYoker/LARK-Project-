@@ -35,7 +35,10 @@ if [ "$itemseen" = "no" ]
           sleep 1;
           echo "(If you are unsure which items you are able to use remember the command below)" 
           sleep 1;
-          echo " -> view collected items: ls \$collected"  >> "$location/scripts/listofcommands"
+          echo " -> view collected items: ls \$collected"
+          sleep 1;
+          tput bold; echo "(Reminder: to look at these commands again and get a refresher type 'amulet' into the command line)"
+          tput sgr0; echo ""
           echo "To use these materials you must use this command." >> "$location/scripts/listofcommands"
           echo "useItem" >> "$location/scripts/listofcommands"
           echo "        -> This command gives you a prompt for which item to use and will then remove that item from collected." >> "$location/scripts/listofcommands"
