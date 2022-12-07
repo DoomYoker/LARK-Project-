@@ -1,0 +1,50 @@
+#!/bin/bash
+
+  echo "Deciding to follow them from behind, you come across a large church in the distance."
+  sleep 1;
+  echo "This rustic structure looks to be warn down. You do see the creatures heading inside."
+  sleep 1;
+  echo "And can just make out the last one as it looks back before closing the door with a slam."
+  sleep 1;
+  echo "You take note of its demonic features."
+  sleep 1;
+  echo "You approach the doors to which the little creatures entered."
+  sleep 1;
+  echo "You try pulling them open, but do not budge. You then stop and hear laughter coming from inside."
+  sleep 1;
+  echo "You try looking around the building, but find trees and fauna blocking their paths."
+  sleep 1;
+  echo "However, you do see a potion on the ground tilting on the side of the building."
+  if [ "$itemseen" = "no" ]
+  then
+          echo "Press any button to continue reading: "
+          read hi
+          tput bold; echo "Amulet: " ; tput sgr0 ; echo "Over the course of your journey you may also find some flasks or stones,"
+          echo "these items are used to heal yourself or increase your damage."
+          sleep 1;
+          echo "To use these materials you must use this command."
+          sleep 1;
+          echo "useItem" 
+          sleep 1;
+          echo "        -> This command gives you a prompt for which item to use and will then remove that item from collected." 
+          sleep 1;
+          echo "(If you are unsure which items you are able to use remember the command below)" 
+          sleep 1;
+          tput bold; echo "(Reminder: to look at these commands again and get a refresher type 'amulet' into the command line)"
+          tput sgr0; echo ""
+          echo " -> view collected items: ls \$collected"  >> "$location/scripts/listofcommands"
+          echo "To use these materials you must use this command." >> "$location/scripts/listofcommands"
+          echo "useItem" >> "$location/scripts/listofcommands"
+          echo "        -> This command gives you a prompt for which item to use and will then remove that item from collected." >> "$location/scripts/listofcommands"
+          echo "(If you are unsure which items you are able to use remember the command below)" >> "$location/scripts/listofcommands"
+          echo " -> view collected items: ls \$collected" >> "$location/scripts/listofcommands"
+          itemseen="yes"
+  fi
+  mv .+health-potion \+health-potion
+  sleep 1;
+  echo "You then turn around and leave, heading back to the path towards the lake."
+  sleep 1;
+  echo "press any button to continue"
+  read hi
+  clear
+  rm $location/locations/cave/barn/church/@Church1

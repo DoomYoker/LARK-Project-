@@ -1,0 +1,17 @@
+#!bin/bash/
+
+#(At Merlin Tower) - move to Tower Directory 
+
+echo "You speak with Merlin and explain that the basilisk had risen the drawbridge."
+sleep 1;
+tput bold; echo "Merlin: "; tput srg0; echo "This is not good. He is growing thin. Go with him. There is a friend who can help you cross over the castle walls."
+sleep 1;
+echo "She should be located in the cave I originally called to you at. The phoenix is now flying with you."
+mv .+phoenix /+phoenix
+mv \+phoenix /$collected
+mv $location/
+sleep 1;
+echo "Press any button to continue: "
+read hi
+clear
+rm $location/locations/cave/barn/lake/garden/merlin_tower/@Merlin4

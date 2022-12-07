@@ -1,0 +1,30 @@
+#!bin/bash/
+
+#(In cave) - move to Cave Directory
+
+echo "You go back inside the cave and travel to where the griffen is."
+echo "When coming face to face with her, she notices the egg you are holding and proceeds to stand up."
+echo "You then bring it to her nest and lay it down delicately."
+echo "She then steps towards the egg and caresses it with delight."
+echo "She turns to you and leans her head down, as you reach your hand out and pat."
+echo "She now trusts you and will help you travel over the moat."
+sleep 1;
+
+echo "Press any button to continue reading: "
+read hi
+clear
+#(At exit of cave) 
+
+echo "The griffen prepares to fly you over the castle walls from the cave entrance."
+echo "You hop on and she soars high into the sky."
+sleep 1;
+echo "As you both fly through the over the moat, you notice the basilisk is inside a tower."
+echo "You scout and see an open balcony, pointing the griffen to land there."
+sleep 1;
+echo "(THIS IS YOUR LAST CHANCE TO USE OR EQUIP ITEMS BEFORE THE BASILISK FIGHT)"
+cd .castle
+
+echo "Press any button to continue: "
+read hi
+clear
+rm $location/locations/cave/@Cave2
