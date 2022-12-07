@@ -29,7 +29,7 @@ read -p "Do you look inside or head back outside?[inside or outside]: " selectio
           tput bold; echo "Amulet: " ; tput sgr0 ; echo "Along your path you will find many different items,"
           echo "in order to interact with and use these items here is what you must do"
           sleep 1;
-          echo "mv <scriptname> \$collected" 
+          echo "mv <scriptname> \/$collected" 
           sleep 1;
           echo "        - This command is used to move files(items) to your collection." 
           sleep 1;
@@ -156,7 +156,7 @@ read -p "Do you look inside or head back outside?[inside or outside]: " selectio
           sleep 1;
           ;;
 esac
-echo "mv <scriptname> \$collected" >> "$location/scripts/listofcommands"
+echo "mv <scriptname> \/$collected" >> "$location/scripts/listofcommands"
           echo "        - This command is used to move files(items) to your collection." >> "$location/scripts/listofcommands"
           echo "\"\$collected\" is the variable that holds the path to your inventory" >> "$location/scripts/listofcommands"
           echo "(be wary with moving items because if you move anything without an + infront of it you can break this game)" >> "$location/scripts/listofcommands"
