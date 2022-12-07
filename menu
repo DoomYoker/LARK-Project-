@@ -108,7 +108,7 @@ function move_items() {
   cp $location/scripts/@Lake $location/locations/cave/barn/lake 2>/dev/null
   rm $location/locations/cave/barn/lake/.@Lake2 2>/dev/null
   rm $location/locations/cave/barn/lake/@Lake2 2>/dev/null
-  cp $location/scripts/@Lake2 $location/locations/cave/barn/lake 2>/dev/null
+  cp $location/scripts/.@Lake2 $location/locations/cave/barn/lake 2>/dev/null
   rm $location/locations/cave/barn/lake/bridge/@Bridge1 2>/dev/null
   cp $location/scripts/@Bridge1 $location/locations/cave/barn/lake/bridge 2>/dev/null
   rm $location/locations/cave/barn/lake/deeplake/@DeepLake 2>/dev/null
