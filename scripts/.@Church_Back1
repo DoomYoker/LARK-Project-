@@ -51,6 +51,8 @@ then
               then
               RandAttack2=0
               fi
+              echo "Damage dealt: $RandAttack";
+              echo "Damage recieved: $RandAttack2";
               health=$(($health-$RandAttack2));
               elif [ $response = 'B' ] || [ $response = 'b' ]
               then
@@ -60,6 +62,7 @@ then
               then
               RandAttack2=0
               fi
+              echo "Damage recieved: $RandAttack2";
               health=$(($health-$RandAttack2))
               else
               echo " "
@@ -69,6 +72,7 @@ then
               then
               RandAttack2=0
               fi
+              echo "Damage recieved: $RandAttack2";
               health=$(($health-$RandAttack2))
               fi
               if [ $ImpHealthTotal -le 59 ]
