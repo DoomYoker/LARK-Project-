@@ -54,6 +54,8 @@ if [ $RandAttack2 -lt 0 ]
 then
 RandAttack2=0
 fi
+echo "Damage dealt: $RandAttack";
+echo "Damage recieved: $RandAttack2";
 health=$(($health-$RandAttack2));
 elif [ $response = 'B' ] || [ $response = 'b' ]
 then
@@ -63,6 +65,7 @@ if [ $RandAttack2 -lt 0 ]
 then
 RandAttack2=0
 fi
+echo "Damage recieved: $RandAttack2";
 health=$(($health-$RandAttack2))
 else
 echo " "
@@ -72,6 +75,7 @@ if [ $RandAttack2 -lt 0 ]
 then
 RandAttack2=0
 fi
+echo "Damage recieved: $RandAttack2";
 health=$(($health-$RandAttack2))
 fi
 if [ $SkeletonHealthTotal -le 29 ]
